@@ -1,0 +1,1519 @@
+Components
+Code
+Preview
+Assets
+
+JSX
+
+TailwindCSS
+<div className="w-[1245px] h-[4450px] relative overflow-hidden bg-white">
+  <div className="flex flex-col justify-start items-center w-[1288px] h-[1042px] absolute left-3.5 top-[2865px] overflow-hidden bg-white">
+    <div className="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-16 py-24 bg-white">
+      <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 w-[1280px] gap-8 px-8">
+        <div className="flex flex-col justify-start items-center self-stretch flex-grow-0 flex-shrink-0 gap-10">
+          <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 w-[960px] relative gap-6">
+            <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3">
+              <p className="self-stretch flex-grow-0 flex-shrink-0 w-[960px] text-base font-semibold text-center text-[#7f56d9]">
+                Our blog
+              </p>
+              <p className="self-stretch flex-grow-0 flex-shrink-0 w-[960px] text-5xl font-semibold text-center text-[#101828]">
+                Stories and interviews
+              </p>
+            </div>
+            <p className="flex-grow-0 flex-shrink-0 w-[768px] text-xl text-center text-[#667085]">
+              Subscribe to learn about new product features, the latest in technology, solutions,
+              and updates.
+            </p>
+          </div>
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 gap-4">
+            <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 w-[360px]">
+              <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-2">
+                <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-1.5">
+                  <div
+                    className="flex justify-start items-center self-stretch flex-grow-0 flex-shrink-0 overflow-hidden gap-2 pl-4 pr-3.5 py-3 rounded-lg bg-white border border-[#d0d5dd]"
+                    style={{ boxShadow: "0px 1px 2px 0 rgba(16,24,40,0.05)" }}
+                  >
+                    <div className="flex justify-start items-center flex-grow relative gap-2">
+                      <p className="flex-grow w-[330px] text-base text-left text-[#667085]">
+                        Enter your email
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <p className="self-stretch flex-grow-0 flex-shrink-0 w-[360px] text-sm text-left text-[#667085]">
+                  We care about your data in our privacy policy
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 rounded-lg">
+              <div
+                className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative overflow-hidden gap-2 px-5 py-3 rounded-lg bg-[#7f56d9] border border-[#7f56d9]"
+                style={{ boxShadow: "0px 1px 2px 0 rgba(16,24,40,0.05)" }}
+              >
+                <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-white">
+                  Subscribe
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 h-[580px] w-[1296px] gap-16 pb-24 bg-white">
+      <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 h-[784px] w-[1290px] relative gap-8 px-8">
+        <p className="self-stretch flex-grow-0 flex-shrink-0 w-[1226px] text-2xl font-semibold text-left text-[#101828]">
+          Recent blog posts
+        </p>
+        <div className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-8">
+          <div className="flex flex-col justify-start items-start self-stretch flex-grow relative gap-8">
+            <div className="self-stretch flex-grow w-[597px] h-[228px] relative overflow-hidden bg-[url('image-4.jpeg')] bg-cover bg-no-repeat bg-center" />
+            <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-6">
+              <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3">
+                <p className="self-stretch flex-grow-0 flex-shrink-0 w-[597px] text-sm font-semibold text-left text-[#6941c6]">
+                  Olivia Rhye • 20 Jan 2022
+                </p>
+                <div className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4">
+                  <p className="flex-grow w-[557px] text-2xl font-semibold text-left text-[#101828]">
+                    UX review presentations
+                  </p>
+                  <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative pt-1">
+                    <svg
+                      width={24}
+                      height={24}
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="flex-grow-0 flex-shrink-0 w-6 h-6 relative"
+                      preserveAspectRatio="none"
+                    >
+                      <path
+                        d="M7 17L17 7M17 7H7M17 7V17"
+                        stroke="#101828"
+                        stroke-width={2}
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <p className="self-stretch flex-grow-0 flex-shrink-0 w-[597px] text-base text-left text-[#667085]">
+                  How do you create compelling presentations that wow your colleagues and impress
+                  your managers?
+                </p>
+              </div>
+              <div className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-2">
+                <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                  <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-[#f9f5ff]">
+                    <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#6941c6]">
+                      Design
+                    </p>
+                  </div>
+                </div>
+                <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                  <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-[#eef4ff]">
+                    <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#3538cd]">
+                      Research
+                    </p>
+                  </div>
+                </div>
+                <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                  <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-[#fdf2fa]">
+                    <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#c11574]">
+                      Presentation
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col justify-center items-start flex-grow gap-8">
+            <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 w-[620px] relative gap-6">
+              <div className="flex-grow-0 flex-shrink-0 w-80 h-[200px] relative overflow-hidden bg-[url('image-6.jpeg')] bg-cover bg-no-repeat bg-center" />
+              <div className="flex flex-col justify-start items-start flex-grow gap-6">
+                <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3">
+                  <p className="self-stretch flex-grow-0 flex-shrink-0 w-[276px] text-sm font-semibold text-left text-[#6941c6]">
+                    Phoenix Baker • 19 Jan 2022
+                  </p>
+                  <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-2">
+                    <p className="self-stretch flex-grow-0 flex-shrink-0 w-[276px] text-lg font-semibold text-left text-[#101828]">
+                      Migrating to Linear 101
+                    </p>
+                    <p className="self-stretch flex-grow-0 flex-shrink-0 w-[276px] text-base text-left text-[#667085]">
+                      Linear helps streamline software projects, sprints, tasks, and bug tracking.
+                      Here’s how to get...
+                    </p>
+                  </div>
+                </div>
+                <div className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-2">
+                  <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-sky-50">
+                      <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#026aa2]">
+                        Design
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-[#fdf2fa]">
+                      <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#c11574]">
+                        Research
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 w-[620px] relative gap-6">
+              <div className="flex-grow-0 flex-shrink-0 w-80 h-[200px] relative overflow-hidden bg-[url('image-5.jpeg')] bg-cover bg-no-repeat bg-center" />
+              <div className="flex flex-col justify-start items-start flex-grow gap-6">
+                <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3">
+                  <p className="self-stretch flex-grow-0 flex-shrink-0 w-[276px] text-sm font-semibold text-left text-[#6941c6]">
+                    Lana Steiner • 18 Jan 2022
+                  </p>
+                  <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-2">
+                    <p className="self-stretch flex-grow-0 flex-shrink-0 w-[276px] text-lg font-semibold text-left text-[#101828]">
+                      Building your API Stack
+                    </p>
+                    <p className="self-stretch flex-grow-0 flex-shrink-0 w-[276px] text-base text-left text-[#667085]">
+                      The rise of RESTful APIs has been met by a rise in tools for creating,
+                      testing, and manag...
+                    </p>
+                  </div>
+                </div>
+                <div className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-2">
+                  <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-[#ecfdf3]">
+                      <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#027a48]">
+                        Design
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-[#fdf2fa]">
+                      <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#c11574]">
+                        Research
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="w-[1252px] h-[1005px] absolute left-0 top-[920px] overflow-hidden bg-white">
+    <div className="w-[1105px] h-[850px]">
+      <div className="w-[809px] h-[800px]">
+        <div className="w-[808px] h-[394px]">
+          <div className="w-[260.67px] h-[394px] absolute left-[370px] top-[181px] overflow-hidden bg-white border border-[#e5e9eb]">
+            <img
+              src="image-8.png"
+              className="w-[250px] h-[250px] absolute left-1 top-[29px] object-cover"
+            />
+            <p className="absolute left-6 top-[300px] text-sm text-left text-[#252c32]">
+              DJI Phantom 2 Vision+
+            </p>
+            <p className="absolute left-28 top-[354px] text-xs text-left text-[#5b6871]">243</p>
+            <p className="absolute left-6 top-[326px] text-lg font-semibold text-left text-[#252c32]">
+              $599
+            </p>
+            <div className="flex justify-between items-center w-20 absolute left-6 top-[354px]">
+              <svg
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8 2L9.77994 6.05749L14 6.58359L10.88 9.61736L11.7082 14L8 11.8175L4.2918 14L5.12 9.61736L2 6.58359L6.22006 6.05749L8 2Z"
+                  fill="#F8C51B"
+                />
+              </svg>
+              <svg
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8 2L9.77994 6.05749L14 6.58359L10.88 9.61736L11.7082 14L8 11.8175L4.2918 14L5.12 9.61736L2 6.58359L6.22006 6.05749L8 2Z"
+                  fill="#F8C51B"
+                />
+              </svg>
+              <svg
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8 2L9.77994 6.05749L14 6.58359L10.88 9.61736L11.7082 14L8 11.8175L4.2918 14L5.12 9.61736L2 6.58359L6.22006 6.05749L8 2Z"
+                  fill="#F8C51B"
+                />
+              </svg>
+              <svg
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8 2L6.22006 6.05749L2 6.58359L5.12 9.61736L4.2918 14L8 11.8175V2Z"
+                  fill="#F8C51B"
+                />
+                <path
+                  d="M8 11.8175L11.7082 14L10.88 9.61736L14 6.58359L9.77994 6.05749L8 2V11.8175Z"
+                  fill="#DDE2E4"
+                />
+              </svg>
+              <svg
+                width={16}
+                height={16}
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8 2L9.77994 6.05749L14 6.58359L10.88 9.61736L11.7082 14L8 11.8175L4.2918 14L5.12 9.61736L2 6.58359L6.22006 6.05749L8 2Z"
+                  fill="#D5DADD"
+                />
+              </svg>
+            </div>
+            <svg
+              width={32}
+              height={32}
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8 absolute left-[225px] top-2"
+              preserveAspectRatio="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.17115 10.2212C9.92126 9.47127 10.9385 9.05001 11.9991 9.05001C13.0598 9.05001 14.077 9.47127 14.8271 10.2212L15.9991 11.3922L17.1711 10.2212C17.5401 9.83911 17.9815 9.53438 18.4695 9.32475C18.9575 9.11511 19.4824 9.00477 20.0135 9.00015C20.5447 8.99554 21.0714 9.09674 21.563 9.29787C22.0545 9.49899 22.5012 9.796 22.8767 10.1716C23.2523 10.5471 23.5493 10.9938 23.7504 11.4853C23.9516 11.9769 24.0528 12.5036 24.0481 13.0348C24.0435 13.5659 23.9332 14.0908 23.7236 14.5788C23.5139 15.0668 23.2092 15.5082 22.8271 15.8772L15.9991 22.7062L9.17115 15.8772C8.42126 15.127 8 14.1098 8 13.0492C8 11.9885 8.42126 10.9713 9.17115 10.2212Z"
+                fill="#B0BABF"
+              />
+            </svg>
+            <svg
+              width={32}
+              height={32}
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8 absolute left-[225px] top-10"
+              preserveAspectRatio="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12 8C11.4696 8 10.9609 8.21071 10.5858 8.58579C10.2107 8.96086 10 9.46957 10 10V22C10 22.5304 10.2107 23.0391 10.5858 23.4142C10.9609 23.7893 11.4696 24 12 24H20C20.5304 24 21.0391 23.7893 21.4142 23.4142C21.7893 23.0391 22 22.5304 22 22V13.414C21.9999 12.8836 21.7891 12.375 21.414 12L18 8.586C17.625 8.2109 17.1164 8.00011 16.586 8H12ZM17 14C17 13.7348 16.8946 13.4804 16.7071 13.2929C16.5196 13.1054 16.2652 13 16 13C15.7348 13 15.4804 13.1054 15.2929 13.2929C15.1054 13.4804 15 13.7348 15 14V16H13C12.7348 16 12.4804 16.1054 12.2929 16.2929C12.1054 16.4804 12 16.7348 12 17C12 17.2652 12.1054 17.5196 12.2929 17.7071C12.4804 17.8946 12.7348 18 13 18H15V20C15 20.2652 15.1054 20.5196 15.2929 20.7071C15.4804 20.8946 15.7348 21 16 21C16.2652 21 16.5196 20.8946 16.7071 20.7071C16.8946 20.5196 17 20.2652 17 20V18H19C19.2652 18 19.5196 17.8946 19.7071 17.7071C19.8946 17.5196 20 17.2652 20 17C20 16.7348 19.8946 16.4804 19.7071 16.2929C19.5196 16.1054 19.2652 16 19 16H17V14Z"
+                fill="#B0BABF"
+              />
+            </svg>
+          </div>
+          <div className="w-[260.67px] h-[394px] absolute left-[643.67px] top-[181px] overflow-hidden bg-white border border-[#e5e9eb]">
+            <img
+              src="image-9.png"
+              className="w-[250px] h-[250px] absolute left-1 top-[29px] object-cover"
+            />
+            <p className="absolute left-6 top-[300px] text-sm text-left text-[#252c32]">
+              DJI Phantom 4 Multispectral
+            </p>
+            <p className="absolute left-28 top-[354px] text-xs text-left text-[#5b6871]">98</p>
+            <p className="absolute left-6 top-[326px] text-lg font-semibold text-left text-[#252c32]">
+              $1,449
+            </p>
+            <div className="flex justify-between items-center w-20 absolute left-6 top-[354px]">
+              <svg
+                width={17}
+                height={16}
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8.66663 2L10.4466 6.05749L14.6666 6.58359L11.5466 9.61736L12.3748 14L8.66663 11.8175L4.95842 14L5.78663 9.61736L2.66663 6.58359L6.88669 6.05749L8.66663 2Z"
+                  fill="#F8C51B"
+                />
+              </svg>
+              <svg
+                width={17}
+                height={16}
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8.66663 2L10.4466 6.05749L14.6666 6.58359L11.5466 9.61736L12.3748 14L8.66663 11.8175L4.95842 14L5.78663 9.61736L2.66663 6.58359L6.88669 6.05749L8.66663 2Z"
+                  fill="#F8C51B"
+                />
+              </svg>
+              <svg
+                width={17}
+                height={16}
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8.66663 2L10.4466 6.05749L14.6666 6.58359L11.5466 9.61736L12.3748 14L8.66663 11.8175L4.95842 14L5.78663 9.61736L2.66663 6.58359L6.88669 6.05749L8.66663 2Z"
+                  fill="#F8C51B"
+                />
+              </svg>
+              <svg
+                width={17}
+                height={16}
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8.66663 2L10.4466 6.05749L14.6666 6.58359L11.5466 9.61736L12.3748 14L8.66663 11.8175L4.95842 14L5.78663 9.61736L2.66663 6.58359L6.88669 6.05749L8.66663 2Z"
+                  fill="#F8C51B"
+                />
+              </svg>
+              <svg
+                width={17}
+                height={16}
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8.66663 2L10.4466 6.05749L14.6666 6.58359L11.5466 9.61736L12.3748 14L8.66663 11.8175L4.95842 14L5.78663 9.61736L2.66663 6.58359L6.88669 6.05749L8.66663 2Z"
+                  fill="#F8C51B"
+                />
+              </svg>
+            </div>
+            <svg
+              width={33}
+              height={32}
+              viewBox="0 0 33 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8 absolute left-[225px] top-2"
+              preserveAspectRatio="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.83777 10.2212C10.5879 9.47127 11.6051 9.05001 12.6658 9.05001C13.7264 9.05001 14.7437 9.47127 15.4938 10.2212L16.6658 11.3922L17.8378 10.2212C18.2068 9.83911 18.6481 9.53438 19.1362 9.32475C19.6242 9.11511 20.149 9.00477 20.6802 9.00015C21.2113 8.99554 21.738 9.09674 22.2296 9.29787C22.7212 9.49899 23.1678 9.796 23.5434 10.1716C23.9189 10.5471 24.2159 10.9938 24.4171 11.4853C24.6182 11.9769 24.7194 12.5036 24.7148 13.0348C24.7102 13.5659 24.5998 14.0908 24.3902 14.5788C24.1805 15.0668 23.8758 15.5082 23.4938 15.8772L16.6658 22.7062L9.83777 15.8772C9.08789 15.127 8.66663 14.1098 8.66663 13.0492C8.66663 11.9885 9.08789 10.9713 9.83777 10.2212Z"
+                fill="#B0BABF"
+              />
+            </svg>
+            <svg
+              width={33}
+              height={32}
+              viewBox="0 0 33 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8 absolute left-[225px] top-10"
+              preserveAspectRatio="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.6666 8C12.1362 8 11.6275 8.21071 11.2524 8.58579C10.8773 8.96086 10.6666 9.46957 10.6666 10V22C10.6666 22.5304 10.8773 23.0391 11.2524 23.4142C11.6275 23.7893 12.1362 24 12.6666 24H20.6666C21.1971 24 21.7058 23.7893 22.0808 23.4142C22.4559 23.0391 22.6666 22.5304 22.6666 22V13.414C22.6665 12.8836 22.4557 12.375 22.0806 12L18.6666 8.586C18.2916 8.2109 17.783 8.00011 17.2526 8H12.6666ZM17.6666 14C17.6666 13.7348 17.5613 13.4804 17.3737 13.2929C17.1862 13.1054 16.9318 13 16.6666 13C16.4014 13 16.1471 13.1054 15.9595 13.2929C15.772 13.4804 15.6666 13.7348 15.6666 14V16H13.6666C13.4014 16 13.1471 16.1054 12.9595 16.2929C12.772 16.4804 12.6666 16.7348 12.6666 17C12.6666 17.2652 12.772 17.5196 12.9595 17.7071C13.1471 17.8946 13.4014 18 13.6666 18H15.6666V20C15.6666 20.2652 15.772 20.5196 15.9595 20.7071C16.1471 20.8946 16.4014 21 16.6666 21C16.9318 21 17.1862 20.8946 17.3737 20.7071C17.5613 20.5196 17.6666 20.2652 17.6666 20V18H19.6666C19.9318 18 20.1862 17.8946 20.3737 17.7071C20.5613 17.5196 20.6666 17.2652 20.6666 17C20.6666 16.7348 20.5613 16.4804 20.3737 16.2929C20.1862 16.1054 19.9318 16 19.6666 16H17.6666V14Z"
+                fill="#B0BABF"
+              />
+            </svg>
+          </div>
+          <div className="w-[260.67px] h-[394px] absolute left-[917.33px] top-[181px] overflow-hidden bg-white border border-[#e5e9eb]">
+            <img
+              src="image-10.png"
+              className="w-[250px] h-[250px] absolute left-1 top-[29px] object-cover"
+            />
+            <p className="absolute left-6 top-[300px] text-sm text-left text-[#252c32]">
+              DJI Phantom 4 PRO
+            </p>
+            <p className="absolute left-28 top-[354px] text-xs text-left text-[#5b6871]">1,002</p>
+            <p className="absolute left-6 top-[326px] text-lg font-semibold text-left text-[#252c32]">
+              $739
+            </p>
+            <div className="flex justify-between items-center w-20 absolute left-6 top-[354px]">
+              <svg
+                width={17}
+                height={16}
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8.33331 2L10.1133 6.05749L14.3333 6.58359L11.2133 9.61736L12.0415 14L8.33331 11.8175L4.62511 14L5.45331 9.61736L2.33331 6.58359L6.55338 6.05749L8.33331 2Z"
+                  fill="#F8C51B"
+                />
+              </svg>
+              <svg
+                width={17}
+                height={16}
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8.33331 2L10.1133 6.05749L14.3333 6.58359L11.2133 9.61736L12.0415 14L8.33331 11.8175L4.62511 14L5.45331 9.61736L2.33331 6.58359L6.55338 6.05749L8.33331 2Z"
+                  fill="#F8C51B"
+                />
+              </svg>
+              <svg
+                width={17}
+                height={16}
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8.33331 2L10.1133 6.05749L14.3333 6.58359L11.2133 9.61736L12.0415 14L8.33331 11.8175L4.62511 14L5.45331 9.61736L2.33331 6.58359L6.55338 6.05749L8.33331 2Z"
+                  fill="#D5DADD"
+                />
+              </svg>
+              <svg
+                width={17}
+                height={16}
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8.33331 2L10.1133 6.05749L14.3333 6.58359L11.2133 9.61736L12.0415 14L8.33331 11.8175L4.62511 14L5.45331 9.61736L2.33331 6.58359L6.55338 6.05749L8.33331 2Z"
+                  fill="#D5DADD"
+                />
+              </svg>
+              <svg
+                width={17}
+                height={16}
+                viewBox="0 0 17 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M8.33331 2L10.1133 6.05749L14.3333 6.58359L11.2133 9.61736L12.0415 14L8.33331 11.8175L4.62511 14L5.45331 9.61736L2.33331 6.58359L6.55338 6.05749L8.33331 2Z"
+                  fill="#D5DADD"
+                />
+              </svg>
+            </div>
+            <svg
+              width={33}
+              height={32}
+              viewBox="0 0 33 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8 absolute left-[225px] top-2"
+              preserveAspectRatio="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M9.50446 10.2212C10.2546 9.47127 11.2718 9.05001 12.3325 9.05001C13.3931 9.05001 14.4103 9.47127 15.1605 10.2212L16.3325 11.3922L17.5045 10.2212C17.8734 9.83911 18.3148 9.53438 18.8028 9.32475C19.2909 9.11511 19.8157 9.00477 20.3469 9.00015C20.878 8.99554 21.4047 9.09674 21.8963 9.29787C22.3879 9.49899 22.8345 9.796 23.21 10.1716C23.5856 10.5471 23.8826 10.9938 24.0837 11.4853C24.2849 11.9769 24.3861 12.5036 24.3815 13.0348C24.3768 13.5659 24.2665 14.0908 24.0569 14.5788C23.8472 15.0668 23.5425 15.5082 23.1605 15.8772L16.3325 22.7062L9.50446 15.8772C8.75457 15.127 8.33331 14.1098 8.33331 13.0492C8.33331 11.9885 8.75457 10.9713 9.50446 10.2212Z"
+                fill="#B0BABF"
+              />
+            </svg>
+            <svg
+              width={33}
+              height={32}
+              viewBox="0 0 33 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-8 h-8 absolute left-[225px] top-10"
+              preserveAspectRatio="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.3333 8C11.8029 8 11.2942 8.21071 10.9191 8.58579C10.544 8.96086 10.3333 9.46957 10.3333 10V22C10.3333 22.5304 10.544 23.0391 10.9191 23.4142C11.2942 23.7893 11.8029 24 12.3333 24H20.3333C20.8637 24 21.3725 23.7893 21.7475 23.4142C22.1226 23.0391 22.3333 22.5304 22.3333 22V13.414C22.3332 12.8836 22.1224 12.375 21.7473 12L18.3333 8.586C17.9583 8.2109 17.4497 8.00011 16.9193 8H12.3333ZM17.3333 14C17.3333 13.7348 17.228 13.4804 17.0404 13.2929C16.8529 13.1054 16.5985 13 16.3333 13C16.0681 13 15.8137 13.1054 15.6262 13.2929C15.4387 13.4804 15.3333 13.7348 15.3333 14V16H13.3333C13.0681 16 12.8137 16.1054 12.6262 16.2929C12.4387 16.4804 12.3333 16.7348 12.3333 17C12.3333 17.2652 12.4387 17.5196 12.6262 17.7071C12.8137 17.8946 13.0681 18 13.3333 18H15.3333V20C15.3333 20.2652 15.4387 20.5196 15.6262 20.7071C15.8137 20.8946 16.0681 21 16.3333 21C16.5985 21 16.8529 20.8946 17.0404 20.7071C17.228 20.5196 17.3333 20.2652 17.3333 20V18H19.3333C19.5985 18 19.8529 17.8946 20.0404 17.7071C20.228 17.5196 20.3333 17.2652 20.3333 17C20.3333 16.7348 20.228 16.4804 20.0404 16.2929C19.8529 16.1054 19.5985 16 19.3333 16H17.3333V14Z"
+                fill="#B0BABF"
+              />
+            </svg>
+          </div>
+        </div>
+        <div className="w-[260.67px] h-[394px] absolute left-[371px] top-[587px] overflow-hidden bg-white border border-[#e5e9eb]">
+          <p className="absolute left-6 top-[300px] text-sm text-left text-[#252c32]">
+            4 Series — Intelligent Flight Battery (5…
+          </p>
+          <p className="absolute left-28 top-[354px] text-xs text-left text-[#5b6871]">243</p>
+          <p className="absolute left-6 top-[326px] text-lg font-semibold text-left text-[#252c32]">
+            $186
+          </p>
+          <div className="flex justify-between items-center w-20 absolute left-6 top-[354px]">
+            <svg
+              width={16}
+              height={16}
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8 2L9.77994 6.05749L14 6.58359L10.88 9.61736L11.7082 14L8 11.8175L4.2918 14L5.12 9.61736L2 6.58359L6.22006 6.05749L8 2Z"
+                fill="#F8C51B"
+              />
+            </svg>
+            <svg
+              width={16}
+              height={16}
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8 2L9.77994 6.05749L14 6.58359L10.88 9.61736L11.7082 14L8 11.8175L4.2918 14L5.12 9.61736L2 6.58359L6.22006 6.05749L8 2Z"
+                fill="#F8C51B"
+              />
+            </svg>
+            <svg
+              width={16}
+              height={16}
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8 2L9.77994 6.05749L14 6.58359L10.88 9.61736L11.7082 14L8 11.8175L4.2918 14L5.12 9.61736L2 6.58359L6.22006 6.05749L8 2Z"
+                fill="#F8C51B"
+              />
+            </svg>
+            <svg
+              width={16}
+              height={16}
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8 2L6.22006 6.05749L2 6.58359L5.12 9.61736L4.2918 14L8 11.8175V2Z"
+                fill="#F8C51B"
+              />
+              <path
+                d="M8 11.8175L11.7082 14L10.88 9.61736L14 6.58359L9.77994 6.05749L8 2V11.8175Z"
+                fill="#DDE2E4"
+              />
+            </svg>
+            <svg
+              width={16}
+              height={16}
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8 2L9.77994 6.05749L14 6.58359L10.88 9.61736L11.7082 14L8 11.8175L4.2918 14L5.12 9.61736L2 6.58359L6.22006 6.05749L8 2Z"
+                fill="#D5DADD"
+              />
+            </svg>
+          </div>
+          <svg
+            width={32}
+            height={32}
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-8 h-8 absolute left-[225px] top-2"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.17115 10.2212C9.92126 9.47127 10.9385 9.05001 11.9991 9.05001C13.0598 9.05001 14.077 9.47127 14.8271 10.2212L15.9991 11.3922L17.1711 10.2212C17.5401 9.83911 17.9815 9.53438 18.4695 9.32475C18.9575 9.11511 19.4824 9.00477 20.0135 9.00015C20.5447 8.99554 21.0714 9.09674 21.563 9.29787C22.0545 9.49899 22.5012 9.796 22.8767 10.1716C23.2523 10.5471 23.5493 10.9938 23.7504 11.4853C23.9516 11.9769 24.0528 12.5036 24.0481 13.0348C24.0435 13.5659 23.9332 14.0908 23.7236 14.5788C23.5139 15.0668 23.2092 15.5082 22.8271 15.8772L15.9991 22.7062L9.17115 15.8772C8.42126 15.127 8 14.1098 8 13.0492C8 11.9885 8.42126 10.9713 9.17115 10.2212Z"
+              fill="#B0BABF"
+            />
+          </svg>
+          <svg
+            width={32}
+            height={32}
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-8 h-8 absolute left-[225px] top-10"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 8C11.4696 8 10.9609 8.21071 10.5858 8.58579C10.2107 8.96086 10 9.46957 10 10V22C10 22.5304 10.2107 23.0391 10.5858 23.4142C10.9609 23.7893 11.4696 24 12 24H20C20.5304 24 21.0391 23.7893 21.4142 23.4142C21.7893 23.0391 22 22.5304 22 22V13.414C21.9999 12.8836 21.7891 12.375 21.414 12L18 8.586C17.625 8.2109 17.1164 8.00011 16.586 8H12ZM17 14C17 13.7348 16.8946 13.4804 16.7071 13.2929C16.5196 13.1054 16.2652 13 16 13C15.7348 13 15.4804 13.1054 15.2929 13.2929C15.1054 13.4804 15 13.7348 15 14V16H13C12.7348 16 12.4804 16.1054 12.2929 16.2929C12.1054 16.4804 12 16.7348 12 17C12 17.2652 12.1054 17.5196 12.2929 17.7071C12.4804 17.8946 12.7348 18 13 18H15V20C15 20.2652 15.1054 20.5196 15.2929 20.7071C15.4804 20.8946 15.7348 21 16 21C16.2652 21 16.5196 20.8946 16.7071 20.7071C16.8946 20.5196 17 20.2652 17 20V18H19C19.2652 18 19.5196 17.8946 19.7071 17.7071C19.8946 17.5196 20 17.2652 20 17C20 16.7348 19.8946 16.4804 19.7071 16.2929C19.5196 16.1054 19.2652 16 19 16H17V14Z"
+              fill="#B0BABF"
+            />
+          </svg>
+          <img
+            src="image-11.png"
+            className="w-[250px] h-[250px] absolute left-1 top-[29px] object-cover"
+          />
+        </div>
+        <div className="w-[260.67px] h-[394px] absolute left-[644.67px] top-[587px] overflow-hidden bg-white border border-[#e5e9eb]">
+          <p className="absolute left-6 top-[300px] text-sm text-left text-[#252c32]">
+            DJI Phantom 3 — Intelligent Flight Bat…
+          </p>
+          <p className="absolute left-28 top-[354px] text-xs text-left text-[#5b6871]">98</p>
+          <p className="absolute left-6 top-[326px] text-lg font-semibold text-left text-[#252c32]">
+            $98
+          </p>
+          <div className="flex justify-between items-center w-20 absolute left-6 top-[354px]">
+            <svg
+              width={17}
+              height={16}
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8.66663 2L10.4466 6.05749L14.6666 6.58359L11.5466 9.61736L12.3748 14L8.66663 11.8175L4.95842 14L5.78663 9.61736L2.66663 6.58359L6.88669 6.05749L8.66663 2Z"
+                fill="#F8C51B"
+              />
+            </svg>
+            <svg
+              width={17}
+              height={16}
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8.66663 2L10.4466 6.05749L14.6666 6.58359L11.5466 9.61736L12.3748 14L8.66663 11.8175L4.95842 14L5.78663 9.61736L2.66663 6.58359L6.88669 6.05749L8.66663 2Z"
+                fill="#F8C51B"
+              />
+            </svg>
+            <svg
+              width={17}
+              height={16}
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8.66663 2L10.4466 6.05749L14.6666 6.58359L11.5466 9.61736L12.3748 14L8.66663 11.8175L4.95842 14L5.78663 9.61736L2.66663 6.58359L6.88669 6.05749L8.66663 2Z"
+                fill="#F8C51B"
+              />
+            </svg>
+            <svg
+              width={17}
+              height={16}
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8.66663 2L10.4466 6.05749L14.6666 6.58359L11.5466 9.61736L12.3748 14L8.66663 11.8175L4.95842 14L5.78663 9.61736L2.66663 6.58359L6.88669 6.05749L8.66663 2Z"
+                fill="#F8C51B"
+              />
+            </svg>
+            <svg
+              width={17}
+              height={16}
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8.66663 2L10.4466 6.05749L14.6666 6.58359L11.5466 9.61736L12.3748 14L8.66663 11.8175L4.95842 14L5.78663 9.61736L2.66663 6.58359L6.88669 6.05749L8.66663 2Z"
+                fill="#F8C51B"
+              />
+            </svg>
+          </div>
+          <svg
+            width={33}
+            height={32}
+            viewBox="0 0 33 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-8 h-8 absolute left-[225px] top-2"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.83777 10.2212C10.5879 9.47127 11.6051 9.05001 12.6658 9.05001C13.7264 9.05001 14.7437 9.47127 15.4938 10.2212L16.6658 11.3922L17.8378 10.2212C18.2068 9.83911 18.6481 9.53438 19.1362 9.32475C19.6242 9.11511 20.149 9.00477 20.6802 9.00015C21.2113 8.99554 21.738 9.09674 22.2296 9.29787C22.7212 9.49899 23.1678 9.796 23.5434 10.1716C23.9189 10.5471 24.2159 10.9938 24.4171 11.4853C24.6182 11.9769 24.7194 12.5036 24.7148 13.0348C24.7102 13.5659 24.5998 14.0908 24.3902 14.5788C24.1805 15.0668 23.8758 15.5082 23.4938 15.8772L16.6658 22.7062L9.83777 15.8772C9.08789 15.127 8.66663 14.1098 8.66663 13.0492C8.66663 11.9885 9.08789 10.9713 9.83777 10.2212Z"
+              fill="#B0BABF"
+            />
+          </svg>
+          <svg
+            width={33}
+            height={32}
+            viewBox="0 0 33 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-8 h-8 absolute left-[225px] top-10"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.6666 8C12.1362 8 11.6275 8.21071 11.2524 8.58579C10.8773 8.96086 10.6666 9.46957 10.6666 10V22C10.6666 22.5304 10.8773 23.0391 11.2524 23.4142C11.6275 23.7893 12.1362 24 12.6666 24H20.6666C21.1971 24 21.7058 23.7893 22.0808 23.4142C22.4559 23.0391 22.6666 22.5304 22.6666 22V13.414C22.6665 12.8836 22.4557 12.375 22.0806 12L18.6666 8.586C18.2916 8.2109 17.783 8.00011 17.2526 8H12.6666ZM17.6666 14C17.6666 13.7348 17.5613 13.4804 17.3737 13.2929C17.1862 13.1054 16.9318 13 16.6666 13C16.4014 13 16.1471 13.1054 15.9595 13.2929C15.772 13.4804 15.6666 13.7348 15.6666 14V16H13.6666C13.4014 16 13.1471 16.1054 12.9595 16.2929C12.772 16.4804 12.6666 16.7348 12.6666 17C12.6666 17.2652 12.772 17.5196 12.9595 17.7071C13.1471 17.8946 13.4014 18 13.6666 18H15.6666V20C15.6666 20.2652 15.772 20.5196 15.9595 20.7071C16.1471 20.8946 16.4014 21 16.6666 21C16.9318 21 17.1862 20.8946 17.3737 20.7071C17.5613 20.5196 17.6666 20.2652 17.6666 20V18H19.6666C19.9318 18 20.1862 17.8946 20.3737 17.7071C20.5613 17.5196 20.6666 17.2652 20.6666 17C20.6666 16.7348 20.5613 16.4804 20.3737 16.2929C20.1862 16.1054 19.9318 16 19.6666 16H17.6666V14Z"
+              fill="#B0BABF"
+            />
+          </svg>
+          <img
+            src="image-12.png"
+            className="w-[250px] h-[250px] absolute left-1 top-[29px] object-cover"
+          />
+        </div>
+        <div className="w-[260.67px] h-[394px] absolute left-[918.33px] top-[587px] overflow-hidden bg-white border border-[#e5e9eb]">
+          <p className="absolute left-6 top-[300px] text-sm text-left text-[#252c32]">
+            DJI Phantom 4 PRO
+          </p>
+          <p className="absolute left-28 top-[354px] text-xs text-left text-[#5b6871]">1,002</p>
+          <p className="absolute left-6 top-[326px] text-lg font-semibold text-left text-[#252c32]">
+            $739
+          </p>
+          <div className="flex justify-between items-center w-20 absolute left-6 top-[354px]">
+            <svg
+              width={17}
+              height={16}
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8.33331 2L10.1133 6.05749L14.3333 6.58359L11.2133 9.61736L12.0415 14L8.33331 11.8175L4.62511 14L5.45331 9.61736L2.33331 6.58359L6.55338 6.05749L8.33331 2Z"
+                fill="#F8C51B"
+              />
+            </svg>
+            <svg
+              width={17}
+              height={16}
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8.33331 2L10.1133 6.05749L14.3333 6.58359L11.2133 9.61736L12.0415 14L8.33331 11.8175L4.62511 14L5.45331 9.61736L2.33331 6.58359L6.55338 6.05749L8.33331 2Z"
+                fill="#F8C51B"
+              />
+            </svg>
+            <svg
+              width={17}
+              height={16}
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8.33331 2L10.1133 6.05749L14.3333 6.58359L11.2133 9.61736L12.0415 14L8.33331 11.8175L4.62511 14L5.45331 9.61736L2.33331 6.58359L6.55338 6.05749L8.33331 2Z"
+                fill="#D5DADD"
+              />
+            </svg>
+            <svg
+              width={17}
+              height={16}
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8.33331 2L10.1133 6.05749L14.3333 6.58359L11.2133 9.61736L12.0415 14L8.33331 11.8175L4.62511 14L5.45331 9.61736L2.33331 6.58359L6.55338 6.05749L8.33331 2Z"
+                fill="#D5DADD"
+              />
+            </svg>
+            <svg
+              width={17}
+              height={16}
+              viewBox="0 0 17 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-4 h-4 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M8.33331 2L10.1133 6.05749L14.3333 6.58359L11.2133 9.61736L12.0415 14L8.33331 11.8175L4.62511 14L5.45331 9.61736L2.33331 6.58359L6.55338 6.05749L8.33331 2Z"
+                fill="#D5DADD"
+              />
+            </svg>
+          </div>
+          <svg
+            width={33}
+            height={32}
+            viewBox="0 0 33 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-8 h-8 absolute left-[225px] top-2"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M9.50446 10.2212C10.2546 9.47127 11.2718 9.05001 12.3325 9.05001C13.3931 9.05001 14.4103 9.47127 15.1605 10.2212L16.3325 11.3922L17.5045 10.2212C17.8734 9.83911 18.3148 9.53438 18.8028 9.32475C19.2909 9.11511 19.8157 9.00477 20.3469 9.00015C20.878 8.99554 21.4047 9.09674 21.8963 9.29787C22.3879 9.49899 22.8345 9.796 23.21 10.1716C23.5856 10.5471 23.8826 10.9938 24.0837 11.4853C24.2849 11.9769 24.3861 12.5036 24.3815 13.0348C24.3768 13.5659 24.2665 14.0908 24.0569 14.5788C23.8472 15.0668 23.5425 15.5082 23.1605 15.8772L16.3325 22.7062L9.50446 15.8772C8.75457 15.127 8.33331 14.1098 8.33331 13.0492C8.33331 11.9885 8.75457 10.9713 9.50446 10.2212Z"
+              fill="#B0BABF"
+            />
+          </svg>
+          <svg
+            width={33}
+            height={32}
+            viewBox="0 0 33 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-8 h-8 absolute left-[225px] top-10"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12.3333 8C11.8029 8 11.2942 8.21071 10.9191 8.58579C10.544 8.96086 10.3333 9.46957 10.3333 10V22C10.3333 22.5304 10.544 23.0391 10.9191 23.4142C11.2942 23.7893 11.8029 24 12.3333 24H20.3333C20.8637 24 21.3725 23.7893 21.7475 23.4142C22.1226 23.0391 22.3333 22.5304 22.3333 22V13.414C22.3332 12.8836 22.1224 12.375 21.7473 12L18.3333 8.586C17.9583 8.2109 17.4497 8.00011 16.9193 8H12.3333ZM17.3333 14C17.3333 13.7348 17.228 13.4804 17.0404 13.2929C16.8529 13.1054 16.5985 13 16.3333 13C16.0681 13 15.8137 13.1054 15.6262 13.2929C15.4387 13.4804 15.3333 13.7348 15.3333 14V16H13.3333C13.0681 16 12.8137 16.1054 12.6262 16.2929C12.4387 16.4804 12.3333 16.7348 12.3333 17C12.3333 17.2652 12.4387 17.5196 12.6262 17.7071C12.8137 17.8946 13.0681 18 13.3333 18H15.3333V20C15.3333 20.2652 15.4387 20.5196 15.6262 20.7071C15.8137 20.8946 16.0681 21 16.3333 21C16.5985 21 16.8529 20.8946 17.0404 20.7071C17.228 20.5196 17.3333 20.2652 17.3333 20V18H19.3333C19.5985 18 19.8529 17.8946 20.0404 17.7071C20.228 17.5196 20.3333 17.2652 20.3333 17C20.3333 16.7348 20.228 16.4804 20.0404 16.2929C19.8529 16.1054 19.5985 16 19.3333 16H17.3333V14Z"
+              fill="#B0BABF"
+            />
+          </svg>
+          <img
+            src="image-13.png"
+            className="w-[250px] h-[250px] absolute left-1 top-[29px] object-cover"
+          />
+        </div>
+      </div>
+      <svg
+        width={72}
+        height={40}
+        viewBox="0 0 72 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="w-16 h-8"
+        style={{
+          filter:
+            "drop-shadow(0px 4px 4px rgba(0,0,0,0.25)) drop-shadow(0px 4px 4px rgba(0,0,0,0.25))",
+        }}
+        preserveAspectRatio="none"
+      >
+        <g filter="url(#filter0_dd_3_259)">
+          <path
+            d="M4 6C4 2.68629 6.68629 0 10 0H36V32H10C6.68629 32 4 29.3137 4 26V6Z"
+            fill="#E5E9EB"
+          />
+          <path
+            d="M15 9C14.4696 9 13.9609 9.21071 13.5858 9.58579C13.2107 9.96086 13 10.4696 13 11V13C13 13.5304 13.2107 14.0391 13.5858 14.4142C13.9609 14.7893 14.4696 15 15 15H17C17.5304 15 18.0391 14.7893 18.4142 14.4142C18.7893 14.0391 19 13.5304 19 13V11C19 10.4696 18.7893 9.96086 18.4142 9.58579C18.0391 9.21071 17.5304 9 17 9H15ZM15 17C14.4696 17 13.9609 17.2107 13.5858 17.5858C13.2107 17.9609 13 18.4696 13 19V21C13 21.5304 13.2107 22.0391 13.5858 22.4142C13.9609 22.7893 14.4696 23 15 23H17C17.5304 23 18.0391 22.7893 18.4142 22.4142C18.7893 22.0391 19 21.5304 19 21V19C19 18.4696 18.7893 17.9609 18.4142 17.5858C18.0391 17.2107 17.5304 17 17 17H15ZM21 11C21 10.4696 21.2107 9.96086 21.5858 9.58579C21.9609 9.21071 22.4696 9 23 9H25C25.5304 9 26.0391 9.21071 26.4142 9.58579C26.7893 9.96086 27 10.4696 27 11V13C27 13.5304 26.7893 14.0391 26.4142 14.4142C26.0391 14.7893 25.5304 15 25 15H23C22.4696 15 21.9609 14.7893 21.5858 14.4142C21.2107 14.0391 21 13.5304 21 13V11ZM21 19C21 18.4696 21.2107 17.9609 21.5858 17.5858C21.9609 17.2107 22.4696 17 23 17H25C25.5304 17 26.0391 17.2107 26.4142 17.5858C26.7893 17.9609 27 18.4696 27 19V21C27 21.5304 26.7893 22.0391 26.4142 22.4142C26.0391 22.7893 25.5304 23 25 23H23C22.4696 23 21.9609 22.7893 21.5858 22.4142C21.2107 22.0391 21 21.5304 21 21V19Z"
+            fill="#252C32"
+          />
+          <path
+            d="M36 0H62C65.3137 0 68 2.68629 68 6V26C68 29.3137 65.3137 32 62 32H36V0Z"
+            fill="#F6F8F9"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M45 10C45 9.73478 45.1054 9.48043 45.2929 9.29289C45.4804 9.10536 45.7348 9 46 9H58C58.2652 9 58.5196 9.10536 58.7071 9.29289C58.8946 9.48043 59 9.73478 59 10C59 10.2652 58.8946 10.5196 58.7071 10.7071C58.5196 10.8946 58.2652 11 58 11H46C45.7348 11 45.4804 10.8946 45.2929 10.7071C45.1054 10.5196 45 10.2652 45 10ZM45 14C45 13.7348 45.1054 13.4804 45.2929 13.2929C45.4804 13.1054 45.7348 13 46 13H58C58.2652 13 58.5196 13.1054 58.7071 13.2929C58.8946 13.4804 59 13.7348 59 14C59 14.2652 58.8946 14.5196 58.7071 14.7071C58.5196 14.8946 58.2652 15 58 15H46C45.7348 15 45.4804 14.8946 45.2929 14.7071C45.1054 14.5196 45 14.2652 45 14ZM45 18C45 17.7348 45.1054 17.4804 45.2929 17.2929C45.4804 17.1054 45.7348 17 46 17H58C58.2652 17 58.5196 17.1054 58.7071 17.2929C58.8946 17.4804 59 17.7348 59 18C59 18.2652 58.8946 18.5196 58.7071 18.7071C58.5196 18.8946 58.2652 19 58 19H46C45.7348 19 45.4804 18.8946 45.2929 18.7071C45.1054 18.5196 45 18.2652 45 18ZM45 22C45 21.7348 45.1054 21.4804 45.2929 21.2929C45.4804 21.1054 45.7348 21 46 21H58C58.2652 21 58.5196 21.1054 58.7071 21.2929C58.8946 21.4804 59 21.7348 59 22C59 22.2652 58.8946 22.5196 58.7071 22.7071C58.5196 22.8946 58.2652 23 58 23H46C45.7348 23 45.4804 22.8946 45.2929 22.7071C45.1054 22.5196 45 22.2652 45 22Z"
+            fill="#B0BABF"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_dd_3_259"
+            x={0}
+            y={0}
+            width={72}
+            height={40}
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feflood flood-opacity={0} result="BackgroundImageFix" />
+            <fecolormatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feoffset dy={4} />
+            <fegaussianblur stdDeviation={2} />
+            <fecomposite in2="hardAlpha" operator="out" />
+            <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feblend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_259" />
+            <fecolormatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"
+            />
+            <feoffset dy={4} />
+            <fegaussianblur stdDeviation={2} />
+            <fecomposite in2="hardAlpha" operator="out" />
+            <fecolormatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+            <feblend
+              mode="normal"
+              in2="effect1_dropShadow_3_259"
+              result="effect2_dropShadow_3_259"
+            />
+            <feblend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect2_dropShadow_3_259"
+              result="shape"
+            />
+          </filter>
+        </defs>
+      </svg>
+      <div className="w-[280px] h-[794px] absolute left-[74px] top-48 overflow-hidden">
+        <div className="w-[132px] h-8 absolute left-0 top-7 overflow-hidden rounded-md bg-white border border-[#dde2e4]">
+          <p className="w-[108px] absolute left-3 top-1 text-sm text-left text-[#9aa6ac]">Min</p>
+        </div>
+        <div className="w-[132px] h-8 absolute left-36 top-7 overflow-hidden rounded-md bg-white border border-[#dde2e4]">
+          <p className="w-[108px] absolute left-3 top-1 text-sm text-left text-[#9aa6ac]">Max</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[110px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">App-Controlled</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[268px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">4K UHD 2160p</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[398px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">Beginner</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[528px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">DJI</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[296px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">FHD 1080p</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[426px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">Intermediate</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[556px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">Holy Stone</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[324px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">HD 720p</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[454px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">Expert</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[584px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">Potensic</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[612px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">Ruko</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[640px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">aovo</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[668px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">OXOXO</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[696px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">DEERC</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[138px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">Obstacle Avoidance</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[166px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">Video Downlink Capable</p>
+        </div>
+        <div className="flex justify-start items-start w-[280px] absolute left-0 top-[194px] gap-2">
+          <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-2.5 py-1">
+            <div className="flex-grow-0 flex-shrink-0 w-4 h-4 relative rounded bg-[#f6f8f9] border border-[#b0babf]" />
+          </div>
+          <p className="flex-grow w-64 text-sm text-left text-[#252c32]">Wi-Fi</p>
+        </div>
+        <p className="absolute left-0 top-20 text-sm font-semibold text-left text-[#252c32]">
+          Quadcopter Features
+        </p>
+        <p className="absolute left-0 top-[238px] text-sm font-semibold text-left text-[#252c32]">
+          Video Capture Resolution
+        </p>
+        <p className="absolute left-0 top-[368px] text-sm font-semibold text-left text-[#252c32]">
+          Operator Skill Level
+        </p>
+        <p className="absolute left-0 top-[498px] text-sm font-semibold text-left text-[#252c32]">
+          Brand
+        </p>
+        <p className="absolute left-0 top-0 text-sm font-semibold text-left text-[#252c32]">
+          Price, $
+        </p>
+      </div>
+      <div className="flex justify-center items-center absolute left-[927px] top-[136px] overflow-hidden gap-1 pl-3 pr-1 py-1 rounded-md bg-white border border-[#dde2e4]">
+        <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-2">
+          <p className="flex-grow-0 flex-shrink-0 text-sm text-left text-[#9aa6ac]">Sort by</p>
+          <p className="flex-grow-0 flex-shrink-0 text-sm text-left text-[#252c32]">Featured</p>
+        </div>
+        <svg
+          width={24}
+          height={24}
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="flex-grow-0 flex-shrink-0 w-6 h-6 relative"
+          preserveAspectRatio="none"
+        >
+          <path d="M8 10.5L12 14.5L16 10.5" stroke="#6E7C87" />
+        </svg>
+      </div>
+      <p className="absolute left-[74px] top-[136px] text-2xl font-semibold text-left">
+        <span className="text-2xl font-semibold text-left text-[#252c32]">
+          Found 376 results for{" "}
+        </span>
+        <span className="text-2xl font-semibold text-left text-[#4094f7]">dji phantom</span>
+      </p>
+    </div>
+  </div>
+  <div className="w-[1096px] h-[913px] absolute left-[74px] top-0 overflow-hidden bg-white">
+    <svg
+      width={74}
+      height={185}
+      viewBox="0 0 74 185"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-[70.76px] h-[290.79px] opacity-[0.04]"
+      preserveAspectRatio="none"
+    >
+      <g opacity="0.04">
+        <path
+          d="M70.8605 1.2124C72.3841 26.2048 73.0513 50.9095 71.5016 75.9683C68.1588 130.022 62.3323 184.636 38.4852 234.033C30.0723 251.459 20.1611 267.895 8.09726 283.067C5.93725 285.784 2.74698 288.666 1.62219 292"
+          stroke="#18181B"
+          stroke-width={2}
+          stroke-linecap="round"
+        />
+      </g>
+    </svg>
+    <div className="flex justify-start items-start absolute left-[34px] top-[38px] gap-2.5">
+      <p className="flex-grow-0 flex-shrink-0 text-base font-bold text-left uppercase">
+        <span className="flex-grow-0 flex-shrink-0 text-base font-bold text-left uppercase text-rose-500">
+          /
+        </span>
+        <span className="flex-grow-0 flex-shrink-0 text-base font-bold text-left uppercase text-zinc-900">
+          rareblocks
+        </span>
+      </p>
+    </div>
+    <div className="w-[440px] h-6">
+      <p className="absolute left-[277px] top-[41px] text-base font-medium text-left text-zinc-900">
+        Solutions
+      </p>
+      <p className="absolute left-[386px] top-[41px] text-base font-medium text-left text-zinc-900">
+        Industries
+      </p>
+      <p className="absolute left-[501px] top-[41px] text-base font-medium text-left text-zinc-900">
+        Fees
+      </p>
+      <p className="absolute left-[579px] top-[41px] text-base font-medium text-left text-zinc-900">
+        About Rareblocks
+      </p>
+    </div>
+    <div className="flex justify-start items-start absolute left-[796px] top-[41px] gap-2.5">
+      <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-left text-zinc-900">
+        Sign in
+      </p>
+    </div>
+    <div className="w-[207px] h-[65px] absolute left-[857px] top-[21px]">
+      <div className="flex flex-col justify-center items-center w-[187px] h-[45px] absolute left-2.5 top-2.5 gap-2.5 p-4 rounded-[10px] bg-zinc-900">
+        <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-[9px]">
+          <p className="flex-grow-0 flex-shrink-0 text-base font-medium text-right text-white">
+            Create free account
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="w-[1025px] h-[452px]">
+    <p className="w-[443px] h-[198px] absolute left-[152px] top-[231px] text-[58px] font-bold text-left text-zinc-900">
+      A special credit card made for Developers.
+    </p>
+    <p className="w-[428px] h-[52px] absolute left-[157px] top-[465px] text-base text-left text-zinc-600">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vehicula massa in enim luctus. Rutrum
+      arcu.
+    </p>
+    <div className="flex flex-col justify-center items-start w-[479px] h-[72px] absolute left-[157px] top-[558px] gap-2.5">
+      <div className="flex justify-start items-center self-stretch flex-grow relative gap-[13px] pl-[25px] pr-4 py-[17px] rounded-[15px] bg-neutral-50 border border-zinc-400">
+        <p className="flex-grow-0 flex-shrink-0 w-[227px] text-base text-left text-zinc-900">
+          Enter email address
+        </p>
+      </div>
+    </div>
+    <div className="flex flex-col justify-center items-center w-[182px] h-14 absolute left-[445px] top-[566px] gap-2.5 p-4 rounded-[10px] bg-zinc-900">
+      <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-[9px]">
+        <p className="flex-grow-0 flex-shrink-0 text-lg font-bold text-right text-white">
+          Get Free Card
+        </p>
+      </div>
+    </div>
+    <img
+      src="image-14.png"
+      className="w-[433px] h-[404px] absolute left-[743.5px] top-[177.5px] object-cover"
+    />
+  </div>
+  <div className="flex flex-col justify-start items-center w-[1440px] absolute left-[-88px] top-[2152px] gap-16 pb-24 bg-white">
+    <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-[1280px] gap-16 px-8">
+      <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-[1216px] relative gap-8">
+        <p className="self-stretch flex-grow-0 flex-shrink-0 w-[1216px] text-2xl font-semibold text-left text-[#101828]">
+          All blog posts
+        </p>
+        <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-12">
+          <div className="flex justify-center items-start self-stretch flex-grow-0 flex-shrink-0 gap-8">
+            <div className="flex flex-col justify-start items-start flex-grow relative gap-8">
+              <div className="self-stretch flex-grow-0 flex-shrink-0 w-96 h-60 relative overflow-hidden bg-[url('image-3.jpeg')] bg-cover bg-no-repeat bg-center" />
+              <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-6">
+                <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3">
+                  <p className="self-stretch flex-grow-0 flex-shrink-0 w-96 text-sm font-semibold text-left text-[#6941c6]">
+                    Alec Whitten • 17 Jan 2022
+                  </p>
+                  <div className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4">
+                    <p className="flex-grow w-[344px] text-2xl font-semibold text-left text-[#101828]">
+                      Bill Walsh leadership lessons
+                    </p>
+                    <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative pt-1">
+                      <svg
+                        width={24}
+                        height={24}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="flex-grow-0 flex-shrink-0 w-6 h-6 relative"
+                        preserveAspectRatio="none"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H7M17 7V17"
+                          stroke="#101828"
+                          stroke-width={2}
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p className="self-stretch flex-grow-0 flex-shrink-0 w-96 text-base text-left text-[#667085]">
+                    Like to know the secrets of transforming a 2-14 team into a 3x Super Bowl
+                    winning Dynasty?
+                  </p>
+                </div>
+                <div className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-2">
+                  <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-[#f9f5ff]">
+                      <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#6941c6]">
+                        Leadership
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-[#f8f9fc]">
+                      <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#363f72]">
+                        Management
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col justify-start items-start flex-grow relative gap-8">
+              <div className="self-stretch flex-grow-0 flex-shrink-0 w-96 h-60 relative overflow-hidden bg-[url('image-2.jpeg')] bg-cover bg-no-repeat bg-center" />
+              <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-6">
+                <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3">
+                  <p className="self-stretch flex-grow-0 flex-shrink-0 w-96 text-sm font-semibold text-left text-[#6941c6]">
+                    Demi WIlkinson • 16 Jan 2022
+                  </p>
+                  <div className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4">
+                    <p className="flex-grow w-[344px] text-2xl font-semibold text-left text-[#101828]">
+                      PM mental models
+                    </p>
+                    <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative pt-1">
+                      <svg
+                        width={24}
+                        height={24}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="flex-grow-0 flex-shrink-0 w-6 h-6 relative"
+                        preserveAspectRatio="none"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H7M17 7V17"
+                          stroke="#101828"
+                          stroke-width={2}
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p className="self-stretch flex-grow-0 flex-shrink-0 w-96 text-base text-left text-[#667085]">
+                    Mental models are simple expressions of complex processes or relationships.
+                  </p>
+                </div>
+                <div className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-2">
+                  <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-sky-50">
+                      <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#026aa2]">
+                        Product
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-[#eef4ff]">
+                      <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#3538cd]">
+                        Research
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-[#fff6ed]">
+                      <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#c4320a]">
+                        Frameworks
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="flex flex-col justify-start items-start flex-grow relative gap-8">
+              <div className="self-stretch flex-grow-0 flex-shrink-0 w-96 h-60 relative overflow-hidden bg-[url('image.jpeg')] bg-cover bg-no-repeat bg-center" />
+              <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-6">
+                <div className="flex flex-col justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-3">
+                  <p className="self-stretch flex-grow-0 flex-shrink-0 w-96 text-sm font-semibold text-left text-[#6941c6]">
+                    Candice Wu • 15 Jan 2022
+                  </p>
+                  <div className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 relative gap-4">
+                    <p className="flex-grow w-[344px] text-2xl font-semibold text-left text-[#101828]">
+                      What is Wireframing?
+                    </p>
+                    <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 relative pt-1">
+                      <svg
+                        width={24}
+                        height={24}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="flex-grow-0 flex-shrink-0 w-6 h-6 relative"
+                        preserveAspectRatio="none"
+                      >
+                        <path
+                          d="M7 17L17 7M17 7H7M17 7V17"
+                          stroke="#101828"
+                          stroke-width={2}
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <p className="self-stretch flex-grow-0 flex-shrink-0 w-96 text-base text-left text-[#667085]">
+                    Introduction to Wireframing and its Principles. Learn from the best in the
+                    industry.
+                  </p>
+                </div>
+                <div className="flex justify-start items-start self-stretch flex-grow-0 flex-shrink-0 gap-2">
+                  <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-[#f9f5ff]">
+                      <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#6941c6]">
+                        Design
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 mix-blend-multiply">
+                    <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative px-2.5 py-0.5 rounded-2xl bg-[#eef4ff]">
+                      <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#3538cd]">
+                        Research
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-between items-center self-stretch flex-grow-0 flex-shrink-0 h-[61px] pt-5 border-t border-r-0 border-b-0 border-l-0 border-[#eaecf0]">
+        <div className="flex justify-start items-start flex-grow-0 flex-shrink-0">
+          <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2">
+            <svg
+              width={20}
+              height={21}
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-5 h-5 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M15.8333 10.5H4.16666M4.16666 10.5L9.99999 16.3333M4.16666 10.5L9.99999 4.66663"
+                stroke="#667085"
+                stroke-width="1.67"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-left text-[#667085]">
+              Previous
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 relative gap-0.5">
+          <div className="flex-grow-0 flex-shrink-0 w-10 h-10 relative overflow-hidden rounded-lg bg-[#f9f5ff]">
+            <div className="flex justify-center items-center w-10 h-10 absolute left-0 top-0 p-3 rounded-lg">
+              <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#7f56d9]">
+                1
+              </p>
+            </div>
+          </div>
+          <div className="flex-grow-0 flex-shrink-0 w-10 h-10 relative overflow-hidden rounded-lg">
+            <div className="flex justify-center items-center w-10 h-10 absolute left-0 top-0 p-3 rounded-lg">
+              <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#667085]">
+                2
+              </p>
+            </div>
+          </div>
+          <div className="flex-grow-0 flex-shrink-0 w-10 h-10 relative overflow-hidden rounded-lg">
+            <div className="flex justify-center items-center w-10 h-10 absolute left-0 top-0 p-3 rounded-lg">
+              <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#667085]">
+                3
+              </p>
+            </div>
+          </div>
+          <div className="flex-grow-0 flex-shrink-0 w-10 h-10 relative overflow-hidden rounded-lg">
+            <div className="flex justify-center items-center w-10 h-10 absolute left-0 top-0 p-3 rounded-lg">
+              <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#667085]">
+                ...
+              </p>
+            </div>
+          </div>
+          <div className="flex-grow-0 flex-shrink-0 w-10 h-10 relative overflow-hidden rounded-lg">
+            <div className="flex justify-center items-center w-10 h-10 absolute left-0 top-0 p-3 rounded-lg">
+              <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#667085]">
+                8
+              </p>
+            </div>
+          </div>
+          <div className="flex-grow-0 flex-shrink-0 w-10 h-10 relative overflow-hidden rounded-lg">
+            <div className="flex justify-center items-center w-10 h-10 absolute left-0 top-0 p-3 rounded-lg">
+              <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#667085]">
+                9
+              </p>
+            </div>
+          </div>
+          <div className="flex-grow-0 flex-shrink-0 w-10 h-10 relative overflow-hidden rounded-lg">
+            <div className="flex justify-center items-center w-10 h-10 absolute left-0 top-0 p-3 rounded-lg">
+              <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-center text-[#667085]">
+                10
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-start items-start flex-grow-0 flex-shrink-0">
+          <div className="flex justify-center items-center flex-grow-0 flex-shrink-0 relative gap-2">
+            <p className="flex-grow-0 flex-shrink-0 text-sm font-medium text-left text-[#667085]">
+              Next
+            </p>
+            <svg
+              width={20}
+              height={21}
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="flex-grow-0 flex-shrink-0 w-5 h-5 relative"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M4.16669 10.5H15.8334M15.8334 10.5L10 4.66663M15.8334 10.5L10 16.3333"
+                stroke="#667085"
+                stroke-width="1.67"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>;
+
+Copy
