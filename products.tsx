@@ -1,5 +1,5 @@
 import "../../../styles/globals.css";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { FiPlus, FiEdit, FiTrash2 } from "react-icons/fi";
 
 interface Product {
@@ -38,6 +38,27 @@ export default function ProductsPage() {
     price: 0,
   });
 
+  const [images, setImages] = useState<File[]>([]);
+  const fileSelectedHandler = (event: ChangeEvent<HTMLInputElement>) => {
+    if (event.target.files) {
+      const selectedFiles = Array.from(event.target.files);
+      if (selectedFiles.length + images.length <= 10) {
+        setImages((prevImages) => [...prevImages, ...selectedFiles]);
+      } else {
+        alert("You can only upload up to 10 images.");
+      }
+    }
+  };
+
+  const fileUploadHandler = async () => {
+    const formData = new FormData();
+    images.forEach((image, index) => {
+      formData.append("images", image, image.name);
+    });
+
+    // After appending all images, you can make the API call to upload the images.
+  };
+
   const handleAddProduct = () => {
     setSelectedProduct(null);
     setFormValues({ name: "", description: "", price: 0 });
@@ -58,7 +79,7 @@ export default function ProductsPage() {
     setProducts(products.filter((product) => product.id !== productId));
   };
 
-  const handleSubmitForm = (event:React.FormEvent) => {
+  const handleSubmitForm = (event: React.FormEvent) => {
     event.preventDefault();
     if (selectedProduct) {
       // Edit existing product
@@ -189,6 +210,26 @@ export default function ProductsPage() {
                   <div className="mt-2">
                     <form onSubmit={handleSubmitForm}>
                       <div>
+                        <div className="flex flex-wrap">
+                          {images.map((image, index) => (
+                            <div
+                              key={index}
+                              className="w-1/2 sm:w-1/4 md:w-1/6 p-1"
+                            >
+                              <img
+                                src={URL.createObjectURL(image)}
+                                alt={image.name}
+                                className="w-full h-auto object-contain"
+                              />
+                            </div>
+                          ))}
+                        </div>
+                        <input
+                          type="file"
+                          accept="image/*"
+                          multiple // Add this attribute
+                          onChange={fileSelectedHandler}
+                        />
                         <label
                           htmlFor="name"
                           className="block text-sm font-medium text-gray-700"
