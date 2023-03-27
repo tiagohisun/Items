@@ -1,6 +1,11 @@
 import "../../../styles/globals.css";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useState, useEffect } from "react";
 import { FiPlus, FiEdit, FiTrash2 } from "react-icons/fi";
+import { useRouter } from "next/router";
+import fs from "fs";
+import path from "path";
+import { addProduct } from "../../../utils/product";
+
 
 interface Product {
   id: number;
@@ -9,7 +14,9 @@ interface Product {
   price: number;
 }
 
-export default function ProductsPage() {
+
+
+const ProductsPage = () => {
   const [products, setProducts] = useState<Product[]>([
     {
       id: 1,
@@ -50,14 +57,23 @@ export default function ProductsPage() {
     }
   };
 
-  const fileUploadHandler = async () => {
-    const formData = new FormData();
-    images.forEach((image, index) => {
-      formData.append("images", image, image.name);
-    });
+ const fileUploadHandler = async () => {
+   const storagePath = path.join(process.cwd(), "/pages/admin/storage/Units");
 
-    // After appending all images, you can make the API call to upload the images.
-  };
+   images.forEach((image) => {
+     const imagePath = path.join(storagePath, image.name);
+     const reader = new FileReader();
+
+     reader.onload = function (event) {
+       if (event.target && event.target.result) {
+         const buffer = Buffer.from(event.target.result as ArrayBuffer);
+         fs.writeFileSync(imagePath, buffer);
+       }
+     };
+
+     reader.readAsArrayBuffer(image);
+   });
+ };
 
   const handleAddProduct = () => {
     setSelectedProduct(null);
@@ -79,7 +95,7 @@ export default function ProductsPage() {
     setProducts(products.filter((product) => product.id !== productId));
   };
 
-  const handleSubmitForm = (event: React.FormEvent) => {
+  const handleSubmitForm = async (event: React.FormEvent) => {
     event.preventDefault();
     if (selectedProduct) {
       // Edit existing product
@@ -105,10 +121,13 @@ export default function ProductsPage() {
         description: formValues.description,
         price: formValues.price,
       };
+      await addProduct(newProduct); // Save the new product to MongoDB
+      fileUploadHandler(); // Upload images to the server
       setProducts([...products, newProduct]);
     }
     setIsModalOpen(false);
   };
+
 
   return (
     <div className="flex flex-col h-full">
@@ -323,3 +342,5 @@ export default function ProductsPage() {
     </div>
   );
 }
+
+export default ProductsPage
