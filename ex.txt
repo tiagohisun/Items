@@ -1,0 +1,1850 @@
+<table width="95%" border="0" cellpadding="0" cellspacing="2" align="center">
+		The buttos are here
+ <table width="95%" border="0" cellpadding="0" cellspacing="2" align="center">
+
+    <tbody><tr valign="center" height="20"> 
+      <td class="tbtitulo" width="60" bgcolor="#e8f5ff">Número<br>NF</td>
+      <td class="tbtitulo" width="60" bgcolor="#e8f5ff">RPS/Ref</td>
+      <td class="tbtitulo" width="60" bgcolor="#e8f5ff">Emissão</td>
+      <td class="tbtitulo" bgcolor="#e8f5ff">Tomador</td>
+      <td class="tbtitulo_r" width="70" bgcolor="#e8f5ff">Valor<br>Total</td>
+      <td class="tbtitulo_r" width="50" bgcolor="#e8f5ff">ISS<br>Incluso</td>
+      <td class="tbtitulo_r" width="50" bgcolor="#e8f5ff">ISS<br>Retido</td>
+      <td class="tbtitulo_r" width="25" bgcolor="#e8f5ff">loc</td>
+      <td class="tbtitulo" width="60" bgcolor="#e8f5ff">Sts</td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1407" name="botBoleto" onclick="Visualiza_Nota(1407);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">02/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Fabricio Mesquita Tuji<br><b>562.989.272-04</b>  Belém</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1408" name="botBoleto" onclick="Visualiza_Nota(1408);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">02/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">FENELON<br><b>03.628.122/0001-15</b>  Brasília</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr><tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1409" name="botBoleto" onclick="Visualiza_Nota(1409);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">03/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">CRANIOFACIAL IMAGENS ODONTOLÓGICAS<br><b>36.328.532/0002-80</b>  Vitória </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1410" name="botBoleto" onclick="Visualiza_Nota(1410);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">03/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">CIRO R.O.D.<br><b>01.055.957/0001-06</b>  Ribeirão Preto</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""><b><font color="navy">alterada</font></b></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1411" name="botBoleto" onclick="Visualiza_Nota(1411);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">05/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">CIOC<br><b>14.523.577/0001-92</b>  Rio de Janeiro</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">250,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+5,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1412" name="botBoleto" onclick="Visualiza_Nota(1412);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">05/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">CIOC<br><b>14.523.577/0001-92</b>  Rio de Janeiro</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">140,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+2,80      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1413" name="botBoleto" onclick="Visualiza_Nota(1413);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">06/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">VBX EQUIPAMENTOS<br><b>40.708.442/0001-01</b>  Belo Horizonte </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1414" name="botBoleto" onclick="Visualiza_Nota(1414);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">07/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">DENTAL-X RADIOLOGIA<br><b>45.661.315/0001-18</b>  Carapicuíba - SP</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">200,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+4,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1415" name="botBoleto" onclick="Visualiza_Nota(1415);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">10/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Jesca Nogueira<br><b>096.649.536-52</b>  Monsoes do Bom Pastor</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1416" name="botBoleto" onclick="Visualiza_Nota(1416);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">11/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">CENTRO DE RADIO ODONTOLÓGICO ROQUE PASSARO<br><b>01.701.969/0001-52</b>  Sorocaba</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1417" name="botBoleto" onclick="Visualiza_Nota(1417);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">11/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">S R S da Silva Martins de Souza Radiologia ME<br><b>05.592.804/0001-40</b>  Osasco</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1418" name="botBoleto" onclick="Visualiza_Nota(1418);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">11/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">Francisco Ângelo Biagioni <br><b>140.441.858-08</b>  São Bernardo do Campo</td>
+      <td class="tbcanc_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbcanc_r" bgcolor="#f7f7f7">
+0,00      
+      </td>
+      <td class="tbcanc_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title="Erro Clínica"><b><font color="red">canc</font></b></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1419" name="botBoleto" onclick="Visualiza_Nota(1419);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">11/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">ORTHO-X - Meire Biagioni<br><b>272.658.128-59</b>  São Bernardo do Campo</td>
+      <td class="tbcanc_r" bgcolor="#efefef">70,00</td>
+      <td class="tbcanc_r" bgcolor="#efefef">
+0,00      
+      </td>
+      <td class="tbcanc_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title="Errado Valor"><b><font color="red">canc</font></b></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1420" name="botBoleto" onclick="Visualiza_Nota(1420);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">11/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ORTHO-X - Meire Biagioni<br><b>272.658.128-59</b>  São Bernardo do Campo</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1421" name="botBoleto" onclick="Visualiza_Nota(1421);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">11/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">CENTRO DE IMAGEM <br><b>40.034.252/0001-56</b>  Eusebio</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1422" name="botBoleto" onclick="Visualiza_Nota(1422);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">12/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">IDOC- INSTITUTO DE RADIOLOGIA<br><b>03.287.843/0001-09</b>  Teresina</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1423" name="botBoleto" onclick="Visualiza_Nota(1423);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">12/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">S R S da Silva Martins de Souza Radiologia ME<br><b>05.592.804/0001-40</b>  Osasco</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1424" name="botBoleto" onclick="Visualiza_Nota(1424);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">12/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">SJ CLINICA ODONTO<br><b>47.950.651/0001-06</b>  Santa Maria do Herval</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1425" name="botBoleto" onclick="Visualiza_Nota(1425);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">18/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">INCO<br><b>13.571.287/0003-13</b>  Rio de Janeiro</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1426" name="botBoleto" onclick="Visualiza_Nota(1426);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">18/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">Alejandra P. Benitez<br><b>071.688.397-05</b>  Rio de Janeiro</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1427" name="botBoleto" onclick="Visualiza_Nota(1427);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">18/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">André Vilanova <br><b>33.910.550/0001-05</b>  Belo Horizonte</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">32.000,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+640,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1428" name="botBoleto" onclick="Visualiza_Nota(1428);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">18/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">CLINICA AURELINO M G<br><b>31.380.710/0001-18</b>  Rio de Janeiro</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">2.500,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+50,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1429" name="botBoleto" onclick="Visualiza_Nota(1429);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">19/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">RADIOREDX<br><b>05.222.323/0001-43</b>  São Paulo</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1430" name="botBoleto" onclick="Visualiza_Nota(1430);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">19/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ODONTO IMAGEM<br><b>03.324.026/0001-83</b>  Brasília</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">210,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+4,20      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1431" name="botBoleto" onclick="Visualiza_Nota(1431);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">24/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">FOKO<br><b>07.693.106/0001-67</b>  IPIRANGA</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1432" name="botBoleto" onclick="Visualiza_Nota(1432);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">24/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">Ralph Azevedo <br><b>008.092.150-71</b>  Vacaria </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1433" name="botBoleto" onclick="Visualiza_Nota(1433);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">24/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Fabricio Mesquita Tuji<br><b>562.989.272-04</b>  Belém</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1434" name="botBoleto" onclick="Visualiza_Nota(1434);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">24/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">S R S da Silva Martins de Souza Radiologia ME<br><b>05.592.804/0001-40</b>  Osasco</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">140,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+2,80      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1435" name="botBoleto" onclick="Visualiza_Nota(1435);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">24/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">RADIODIAGNOSIS<br><b>03.461.602/0001-34</b>  Diadema</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">220,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+4,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1436" name="botBoleto" onclick="Visualiza_Nota(1436);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">25/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">SORRIA RX ODONTOLÓGICO DIGITAL<br><b>20.676.113/0001-19</b>  Betim</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1437" name="botBoleto" onclick="Visualiza_Nota(1437);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">25/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Edriano Benedito de Lima<br><b>597.253.461-49</b>  Brasília</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1438" name="botBoleto" onclick="Visualiza_Nota(1438);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">26/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ORALLIS RADIOLOGIA ODONTOLÓGICA<br><b>03.044.339/0001-88</b>  Itajubá</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">600,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+12,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1439" name="botBoleto" onclick="Visualiza_Nota(1439);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">26/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">ODONTONORTE<br><b>25.220.682/0001-79</b>  Montes Claros</td>
+      <td class="tbcanc_r" bgcolor="#efefef">150,00</td>
+      <td class="tbcanc_r" bgcolor="#efefef">
+0,00      
+      </td>
+      <td class="tbcanc_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title="Clinica Errada"><b><font color="red">canc</font></b></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1440" name="botBoleto" onclick="Visualiza_Nota(1440);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">26/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">Odontonorte Documentacoes Odontologicas LTDA<br><b>96.476.221/0001-00</b>  São Paulo</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1441" name="botBoleto" onclick="Visualiza_Nota(1441);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">26/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">ORTOIMAGEM<br><b>18.027.494/0001-63</b>  São Paulo</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1442" name="botBoleto" onclick="Visualiza_Nota(1442);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">27/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ARA-X<br><b>40.876.181/0001-39</b>  Araras</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1443" name="botBoleto" onclick="Visualiza_Nota(1443);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">30/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">CURY RADIOLOGIA<br><b>01.114.417/0002-29</b>  Guarulhos</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1444" name="botBoleto" onclick="Visualiza_Nota(1444);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">30/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">RADIODIAGNOSIS<br><b>03.461.602/0001-34</b>  Diadema</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1445" name="botBoleto" onclick="Visualiza_Nota(1445);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">30/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">RADIO IMAGEM<br><b>13.359.066/0001-14</b>  Mossoró</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1446" name="botBoleto" onclick="Visualiza_Nota(1446);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">31/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">CENTRO ODONTOLÓGICO ANGELO DOLAVALE<br><b>10.490.743/0001-40</b>  Paraty</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1447" name="botBoleto" onclick="Visualiza_Nota(1447);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">01/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Edriano Benedito de Lima<br><b>597.253.461-49</b>  Brasília</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1448" name="botBoleto" onclick="Visualiza_Nota(1448);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">01/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">PHOTOGRAPH<br><b>01.412.833/0001-22</b>  Paranavaí</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1449" name="botBoleto" onclick="Visualiza_Nota(1449);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">01/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">CENTRO DE RADIO ODONTOLÓGICO ROQUE PASSARO<br><b>01.701.969/0001-52</b>  Sorocaba</td>
+      <td class="tbcanc_r" bgcolor="#efefef">150,00</td>
+      <td class="tbcanc_r" bgcolor="#efefef">
+0,00      
+      </td>
+      <td class="tbcanc_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title="Fazer em PF"><b><font color="red">canc</font></b></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1450" name="botBoleto" onclick="Visualiza_Nota(1450);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">02/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">Roque Passaro<br><b>081.790.018-73</b>  Sorocaba</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1451" name="botBoleto" onclick="Visualiza_Nota(1451);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">03/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">FENELON<br><b>03.628.122/0001-15</b>  Brasília</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">7.000,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+140,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1452" name="botBoleto" onclick="Visualiza_Nota(1452);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">04/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ALPHA RADIOLOGIA<br><b>11.041.235/0004-90</b>  Jarú</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1453" name="botBoleto" onclick="Visualiza_Nota(1453);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">06/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">IGRO<br><b>00.884.702/0001-85</b>  Itumbiara </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1454" name="botBoleto" onclick="Visualiza_Nota(1454);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">06/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ODONTO X<br><b>08.753.387/0001-69</b>  Florianópolis</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1455" name="botBoleto" onclick="Visualiza_Nota(1455);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">06/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">IGRO<br><b>00.884.702/0001-85</b>  Itumbiara </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1456" name="botBoleto" onclick="Visualiza_Nota(1456);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">07/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">IGRO<br><b>00.884.702/0001-85</b>  Itumbiara </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1457" name="botBoleto" onclick="Visualiza_Nota(1457);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">08/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Qd2 Conj 4 26 São Bartolomeu<br><b>710.850.681-53</b>  Brasília</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1458" name="botBoleto" onclick="Visualiza_Nota(1458);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">08/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">PERFIL RADIOLOGIA (Osasco)<br><b>08.808.807/0001-67</b>  Osasco</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1459" name="botBoleto" onclick="Visualiza_Nota(1459);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">08/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">CURY RADIOLOGIA<br><b>01.114.417/0002-29</b>  Guarulhos</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">4.000,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+80,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1460" name="botBoleto" onclick="Visualiza_Nota(1460);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">09/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ODONTOX LTDA  ME<br><b>24.594.199/0001-91</b>  Macapá</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1461" name="botBoleto" onclick="Visualiza_Nota(1461);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">09/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">MEGAMIRR CENTRO RADIOLOGICO DE DIAGNÓSTICO POR IMA<br><b>05.704.253/0001-60</b>  Petrópolis</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1462" name="botBoleto" onclick="Visualiza_Nota(1462);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">10/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">Andressa Rocha<br><b>299.589.918-70</b>  São Paulo</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1463" name="botBoleto" onclick="Visualiza_Nota(1463);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">13/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">S R S da Silva Martins de Souza Radiologia ME<br><b>05.592.804/0001-40</b>  Osasco</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1464" name="botBoleto" onclick="Visualiza_Nota(1464);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">13/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">S R S da Silva Martins de Souza Radiologia ME<br><b>05.592.804/0001-40</b>  Osasco</td>
+      <td class="tbcanc_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbcanc_r" bgcolor="#f7f7f7">
+0,00      
+      </td>
+      <td class="tbcanc_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title="Valor errado"><b><font color="red">canc</font></b></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1465" name="botBoleto" onclick="Visualiza_Nota(1465);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">13/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">S R S da Silva Martins de Souza Radiologia ME<br><b>05.592.804/0001-40</b>  Osasco</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1466" name="botBoleto" onclick="Visualiza_Nota(1466);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">14/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">INCO<br><b>13.571.287/0003-13</b>  Rio de Janeiro</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1467" name="botBoleto" onclick="Visualiza_Nota(1467);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">14/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">DIAGNOSTICA <br><b>06.103.786/0001-59</b>  Itajaí</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1468" name="botBoleto" onclick="Visualiza_Nota(1468);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">14/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ISO REBOUÇAS<br><b>13.220.472/0001-00</b>  São Paulo</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1469" name="botBoleto" onclick="Visualiza_Nota(1469);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">14/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">SANTOS RADIOLOGIA<br><b>07.929.660/0001-09</b>  Araucária</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1470" name="botBoleto" onclick="Visualiza_Nota(1470);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">14/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ORTHO-X - Meire Biagioni<br><b>272.658.128-59</b>  São Bernardo do Campo</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">450,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+9,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1471" name="botBoleto" onclick="Visualiza_Nota(1471);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">15/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">ISO RADIOLOGIA - CAMPO LIMPO<br><b>22.708.188/0009-17</b>  São Paulo</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1472" name="botBoleto" onclick="Visualiza_Nota(1472);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">15/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">CENTRO ODONTOLÓGICO AYRES DINIZ<br><b>08.156.017/0001-44</b>  Santa Bárbara</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1473" name="botBoleto" onclick="Visualiza_Nota(1473);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">15/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">PHOTOGRAPH<br><b>01.412.833/0001-22</b>  Paranavaí</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">670,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+13,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1474" name="botBoleto" onclick="Visualiza_Nota(1474);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">17/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">RADIOREDX<br><b>05.222.323/0001-43</b>  São Paulo</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">200,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+4,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1475" name="botBoleto" onclick="Visualiza_Nota(1475);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">17/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">S R S da Silva Martins de Souza Radiologia ME<br><b>05.592.804/0001-40</b>  Osasco</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1476" name="botBoleto" onclick="Visualiza_Nota(1476);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">17/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">Talita Piassa Mafessoni<br><b>046.778.669-02</b>  Curitiba </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1477" name="botBoleto" onclick="Visualiza_Nota(1477);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">20/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">CROM RADIOLOGIA <br><b>59.640.763/0001-40</b>  Mogi das Cruzes</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1478" name="botBoleto" onclick="Visualiza_Nota(1478);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">23/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">CROM RADIOLOGIA <br><b>59.640.763/0001-40</b>  Mogi das Cruzes</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1479" name="botBoleto" onclick="Visualiza_Nota(1479);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">23/02/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Gustavo Zanatta<br><b>004.690.880-36</b>  Palhoça</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1480" name="botBoleto" onclick="Visualiza_Nota(1480);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">24/02/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">CDO<br><b>10.565.529/0001-06</b>  Brasília</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1481" name="botBoleto" onclick="Visualiza_Nota(1481);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">01/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">CERO IMAGEM DIGITAL<br><b>42.932.256/0001-87</b>  São Francisco de Itapaboana</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1482" name="botBoleto" onclick="Visualiza_Nota(1482);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">02/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ISO REBOUÇAS<br><b>13.220.472/0001-00</b>  São Paulo</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1483" name="botBoleto" onclick="Visualiza_Nota(1483);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">03/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Giulianna Barros Barbosa<br><b>083.293.556-59</b>  Belo Horizonte </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1484" name="botBoleto" onclick="Visualiza_Nota(1484);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">05/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">Vanessa Adreciolli <br><b>263.071.308-30</b>  São Paulo </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1485" name="botBoleto" onclick="Visualiza_Nota(1485);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">06/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Emerson Hokumura Bragaroli<br><b>19.047.617/0001-90</b>  Cuiabá </td>
+      <td class="tbcanc_r" bgcolor="#efefef">70,00</td>
+      <td class="tbcanc_r" bgcolor="#efefef">
+0,00      
+      </td>
+      <td class="tbcanc_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title="Clínica errada"><b><font color="red">canc</font></b></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1486" name="botBoleto" onclick="Visualiza_Nota(1486);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">06/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ODONTOPRIME<br><b>09.355.931/0001-87</b>  Cuiabá</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1487" name="botBoleto" onclick="Visualiza_Nota(1487);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">07/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">ORTOIMAGEM<br><b>18.027.494/0001-63</b>  São Paulo</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1488" name="botBoleto" onclick="Visualiza_Nota(1488);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">08/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">S R S da Silva Martins de Souza Radiologia ME<br><b>05.592.804/0001-40</b>  Osasco</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1489" name="botBoleto" onclick="Visualiza_Nota(1489);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">09/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">CLÍNICA RADIOLGOIA SÃO GERALDO<br><b>11.196.188/0001-01</b>  Patrocínio</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">290,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+5,80      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1490" name="botBoleto" onclick="Visualiza_Nota(1490);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">10/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">PRIMED CURSOS<br><b>35.840.874/0001-31</b>  Brasília</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1491" name="botBoleto" onclick="Visualiza_Nota(1491);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">14/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">FACERADIOLOGIA<br><b>84.025.063/0001-92</b>  Boa Vista </td>
+      <td class="tbcanc_r" bgcolor="#efefef">150,00</td>
+      <td class="tbcanc_r" bgcolor="#efefef">
+0,00      
+      </td>
+      <td class="tbcanc_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title="Erro valor"><b><font color="red">canc</font></b></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1492" name="botBoleto" onclick="Visualiza_Nota(1492);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">14/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">FACERADIOLOGIA<br><b>84.025.063/0001-92</b>  Boa Vista </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">140,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+2,80      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1493" name="botBoleto" onclick="Visualiza_Nota(1493);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">14/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">RADIALLIS<br><b>17.926.955/0001-77</b>  Veranópolis</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">450,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+9,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1494" name="botBoleto" onclick="Visualiza_Nota(1494);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">15/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">RADIODONTO<br><b>10.629.398/0001-83</b>  Lajeado</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1495" name="botBoleto" onclick="Visualiza_Nota(1495);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">15/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Maxilare Radiologia Odontologica<br><b>05.809.341/0002-07</b>  Dourados</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1496" name="botBoleto" onclick="Visualiza_Nota(1496);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">15/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ORTODIAGNOSIS RADIOLOGIA ODONTOLÓGICA<br><b>02.881.310/0001-98</b>  Bauru</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">450,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+9,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1497" name="botBoleto" onclick="Visualiza_Nota(1497);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">15/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">FACERADIOLOGIA<br><b>84.025.063/0001-92</b>  Boa Vista </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1498" name="botBoleto" onclick="Visualiza_Nota(1498);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">16/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">CROM RADIOLOGIA <br><b>59.640.763/0001-40</b>  Mogi das Cruzes</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">140,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+2,80      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1499" name="botBoleto" onclick="Visualiza_Nota(1499);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">20/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">CROM RADIOLOGIA <br><b>59.640.763/0001-40</b>  Mogi das Cruzes</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">350,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+7,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1500" name="botBoleto" onclick="Visualiza_Nota(1500);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">20/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ISO REBOUÇAS<br><b>13.220.472/0001-00</b>  São Paulo</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">450,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+9,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1501" name="botBoleto" onclick="Visualiza_Nota(1501);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">21/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">RADIOLUZ <br><b>04.508.162/0001-96</b>  Anápolis</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">3.000,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+60,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1502" name="botBoleto" onclick="Visualiza_Nota(1502);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">22/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">BARBOSA &amp; FREIRE LTDA<br><b>32.071.029/0001-50</b>  Campos dos Goytacazes</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1503" name="botBoleto" onclick="Visualiza_Nota(1503);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">23/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">RADIORAL<br><b>01.581.914/0001-56</b>  Botucatu</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1504" name="botBoleto" onclick="Visualiza_Nota(1504);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">23/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">RADIOLOGIA ODONTOLÓGICA PERFIL<br><b>12.302.299/0001-18</b>  Mafra</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">100,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+2,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1505" name="botBoleto" onclick="Visualiza_Nota(1505);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">24/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">PIXEL ODONTO IMAGEM<br><b>19.072.250/0001-65</b>  Salvador</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1506" name="botBoleto" onclick="Visualiza_Nota(1506);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">24/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">Soraya Castro<br><b>017.491.681-70</b>  Colinas do Tocantins </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1507" name="botBoleto" onclick="Visualiza_Nota(1507);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">29/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Alejandra P. Benitez<br><b>071.688.397-05</b>  Rio de Janeiro</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1508" name="botBoleto" onclick="Visualiza_Nota(1508);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">30/03/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">Juliana da Silva Noia<br><b>047.476.347-11</b>  Rio de janeiro</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1509" name="botBoleto" onclick="Visualiza_Nota(1509);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">30/03/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">RADIODIAGNOSIS<br><b>03.461.602/0001-34</b>  Diadema</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1510" name="botBoleto" onclick="Visualiza_Nota(1510);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">08/04/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">RADIODOC IMAGEM<br><b>03.059.798/0001-35</b>  Maringá</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1511" name="botBoleto" onclick="Visualiza_Nota(1511);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">08/04/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">S R S da Silva Martins de Souza Radiologia ME<br><b>05.592.804/0001-40</b>  Osasco</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">140,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+2,80      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1512" name="botBoleto" onclick="Visualiza_Nota(1512);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">08/04/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">Maxilare Radiologia Odontologica<br><b>05.809.341/0002-07</b>  Dourados</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1513" name="botBoleto" onclick="Visualiza_Nota(1513);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">12/04/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">RADIOREDX<br><b>05.222.323/0001-43</b>  São Paulo</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1514" name="botBoleto" onclick="Visualiza_Nota(1514);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">12/04/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">IGRO<br><b>00.884.702/0001-85</b>  Itumbiara </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">70,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+1,40      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1515" name="botBoleto" onclick="Visualiza_Nota(1515);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">13/04/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">IRO<br><b>17.983.009/0001-62</b>  Lucas do Rio Verde-Mt</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">150,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+3,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1516" name="botBoleto" onclick="Visualiza_Nota(1516);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">14/04/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">ROI<br><b>09.162.864/0001-84</b>  Imbituba</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">600,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+12,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1517" name="botBoleto" onclick="Visualiza_Nota(1517);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">17/04/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Marcelo Kuerten Borges <br><b>007.655.279-95</b>  Araranguá</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1518" name="botBoleto" onclick="Visualiza_Nota(1518);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">17/04/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">RADIOLOGIA ODONTOLÓGICA PERFIL<br><b>12.302.299/0001-18</b>  Mafra</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">100,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+2,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1519" name="botBoleto" onclick="Visualiza_Nota(1519);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">17/04/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">RADIOLOGIA ODONTOLÓGICA LTDA<br><b>19.648.447/0001-08</b>  Belo Horizonte</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1520" name="botBoleto" onclick="Visualiza_Nota(1520);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">19/04/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">KOF RADIOLOGIA<br><b>24.406.784/0001-10</b>  Mossoró</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">450,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+9,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr>
+
+    <tr valign="center"> 
+      <td class="tbtitulo_r" bgcolor="#e8f5ff" colspan="4">Total:<br><span class="detalhe">107 notas&nbsp;(sem considerar notas canceladas)</span></td>
+      <td class="tbtitulo_r" bgcolor="#e8f5ff">68.930,00</td>
+      <td class="tbtitulo_r" bgcolor="#e8f5ff">1.378,60</td>
+      <td class="tbtitulo_r" bgcolor="#e8f5ff">0,00</td>
+      <td class="detalhe_r" bgcolor="#e8f5ff" colspan="2"></td>
+    </tr>
+ 
+  </tbody></table>
+  </tbody></table>
