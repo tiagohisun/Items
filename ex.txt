@@ -1,8 +1,4 @@
-<table width="95%" border="0" cellpadding="0" cellspacing="2" align="center">
-		The buttos are here
- <table width="95%" border="0" cellpadding="0" cellspacing="2" align="center">
-
-    <tbody><tr valign="center" height="20"> 
+<tbody><tr valign="center" height="20"> 
       <td class="tbtitulo" width="60" bgcolor="#e8f5ff">Número<br>NF</td>
       <td class="tbtitulo" width="60" bgcolor="#e8f5ff">RPS/Ref</td>
       <td class="tbtitulo" width="60" bgcolor="#e8f5ff">Emissão</td>
@@ -14,39 +10,11 @@
       <td class="tbtitulo" width="60" bgcolor="#e8f5ff">Sts</td>
     </tr>
 
-    <tr valign="center"> 
-      <td class="tbtitulo">
-        <input class="button_tb_60" type="button" value="1407" name="botBoleto" onclick="Visualiza_Nota(1407);">
-      </td>
-      <td class="detalhe" bgcolor="#efefef"></td>
-      <td class="detalhe" bgcolor="#efefef">02/01/2023</td>
-      <td class="detalhe_l" bgcolor="#efefef">Fabricio Mesquita Tuji<br><b>562.989.272-04</b>  Belém</td>
-      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
-      <td class="tbtitulo_r" bgcolor="#efefef">
-6,00      
-      </td>
-      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
-      <td class="tbtitulo" bgcolor="#efefef">0</td>
-      <td class="tbresult" title=""></td>
-    </tr>
+    
 
     
 
     <tr valign="center"> 
-      <td class="tbtitulo">
-        <input class="button_tb_60" type="button" value="1408" name="botBoleto" onclick="Visualiza_Nota(1408);">
-      </td>
-      <td class="detalhe" bgcolor="#f7f7f7"></td>
-      <td class="detalhe" bgcolor="#f7f7f7">02/01/2023</td>
-      <td class="detalhe_l" bgcolor="#f7f7f7">FENELON<br><b>03.628.122/0001-15</b>  Brasília</td>
-      <td class="tbtitulo_r" bgcolor="#f7f7f7">300,00</td>
-      <td class="tbtitulo_r" bgcolor="#f7f7f7">
-6,00      
-      </td>
-      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
-      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
-      <td class="tbresult" title=""></td>
-    </tr><tr valign="center"> 
       <td class="tbtitulo">
         <input class="button_tb_60" type="button" value="1409" name="botBoleto" onclick="Visualiza_Nota(1409);">
       </td>
@@ -160,6 +128,20 @@
 
     <tr valign="center"> 
       <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1407" name="botBoleto" onclick="Visualiza_Nota(1407);">
+      </td>
+      <td class="detalhe" bgcolor="#efefef"></td>
+      <td class="detalhe" bgcolor="#efefef">02/01/2023</td>
+      <td class="detalhe_l" bgcolor="#efefef">Fabricio Mesquita Tuji<br><b>562.989.272-04</b>  Belém</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#efefef">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#efefef">0,00</td>
+      <td class="tbtitulo" bgcolor="#efefef">0</td>
+      <td class="tbresult" title=""></td>
+    </tr><tr valign="center"> 
+      <td class="tbtitulo">
         <input class="button_tb_60" type="button" value="1416" name="botBoleto" onclick="Visualiza_Nota(1416);">
       </td>
       <td class="detalhe" bgcolor="#f7f7f7"></td>
@@ -175,6 +157,20 @@
     </tr>
 
     <tr valign="center"> 
+      <td class="tbtitulo">
+        <input class="button_tb_60" type="button" value="1408" name="botBoleto" onclick="Visualiza_Nota(1408);">
+      </td>
+      <td class="detalhe" bgcolor="#f7f7f7"></td>
+      <td class="detalhe" bgcolor="#f7f7f7">02/01/2023</td>
+      <td class="detalhe_l" bgcolor="#f7f7f7">FENELON<br><b>03.628.122/0001-15</b>  Brasília</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">300,00</td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">
+6,00      
+      </td>
+      <td class="tbtitulo_r" bgcolor="#f7f7f7">0,00</td>
+      <td class="tbtitulo" bgcolor="#f7f7f7">0</td>
+      <td class="tbresult" title=""></td>
+    </tr><tr valign="center"> 
       <td class="tbtitulo">
         <input class="button_tb_60" type="button" value="1417" name="botBoleto" onclick="Visualiza_Nota(1417);">
       </td>
@@ -1615,6 +1611,12 @@
     </tr>
 
     <tr valign="center"> 
+      <td class="tbtitulo_r" bgcolor="#e8f5ff" colspan="4">Total:<br><span class="detalhe">107 notas&nbsp;(sem considerar notas canceladas)</span></td>
+      <td class="tbtitulo_r" bgcolor="#e8f5ff">68.930,00</td>
+      <td class="tbtitulo_r" bgcolor="#e8f5ff">1.378,60</td>
+      <td class="tbtitulo_r" bgcolor="#e8f5ff">0,00</td>
+      <td class="detalhe_r" bgcolor="#e8f5ff" colspan="2"></td>
+    </tr><tr valign="center"> 
       <td class="tbtitulo">
         <input class="button_tb_60" type="button" value="1507" name="botBoleto" onclick="Visualiza_Nota(1507);">
       </td>
@@ -1838,13 +1840,6 @@
       <td class="tbresult" title=""></td>
     </tr>
 
-    <tr valign="center"> 
-      <td class="tbtitulo_r" bgcolor="#e8f5ff" colspan="4">Total:<br><span class="detalhe">107 notas&nbsp;(sem considerar notas canceladas)</span></td>
-      <td class="tbtitulo_r" bgcolor="#e8f5ff">68.930,00</td>
-      <td class="tbtitulo_r" bgcolor="#e8f5ff">1.378,60</td>
-      <td class="tbtitulo_r" bgcolor="#e8f5ff">0,00</td>
-      <td class="detalhe_r" bgcolor="#e8f5ff" colspan="2"></td>
-    </tr>
+    
  
-  </tbody></table>
-  </tbody></table>
+  </tbody>
