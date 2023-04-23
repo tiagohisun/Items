@@ -1,0 +1,472 @@
+<html><head>
+<meta name="GENERATOR" content="Microsoft Visual Studio 6.0">
+<link href="../inc/nfprint.css" type="text/css" rel="stylesheet">
+<title>Nota Fiscal Eletrônica de Serviços  ____________________________________________________________________________________________________</title>
+<style type="text/css">
+.img_botao {cursor: pointer}
+@media print {
+  .naoimprime {display: none;}
+  .info {display: none;}
+  .quebra_pagina {page-break-before: always}
+}
+@media screen {
+  .info  {
+  	font-size: 12px;
+  	background-color: navy
+  }
+}
+</style>
+<script id="clientEventHandlersJS" language="javascript">
+<!--
+function window_onunload() {
+  try {
+    if ((flg_segue == 0) && (window.opener.document.getElementById('cmdSegue')))
+      window.opener.document.getElementById('cmdSegue').click();
+    }
+    catch(er) { };
+}
+//-->
+</script>
+</head>
+
+<body language="javascript" onunload="return window_onunload()">
+<img src="../images/mCANC.gif" style="position:absolute; left:0; top:100; z-index:1;" id="fundo_canc" class="esconde">    
+<p align="center" class="info">
+  <table width="95%">
+
+    <tbody><tr>
+      <td rowspan="2"><span class="img_botao" onclick="window.print();"><img class="img_botao" src="../images/icon_imprime.gif" width="32" height="32">&nbsp;Imprime</span></td>
+      <td rowspan="2">&nbsp;</td>
+      <td rowspan="2">
+
+      <span class="img_botao" id="cmdCancela" onclick="Cancela_Nota('93CCPYO8000030000080547121407');"><img src="../images/icon_cancela.gif" width="32" height="32">&nbsp;Cancela</span>
+
+      </td>
+
+      <td rowspan="2">&nbsp;</td>
+      <td rowspan="2"><span class="img_botao" onclick="Altera_Nota('1407');"><img src="../images/icon_comenta.gif" width="32" height="32">&nbsp;Corrige</span></td>
+
+      <td rowspan="2">&nbsp;</td>
+      <td rowspan="2"><span class="img_botao" onclick="Envia_Nota('93CCPYO8000030000080547121407','contato@dental04.com','TIAGO DA SILVA LEMOS','DENTAL04');"><img src="../images/icon_envia.gif" width="32" height="32">&nbsp;Envia</span></td>
+      <td class="ressalta" style="color:white;" width="70">
+      
+      <input type="checkbox" id="check_email_cob" style="margin:0;" checked="">&nbsp;tomador:</td>
+      <td align="left" class="ressalta" style="color:white;" valign="bottom">
+      <font size="2">fmtuji@gmail.com</font>
+      
+      <input type="hidden" id="txt_enviar_cob" value="fmtuji@gmail.com">
+      </td>  
+    </tr>
+    <tr>
+      <td class="ressalta" style="color:white;"><input type="checkbox" id="check_email_cont" style="margin:0;" checked="">&nbsp;cópia p/:</td>
+      <td align="left"><input size="30" id="txt_enviar_cont" value="tiagohisun@gmail.com"></td>  
+    </tr>
+
+  </tbody></table>
+
+</p>
+
+<table cellspacing="2" cellpadding="0" width="640" border="0">
+<tbody><tr><td>
+
+    <img height="100" src="../images/logo2_sparnaiba_full.jpg">
+      
+</td></tr><tr><td>
+<table class="tb_borda" style="border-collapse:collapse;" cellspacing="0" cellpadding="0" width="100%">
+  <tbody><tr>
+    <td width="55%" class="tbresult_l">
+
+       <span class="ressalta">DENTAL04</span><br>
+       &nbsp;TIAGO DA SILVA LEMOS<br>
+       
+       &nbsp;AV YOJIRO TAKAOKA , 4384 - ANDAR 7<br>
+       &nbsp;ALPHAVILLE C A1&nbsp;-&nbsp;Santana de Parnaíba&nbsp;/&nbsp;SP&nbsp;&nbsp;06541-970   
+       <br>  
+
+       &nbsp;Fone:&nbsp;11985526927&nbsp;&nbsp;&nbsp;       
+
+       &nbsp;email:&nbsp;contato@dental04.com
+       <br>
+       <span class="ressalta">CNPJ: 30.152.335/0001-96</span>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ressalta">CCM: 80547</span>
+       
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="ressalta">IE: Isento</span>
+
+       <br>       
+       <span class="ressalta">Código de Serviço:&nbsp;14.02 </span>&nbsp;-&nbsp;
+       assistencia tecnica<br>
+       
+       <span class="ressalta">Data de Emissão: 02/01/2023</span><br>
+    </td>
+    <td width="15%" align="middle">
+      <span class="ressalta">
+      NOTA FISCAL<br>ELETRÔNICA<br>DE SERVIÇOS<br>
+NF-e<br>      
+      (TRIBUTADOS)<br>
+      
+      No 1407
+      </span>
+       
+    </td>
+  </tr>
+</tbody></table>
+</td></tr><tr><td>
+<table class="tb_borda" style="border-collapse:collapse;" cellspacing="0" cellpadding="0" width="100%">
+  <tbody><tr>
+    <td class="tbtitulo" width="15%">Fatura No</td>
+    <td class="tbtitulo" width="15%">Valor R$</td>
+    <td class="tbtitulo" width="15%">Forma Pgto</td>
+
+    <td rowspan="2" width="55%">&nbsp;</td>
+  
+  </tr>  
+  <tr>
+    <td align="middle" class="tit_bold">1407</td>
+    <td align="middle" class="tit_bold">300,00</td>
+    <td align="middle">
+A VISTA    
+    </td>
+
+  </tr>      
+  <tr>
+    <td colspan="4">
+      <table class="tb_sborda" cellspacing="0" cellpadding="0" width="100%">
+        <tbody><tr>
+          <td class="tbtitulo_l" width="15%">TOMADOR</td>
+          <td class="tbtitulo_l" width="85%">Fabricio Mesquita Tuji
+          </td></tr>
+        <tr>
+          <td class="tbtitulo_l">ENDEREÇO</td>
+          <td class="tbtitulo_l">Av Alcindo Cacela, 856 entre Antônio Barreto e Dom, Umarizal</td></tr>
+        <tr>
+          <td class="tbtitulo_l">MUNICÍPIO</td>
+          <td class="tbtitulo_l">
+            Belém&nbsp;&nbsp;&nbsp;
+            UF:&nbsp;PA&nbsp;&nbsp;&nbsp;
+
+            CEP:&nbsp;66060-271&nbsp;&nbsp;&nbsp;
+            
+          </td></tr>
+        <tr>
+          <td class="tbtitulo_l">END.COBRANÇA</td>
+          <td class="tbtitulo_l">o mesmo</td></tr>
+          
+        <tr>
+          <td class="tbtitulo_l">CNPJ/CPF </td>
+          <td class="tbtitulo_l">
+            562.989.272-04&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+          </td>
+        </tr>
+
+      </tbody></table>
+    </td></tr>
+  <tr>
+    <td class="tbtitulo">VALOR POR EXTENSO</td>
+    <td colspan="3">TREZENTOS REAIS</td>
+  </tr>
+  <tr class="tbresult_l">
+    <td colspan="4">
+    
+    DEVE À EMPRESA <span class="ressalta">TIAGO DA SILVA LEMOS</span>
+    OS VALORES CONSTANTES DESTA <b>NOTA FISCAL DE SERVIÇOS</b>,
+
+    REFERENTE AOS SERVIÇOS ABAIXO DISCRIMINADOS.
+    
+    </td>
+  </tr>
+</tbody></table>
+</td></tr><tr><td>
+
+<table class="tb_borda" style="border-collapse:collapse;" cellspacing="0" cellpadding="0" width="100%">
+  <tbody><tr>
+    <td class="tbtitulo" rowspan="2" width="10%">QTDE</td>
+    <td class="tbtitulo" rowspan="2" width="7%">UNID</td>
+    <td class="tbtitulo" rowspan="2">DISCRIMINAÇÃO DOS SERVIÇOS</td>
+    <td class="tbtitulo" colspan="2" width="30%">PREÇOS (R$)</td>
+  </tr>
+  <tr>
+    <td class="tbtitulo" width="15%">UNITÁRIO</td>
+    <td class="tbtitulo" width="15%">TOTAL</td>
+  </tr>
+  
+  <tr>
+    <td class="tbtitulo">1</td>
+    <td class="tbtitulo">UM</td>
+    <td class="tbtitulo_l">Instalação Digora Optime</td>
+    <td class="tbtitulo_r">300,00</td>
+    <td class="tbtitulo_r">300,00</td>
+  </tr>
+
+</tbody></table>
+</td></tr><tr><td>
+
+<table class="tb_borda" style="border-collapse:collapse;" width="100%" cellspacing="0" cellpadding="0">
+  <tbody><tr><td class="ressalta" align="center" colspan="6">RETENÇÕES NA FONTE PELO TOMADOR (R$)</td></tr>
+  <tr>
+    <td class="tbtitulo">ISS</td>
+    <td class="tbtitulo">IRRF</td>
+    <td class="tbtitulo">Pis</td>
+    <td class="tbtitulo">Cofins</td>
+    <td class="tbtitulo">CSLL</td>
+    <td class="tbtitulo">INSS</td>
+  </tr>
+  <tr>
+    <td class="tbtitulo">0,00</td>
+    <td class="tbtitulo">0,00</td>
+    <td class="tbtitulo">0,00</td>
+    <td class="tbtitulo">0,00</td>
+    <td class="tbtitulo">0,00</td>
+    <td class="tbtitulo">0,00</td>
+  </tr>
+</tbody></table>
+</td></tr><tr><td>
+
+<table class="tb_borda" style="border-collapse:collapse;" cellspacing="0" cellpadding="0" width="100%">
+  <tbody><tr>
+    <td class="tbtitulo_l" width="30%" valign="top">
+    NÃO VALE COMO RECIBO
+    
+    <br><br>
+    Valor aproximado dos tributos<br>
+    (Lei 12741): R$ 46,50    
+    </td>
+    <td width="30%">
+
+      <table class="tb_sborda" cellspacing="1" cellpadding="1" width="100%">
+
+        <tbody><tr>
+          <td class="ressalta" width="60%">Base ISS</td>
+          <td class="tbtitulo_r" width="10%">R$ </td>
+
+          <td class="tbtitulo_r">300,00</td></tr>
+
+        <tr>
+          <td class="tbtitulo_l">Alíquota:</td>
+          <td class="tbtitulo_r">% </td>
+
+          <td class="tbtitulo_r">2,00</td></tr>
+
+        <tr>
+
+          <td class="tbtitulo_l">ISS Incluso</td>
+          <td class="tbtitulo_r">R$ </td>
+          <td class="tbtitulo_r">6,00</td>
+          
+        </tr>
+      </tbody></table>
+
+    </td>
+    <td width="40%">
+      <table class="tb_sborda" cellspacing="0" cellpadding="0" width="100%">
+        <tbody><tr>
+          <td class="ressalta" colspan="3">
+          VALOR TOTAL DA NOTA
+          </td></tr>
+        <tr><td colspan="3">&nbsp;</td></tr>
+        <tr>
+          <td class="tbtitulo_r" width="60%"></td>
+          <td class="tbtitulo_r" width="10%">R$ </td>
+          <td class="ressalta" align="right" width="30%">300,00</td>
+        </tr>
+      </tbody></table>
+    </td>
+  </tr>
+</tbody></table>
+
+</td></tr><tr><td>
+<table style="border-collapse:collapse;" cellspacing="0" cellpadding="0">
+<tbody><tr><td width="400">
+<table class="tb_borda" style="border-collapse:collapse;" cellspacing="0" cellpadding="0" width="60%" border="1" align="left">
+  <tbody><tr><td class="ressalta" align="center" width="100%">Assinatura Digital</td></tr>
+  <tr><td class="tbtitulo" width="100%">
+    <table width="100%" border="0" cellspacing="1" cellpadding="1" class="assinatura">
+    	<tbody><tr>
+    		<td>RXXL739X</td>
+    		<td>K7GVSY9S</td>
+    		<td>WH9KM25W</td>
+    		<td>LZH6OKXE</td>
+    	</tr>
+    	<tr>
+    		<td>N3QX43EC</td>
+    		<td>6U6J0P8G</td>
+    		<td>S19DMZ1M</td>
+    		<td>VGVMMHEO</td>
+    	</tr>
+    	<tr>
+    		<td>EASR0A8L</td>
+    		<td>8WWVC2O2</td>
+    		<td>NWP5VI0Y</td>
+    		<td>93CCPYO8</td>
+    	</tr>
+    	<tr>
+    		<td>A10UJS02</td>
+    		<td>VRJL2AGD</td>
+    		<td>B4SUS7RJ</td>
+    		<td>F4MF3FLJ</td>
+    	</tr>
+    </tbody></table>
+  </td>
+  </tr>
+</tbody></table>  
+</td>
+ 
+</tr>
+</tbody></table> 
+</td></tr>
+<tr><td>
+<img src="../images/tesoura.gif" width="640" height="21">
+<table width="100%" cellspacing="2" cellpadding="0">
+<tbody><tr><td>
+<table class="tb_borda" style="border-collapse:collapse;" cellspacing="0" cellpadding="0" width="40%" border="1" align="left">
+  <tbody><tr><td class="ressalta" align="center" width="100%">
+  Assinatura Digital NFE No 1407<br>
+  Santana de Parnaíba - CCM: 80547
+  </td></tr>
+  <tr><td class="tbtitulo" width="100%">
+    <table width="100%" border="0" cellspacing="1" cellpadding="1" class="assinatura_recibo">
+    	<tbody><tr>
+    		<td>RXXL739X</td>
+    		<td>K7GVSY9S</td>
+    		<td>WH9KM25W</td>
+    		<td>LZH6OKXE</td>
+    	</tr>
+    	<tr>
+    		<td>N3QX43EC</td>
+    		<td>6U6J0P8G</td>
+    		<td>S19DMZ1M</td>
+    		<td>VGVMMHEO</td>
+    	</tr>
+    	<tr>
+    		<td>EASR0A8L</td>
+    		<td>8WWVC2O2</td>
+    		<td>NWP5VI0Y</td>
+    		<td>93CCPYO8</td>
+    	</tr>
+    	<tr>
+    		<td>A10UJS02</td>
+    		<td>VRJL2AGD</td>
+    		<td>B4SUS7RJ</td>
+    		<td>F4MF3FLJ</td>
+    	</tr>
+    </tbody></table>
+  </td></tr>
+</tbody></table>
+</td>
+<td align="right">
+RECEBI (EMOS) DA EMPRESA <span class="ressalta">TIAGO DA SILVA LEMOS</span><br>
+OS SERVIÇOS CONSTANTES DESTA <b>NOTA FISCAL ELETRÔNICA</b>
+   <br><br>
+Local/Data: _______________________________________<br><br>                             
+___________________________________________________<br>
+Assinatura do Recebedor<br>
+</td></tr>
+</tbody></table>
+</td></tr>
+</tbody></table>
+
+
+<input type="button" value="Button" id="cmdModal" style="display:none;" onclick="document.getElementById('fundo_canc').className = '';document.getElementById('cmdCancela').className = 'esconde';">
+<input type="button" value="Button" id="cmdTX" style="display:none;" onclick="document.getElementById('check_email_cob').checked = false;document.getElementById('check_email_cont').checked = false;">
+<input type="button" value="Button" id="cmdTX_CANC" style="display:none;" onclick="document.getElementById('cmdModal').click();Envia_Canc('93CCPYO8000030000080547121407','contato@dental04.com','TIAGO DA SILVA LEMOS');">
+
+<script language="javascript">
+<!--
+var flg_segue = 0
+
+function Envia_Nota( p1_param, p2_email_de, p3_empresa, p7_fantasia ) {
+var hwnd
+var p4_email_comp
+var p5_email_cont
+var strTST = document.getElementById('txt_enviar_cont').value
+  strTST = strTST.toLowerCase();
+  if (p2_email_de == '') {window.alert('O cadastro da prefeitura não possui o seu email.\nFaça uma solicitação para atualizar o EMAIL DO CONTRIBUINTE em seu cadastro.\n\nENVIO BLOQUEADO');return(false);}; 
+
+  if (document.getElementById('check_email_cob').checked == true) {p4_email_comp = document.getElementById('txt_enviar_cob').value}
+  else  {p4_email_comp = ''};
+  if (document.getElementById('check_email_cont').checked == true) {p5_email_cont = document.getElementById('txt_enviar_cont').value}
+  else  {p5_email_cont = ''};
+  
+  if ((p4_email_comp == '') && (p5_email_cont == '')) {window.alert('Defina o email que receberá sua Nota!');return(false);}; 
+  
+  if ((document.getElementById('check_email_cont').checked == true) && ((strTST.indexOf('@') < 1) || (strTST.indexOf('.') == -1) || (strTST.length < 8))) {window.alert('e-mail para envio de cópia inválido!');document.getElementById('txt_enviar_cont').focus();return(false);}; 
+
+  hwnd = window.open('DOC_envia.asp?s=606558607&m=3&x=0&q=7&p1=' + p1_param + '&p2=' + p2_email_de + '&p3=' + p3_empresa + '&p4=' + p4_email_comp + '&p5=' + p5_email_cont + '&p6=NF&p7=' + p7_fantasia, '_blank','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=300, height=200');
+  window.onfocus=function() {
+    try {
+      if(hwnd && !hwnd.closed)
+        hwnd.focus();
+    }
+    catch(er) { };
+  }
+}
+
+function Envia_Canc( p1_param, p2_email_de, p3_empresa ) {
+var hwnd
+var p4_email_comp
+
+  if (p2_email_de == '') {window.alert('O cadastro da prefeitura não possui o seu email.\nFaça uma solicitação para atualizar o EMAIL DO CONTRIBUINTE em seu cadastro.\n\nENVIO BLOQUEADO');return(false);}; 
+  p4_email_comp = document.getElementById('txt_enviar_cob').value;
+
+  if (p4_email_comp == '') {window.alert('Email do tomador não cadastrado para envio do aviso de cancelamento da Nota!');return(false);}; 
+
+  hwnd = window.open('DOC_envia.asp?s=606558607&m=3&x=0&q=7&p1=' + p1_param + '&p2=' + p2_email_de + '&p3=' + p3_empresa + '&p4=' + p4_email_comp + '&p5=&p6=CANC', '_blank','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=300, height=200');
+  window.onfocus=function() {
+    try {
+      if(hwnd && !hwnd.closed)
+        hwnd.focus();
+    }
+    catch(er) { };
+  }
+}
+
+function Cancela_Nota( p1_param ) {
+var hwnd
+
+  hwnd = window.open('DOC_canc_1.asp?s=606558607&m=3&x=0&q=7&p1=' + p1_param + '&p2=Canc', '_blank','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=500, height=400');
+  
+  window.onfocus=function() {
+    try {
+      if(hwnd && !hwnd.closed)
+        hwnd.focus();
+    }
+    catch(er) { };
+  }
+}
+
+function Mostra_Carta( p1_param ) {
+var hwnd
+  hwnd = window.open('correcao_imprime.asp?s=606558607&m=3&x=0&q=7&a=' + p1_param , '_blank','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, copyhistory=no, width=750, height=500');
+  window.onfocus=function() {
+    try {
+      if(hwnd && !hwnd.closed)
+        hwnd.focus();
+    }
+    catch(er) { };
+  }
+}
+
+function Mostra_Deducoes( numero, codserv ) {
+var hwnd
+  hwnd = window.open('desc_mostra.asp?s=606558607&m=3&x=0&q=7&a=' + numero + '&b=' + codserv , '_blank','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, copyhistory=no, width=500, height=400');
+  window.onfocus=function() {
+    try {
+      if(hwnd && !hwnd.closed)
+        hwnd.focus();
+    }
+    catch(er) { };
+  }
+}
+
+function Altera_Nota( num_NF ) {
+
+  flg_segue = 1;
+  window.onfocus=function() { };
+  window.location = 'NF_Altera_Limitada.asp?s=606558607&m=3&x=0&q=7&b=' + num_NF;
+  
+}
+//-->
+</script>
+
+
+</body></html>
