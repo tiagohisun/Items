@@ -1,461 +1,365 @@
-NFS,Date,Customer,Description,Income,,Date ,Description,Entry,Exit,PIX
-113,,113,113,"R$69,290.00",,,1031,121756.6,121790.23,222
-1407,02/01/2023,Fabricio Mesquita Tuji,Instalação Digora Optime,R$ 300.00,,22/04/2023,TRANSF ENVIADA PIX,0,50,
-1408,02/01/2023,FENELON,Instalação Scanora SW/Driver,R$ 300.00,,20/04/2023,Fatura de cartão,0,70,
-1409,03/01/2023,CRANIOFACIAL IMAGENS ODONTOLÓGICAS,Instalação Digora Optime,R$ 300.00,,20/04/2023,028003064610001:DIMED S/A - DISTRIBUI  JARAGUA DO SU BRA. Cartão 2608,0,79.97,
-1410,03/01/2023,CIRO R.O.D.,Conexão Digora Optime,R$ 70.00,,20/04/2023,TRANSF ENVIADA PIX,0,85.19,
-1411,05/01/2023,CIOC,Instruções Alinhamento Suporte do Queixo,R$ 250.00,,20/04/2023,TRANSF ENVIADA PIX,0,78.52,
-1412,05/01/2023,CIOC,Acesso Remoto Disco Cheio Mudança Banco de Dados,R$ 140.00,,19/04/2023,Pix recebido de K O F DE S ARAUJO RAD ODONTO ME,450,0,
-1413,06/01/2023,VBX EQUIPAMENTOS,Instalação BD DfW,R$ 150.00,,19/04/2023,TRANSF ENVIADA PIX,0,120,
-1414,07/01/2023,DENTAL-X RADIOLOGIA,Instalação OndemandDDental,R$ 200.00,,19/04/2023,Fatura de cartão,0,75,
-1415,10/01/2023,Jesca Nogueira,Instalação do OndemandDental,R$ 300.00,,18/04/2023,TRANSF ENVIADA PIX,0,50,
-1416,11/01/2023,CENTRO DE RADIO ODONTOLÓGICO ROQUE PASSARO,Mover pacientes para DB (ODD),R$ 70.00,,18/04/2023,Pix recebido de DIAGNOSISLAUDOS E EDUCACAO SUPERIOR EM RADIOLOGIA ODONTOLOGICA LTDA,300,0,
-1417,11/01/2023,S R S da Silva Martins de Souza Radiologia ME,Instalação Cliniview/KAVO Driver,R$ 300.00,,18/04/2023,TRANSF ENVIADA PIX,0,120,
-1418,11/01/2023,Francisco Ângelo Biagioni,Instalação DB DfW,R$ 150.00,,18/04/2023,Boleto,0,222.58,
-1419,11/01/2023,ORTHO-X - Meire Biagioni,Instalação DB DfW,R$ 70.00,,17/04/2023,Pix recebido de CINTIA REJANE DA SILVEIRA,100,0,
-1420,11/01/2023,ORTHO-X - Meire Biagioni,Banco de Dados DfW,R$ 150.00,,17/04/2023,TIM CELULAR,0,51.99,
-1421,11/01/2023,CENTRO DE IMAGEM,Instação Scan Exam,R$ 300.00,,17/04/2023,INSTALACAO ONDEMAND,300,0,
-1422,12/01/2023,IDOC- INSTITUTO DE RADIOLOGIA,Instalação Digora Optime,R$ 300.00,,15/04/2023,TRANSF ENVIADA PIX,0,50,
-1423,12/01/2023,S R S da Silva Martins de Souza Radiologia ME,Alteração de IP Scan Exam One,R$ 70.00,,14/04/2023,00197140669    :PAG*Administradora     JARAGUA DO SU BRA. Cartão 2608,0,54,
-1424,12/01/2023,SJ CLINICA ODONTO,Captura não habilitada Scanora SW,R$ 70.00,,14/04/2023,Fatura de cartão,0,100,
-1425,18/01/2023,INCO,Move Banco para HD,R$ 150.00,,14/04/2023,TRANSF ENVIADA PIX,0,70,
-1426,18/01/2023,Alejandra P. Benitez,Instalação BD OndemandDDental,R$ 150.00,,14/04/2023,TRANSF ENVIADA PIX,0,390,
-1427,18/01/2023,André Vilanova,Venda Cranex D Usado,"R$ 32,000.00",,14/04/2023,Pix recebido de RADIOLOGIA ODONTOLOGICA,600,0,
-1428,18/01/2023,CLINICA AURELINO M G,Comissão Venda KODAK D,"R$ 2,500.00",,14/04/2023,depósito via boleto,70,0,
-1429,19/01/2023,RADIOREDX,Configuração Logo,R$ 70.00,,13/04/2023,TRANSF ENVIADA PIX,0,100,
-1430,19/01/2023,ODONTO IMAGEM,Cliniview Configuração + Erro (OP) Erro Botão Acionado Disparador Erro,R$ 210.00,,13/04/2023,104280150001   :DR  VINICIUS CONTE     JARAGUA DO SU BRA. Cartão 2608,0,200,
-1431,24/01/2023,FOKO,Instruções Cliniview,R$ 70.00,,13/04/2023,Pix recebido de Ck Clinica De Radiologia Ltda Me,150,0,
-1432,24/01/2023,Ralph Azevedo,Instalação Componentes DICOM (Scanora),R$ 150.00,,11/04/2023,Fer,150,0,
-1433,24/01/2023,Fabricio Mesquita Tuji,Calibração Digora Optime,R$ 150.00,,10/04/2023,TRANSF ENVIADA PIX,0,43,
-1434,24/01/2023,S R S da Silva Martins de Souza Radiologia ME,OP Erro Processamento (Tomo) Digora Optime (Não Habilita),R$ 140.00,,10/04/2023,TRANSF ENVIADA PIX,0,700,
-1435,24/01/2023,RADIODIAGNOSIS,Criação DB DfW Acesso Remoto (Passar p/ SQL),R$ 220.00,,10/04/2023,Boleto,0,1755.2,
-1436,25/01/2023,SORRIA RX ODONTOLÓGICO DIGITAL,Recuperação DB DfW,R$ 150.00,,10/04/2023,PAGTO MONTSAGEM RAIO X PANORAMICO,1500,0,
-1437,25/01/2023,Edriano Benedito de Lima,Banco de Dados Ondemand e Conf Templates,R$ 150.00,,08/04/2023,Fatura de cartão,0,50,
-1438,26/01/2023,ORALLIS RADIOLOGIA ODONTOLÓGICA,Calibração OP,R$ 600.00,,08/04/2023,Devol recebida pix de LATAM GATEWAY,100,0,
-1439,26/01/2023,ODONTONORTE,Instalação BD DfW,R$ 150.00,,08/04/2023,TRANSF ENVIADA PIX,0,100,
-1440,26/01/2023,Odontonorte Documentacoes Odontologicas LTDA,Instalação DfW,R$ 150.00,,08/04/2023,Fatura de cartão,0,110,
-1441,26/01/2023,ORTOIMAGEM,Acesso Remoto Imagem Presa,R$ 70.00,,08/04/2023,TRANSF ENVIADA PIX,0,215,
-1442,27/01/2023,ARA-X,Configuração Banco e Erro NCPC,R$ 70.00,,07/04/2023,000000001667144:POSTO MAIOCHI BRUDERTH GUARAMIRIM    BRA. Cartão 2608,0,50,
-1443,30/01/2023,CURY RADIOLOGIA,Instalação Banco de Dados DfW,R$ 150.00,,07/04/2023,DVL1D15-AUTOPISTA LITORAL SUL  BR101  GU,0,4.7,
-1444,30/01/2023,RADIODIAGNOSIS,Instalação Digora Optime,R$ 150.00,,07/04/2023,DVL1D15-AUTOPISTA LITORAL SUL  BR376  SA,0,4.7,
-1445,30/01/2023,RADIO IMAGEM,Imagem Travada Digora Optime,R$ 70.00,,07/04/2023,DVL1D15-REGIS BITTENCOURT  REGIS BITTENC,0,3.9,
-1446,31/01/2023,CENTRO ODONTOLÓGICO ANGELO DOLAVALE,Instalação Express,R$ 300.00,,07/04/2023,DVL1D15-REGIS BITTENCOURT  REGIS BITTENC,0,3.9,
-1447,01/02/2023,Edriano Benedito de Lima,Liberar espaço em disco,R$ 70.00,,07/04/2023,000000007455015:SHELL BOX - WC AUTO PO BARRA DO TURV BRA. Cartão 2608,0,100,
-1448,01/02/2023,PHOTOGRAPH,Instalação Scanora SW,R$ 150.00,,07/04/2023,DVL1D15-REGIS BITTENCOURT  REGIS BITTENC,0,3.9,
-1449,01/02/2023,CENTRO DE RADIO ODONTOLÓGICO ROQUE PASSARO,Instalação Banco de Dados,R$ 150.00,,07/04/2023,DVL1D15-REGIS BITTENCOURT  REGIS BITTENC,0,3.9,
-1450,02/02/2023,Roque Passaro,Instalação BD Scanora,R$ 150.00,,07/04/2023,010031734780001:DP MIRACATU R SUL      MIRACATU      BRA. Cartão 2608,0,100,
-1451,03/02/2023,FENELON,Comissão Venda Cranex D,"R$ 7,000.00",,07/04/2023,DVL1D15-REGIS BITTENCOURT  REGIS BITTENC,0,3.9,
-1452,04/02/2023,ALPHA RADIOLOGIA,Instruções/Configuração Impressão Cliniview,R$ 70.00,,07/04/2023,DVL1D15-REGIS BITTENCOURT  REGIS BITTENC,0,3.9,
-1453,06/02/2023,IGRO,Configuração DICOM,R$ 70.00,,07/04/2023,DVL1D15-RODOANEL  SP 021 2536 SUL SAO PA,0,2.8,
-1454,06/02/2023,ODONTO X,Instalação Digora Optime,R$ 300.00,,07/04/2023,DVL1D15-AUTOBAN  SP 348 362 SUL CAIEIRAS,0,11.8,
-1455,06/02/2023,IGRO,Instalação SDX Update,R$ 150.00,,07/04/2023,000000001022072:RESTAURANTE 38         CAJAMAR       BRA. Cartão 2608,0,38.5,
-1456,07/02/2023,IGRO,Configuração Scanora DB,R$ 70.00,,07/04/2023,DVL1D15-AUTOBAN  SP 330 810 SUL VALINHOS,0,11.7,
-1457,08/02/2023,Qd2 Conj 4 26 São Bartolomeu,Instalação OndemandDDental,R$ 300.00,,07/04/2023,DVL1D15-RENOVIAS  SP 340 1235 SUL CAMPIN,0,15.2,
-1458,08/02/2023,PERFIL RADIOLOGIA (Osasco),Reinstalação Drivers DICOM Scanora,R$ 150.00,,07/04/2023,000000000502641:POSTO JARDIM DO SHOPPI CAMPINAS      BRA. Cartão 2608,0,150,
-1459,08/02/2023,CURY RADIOLOGIA,Sensor Cranex D,"R$ 4,000.00",,07/04/2023,DVL1D15-RENOVIAS  SP 340 19284 SUL MOGI ,0,9.1,
-1460,09/02/2023,ODONTOX LTDA ME,Configuração Scanora Captura de Imagem Digora Optime,R$ 70.00,,07/04/2023,DVL1D15-RENOVIAS  SP 340 22129 SUL CASA ,0,8.1,
-1461,09/02/2023,MEGAMIRR CENTRO RADIOLOGICO DE DIAGNÓSTICO POR IMA,Instalação BD,R$ 150.00,,07/04/2023,003000000351845:SAO PAULO MINAS        GUAXUPE       BRA. Cartão 2608,0,150,
-1462,10/02/2023,Andressa Rocha,Instalação OndemandDDental,R$ 300.00,,07/04/2023,000000006013413:CLASS HOTEL            GUAXUPE       BRA. Cartão 2608,0,267.5,
-1463,13/02/2023,S R S da Silva Martins de Souza Radiologia ME,Atualização Drive Update (Oclusal não habilita no Digora Optime),R$ 150.00,,07/04/2023,Devol recebida pix de LATAM GATEWAY,100,0,
-1464,13/02/2023,S R S da Silva Martins de Souza Radiologia ME,Scan Exam One não conecta,R$ 70.00,,07/04/2023,TRANSF ENVIADA PIX,0,100,
-1465,13/02/2023,S R S da Silva Martins de Souza Radiologia ME,Reinstalação KAVO Driver Update (Scan Exam One Não Conecta),R$ 150.00,,07/04/2023,Fatura de cartão,0,50,
-1466,14/02/2023,INCO,Instalação Scanora SW,R$ 150.00,,07/04/2023,Fatura de cartão,0,20,
-1467,14/02/2023,DIAGNOSTICA,Configuração Scanora SW,R$ 70.00,,06/04/2023,00082579126    :PAG*PasquaComercial    GUAXUPE       BRA. Cartão 2608,0,28,
-1468,14/02/2023,ISO REBOUÇAS,DfW Não Abre (Problema Rede),R$ 70.00,,06/04/2023,30119251       :MINCHILLO MAT CONSTR   GUAXUPE       BRA. Cartão 2608,0,14,
-1469,14/02/2023,SANTOS RADIOLOGIA,Configuração Tela OndemandD,R$ 70.00,,06/04/2023,TRANSF ENVIADA PIX,0,200,
-1470,14/02/2023,ORTHO-X - Meire Biagioni,Instalação Scanora + Driver Update + OndemandDDental,R$ 450.00,,06/04/2023,Fatura de cartão,0,100,
-1471,15/02/2023,ISO RADIOLOGIA - CAMPO LIMPO,Reinstalação DfW (conexão com banco novo),R$ 150.00,,06/04/2023,Boleto,0,266.63,
-1472,15/02/2023,CENTRO ODONTOLÓGICO AYRES DINIZ,Instalação BD Ondemand,R$ 150.00,,06/04/2023,Pix recebido de RAIOS X ODONTOLOGICO VILELA LTDA,3000,0,
-1473,15/02/2023,PHOTOGRAPH,Calibração Cranex D Cópia BD e importação,R$ 670.00,,05/04/2023,Fatura de cartão,0,29,
-1474,17/02/2023,RADIOREDX,Calibração Películas + Abertura Digora Optime,R$ 200.00,,05/04/2023,010034673070001:HOTEL MARAMBAIA        GUAXUPE       BRA. Cartão 2608,0,130,
-1475,17/02/2023,S R S da Silva Martins de Souza Radiologia ME,Reinstalação Driver DICOM (não imprime),R$ 150.00,,05/04/2023,Pix recebido de Aline Da Silva Lemos,150,0,
-1476,17/02/2023,Talita Piassa Mafessoni,Instruções OndemandDDental,R$ 150.00,,05/04/2023,DVL1D15-AUTOBAN  SP 348 39047 NORTE FRAN,0,11.8,
-1477,20/02/2023,CROM RADIOLOGIA,Instalação Cliniview + ID Drive Update,R$ 300.00,,05/04/2023,DVL1D15-FERNAO DIAS  BR 381 6668 SUL MAI,0,2.8,
-1478,23/02/2023,CROM RADIOLOGIA,Moção DB & Instalação Digora Optime,R$ 150.00,,05/04/2023,DVL1D15-ROTA DAS BANDEIRAS  SP 065 799 S,0,9.3,
-1479,23/02/2023,Gustavo Zanatta,Instalação BD OndemandDDental,R$ 150.00,,05/04/2023,000000004274529:FRANGO ASSADO MOGIGUAC MOGI GUACU    BRA. Cartão 2608,0,47.6,
-1480,24/02/2023,CDO,Reinstalação Scanora & Driver,R$ 300.00,,05/04/2023,DVL1D15-RENOVIAS  SP 340 22129 SUL CASA ,0,8.1,
-1481,01/03/2023,CERO IMAGEM DIGITAL,Instalação DB OndemandDAPP,R$ 150.00,,05/04/2023,TRANSF ENVIADA PIX,0,20,
-1482,02/03/2023,ISO REBOUÇAS,Instalação Banco de Dados,R$ 300.00,,04/04/2023,DVL1D15-ROTA DAS BANDEIRAS  SP 065 799 N,0,9.3,
-1483,03/03/2023,Giulianna Barros Barbosa,Instruções OndemandDDental,R$ 150.00,,04/04/2023,Thiago pix,150,0,
-1484,05/03/2023,Vanessa Adreciolli,Instalação DB OndemandDDental,R$ 150.00,,04/04/2023,,0,124.89,
-1485,06/03/2023,Emerson Hokumura Bragaroli,Imagem presa Digora Optime,R$ 70.00,,04/04/2023,,0,22.19,
-1486,06/03/2023,ODONTOPRIME,Imagem travada Digora Optime,R$ 70.00,,03/04/2023,Fatura de cartão,0,70,
-1487,07/03/2023,ORTOIMAGEM,Instalação BD Cliniview,R$ 150.00,,03/04/2023,DVL1D15-RENOVIAS  SP 350 25214 NORTE ITO,0,11.6,
-1488,08/03/2023,S R S da Silva Martins de Souza Radiologia ME,Instalação DB OndemandDDental (HD desconectado) Instalação DB Cliniview (HD desconectado),R$ 300.00,,03/04/2023,DVL1D15-RENOVIAS  SP 340 22129 NORTE CAS,0,8.1,
-1489,09/03/2023,CLÍNICA RADIOLGOIA SÃO GERALDO,// HD Cheio// Delete Files// Mover banco para HD I,R$ 290.00,,03/04/2023,000000004494303:AUTO POSTO JAGUARI     SAO JOAO DA B BRA. Cartão 2608,0,100,
-1490,10/03/2023,PRIMED CURSOS,Instalação programas Cranex Novus,R$ 300.00,,03/04/2023,DVL1D15-RENOVIAS  SP 340 19284 NORTE MOG,0,9.1,
-1491,14/03/2023,FACERADIOLOGIA,Acesso Remoto x OP não conecta,R$ 150.00,,03/04/2023,DVL1D15-RENOVIAS  SP 340 1235 NORTE CAMP,0,15.2,
-1492,14/03/2023,FACERADIOLOGIA,Acesso Remoto x,R$ 140.00,,03/04/2023,003000000351821:R.BANDEIRAS            ITATIBA       BRA. Cartão 2608,0,13.5,
-1493,14/03/2023,RADIALLIS,Instalação Programas Digora Optime,R$ 450.00,,03/04/2023,DVL1D15-FERNAO DIAS  BR 381 657 NORTE MA,0,2.8,
-1494,15/03/2023,RADIODONTO,Acesso Remoto OP não conecta,R$ 70.00,,03/04/2023,000000005345063:POSTO 67 DA FERNAO     MAIRIPORA     BRA. Cartão 2608,0,100,
-1495,15/03/2023,Maxilare Radiologia Odontologica,Remoção Mensagem OP,R$ 70.00,,03/04/2023,000000000394891:ESTRELA SANTISTA       SANTOS        BRA. Cartão 2608,0,100,
-1496,15/03/2023,ORTODIAGNOSIS RADIOLOGIA ODONTOLÓGICA,Instalação/Configuração + Erro (BD Não Abre),R$ 450.00,,03/04/2023,TRANSF ENVIADA PIX,0,50,
-1497,15/03/2023,FACERADIOLOGIA,Reparação Cliniview + Reinstalação ID Driver,R$ 300.00,,03/04/2023,103144129000000:IMPERIO DAS BATERIAS   SANTOS        BRA. Cartão 2608,0,469,
-1498,16/03/2023,CROM RADIOLOGIA,Conexão x Digora Optime,R$ 140.00,,02/04/2023,TRANSF ENVIADA PIX,0,200,
-1499,20/03/2023,CROM RADIOLOGIA,Configuração Digora Optime Acessos Remotos x + (recuperar imagem imagem travada ref erro Digora Optime não transfere imagem recuperar pacientes) c/desconto,R$ 350.00,,02/04/2023,Fatura de cartão,0,30,
-1500,20/03/2023,ISO REBOUÇAS,Instalação DfW+SQL,R$ 450.00,,02/04/2023,Fatura de cartão,0,170,
-1501,21/03/2023,RADIOLUZ,Comissão Venda Aparelho Cranex D,"R$ 3,000.00",,02/04/2023,TRANSF ENVIADA PIX,0,199,
-1502,22/03/2023,BARBOSA & FREIRE LTDA,Instalação DB OndemandDAPP,R$ 150.00,,02/04/2023,TRANSF ENVIADA PIX,0,400,
-1503,23/03/2023,RADIORAL,Instalação OndemandDDental,R$ 300.00,,02/04/2023,TRANSF ENVIADA PIX,0,1069,
-1504,23/03/2023,RADIOLOGIA ODONTOLÓGICA PERFIL,Instalação Cliniview,R$ 100.00,,01/04/2023,Pix recebido de Alexandre Martins Figueiredo,2000,0,
-1505,24/03/2023,PIXEL ODONTO IMAGEM,Manutenção Digora Optime,R$ 300.00,,01/04/2023,000000000626244:POSTO ANA DIAS         ITARIRI       BRA. Cartão 2608,0,100,
-1506,24/03/2023,Soraya Castro,Instalação Clinview + Driver,R$ 300.00,,01/04/2023,DVL1D15-REGIS BITTENCOURT - REGIS BITTEN,0,3.9,
-1507,29/03/2023,Alejandra P. Benitez,Instalação BD OndemandDDental,R$ 150.00,,31/03/2023,000000029265113:LAF HOTEL              REGISTRO      BRA. Cartão 2608,0,180,
-1508,30/03/2023,Juliana da Silva Noia,Instalação Banco de Dados,R$ 150.00,,31/03/2023,DVL1D15-REGIS BITTENCOURT - REGIS BITTEN,0,3.9,
-1509,30/03/2023,RADIODIAGNOSIS,Instalação BD,R$ 150.00,,31/03/2023,028103420880001:PISTA 4                SAO JOSE DOS  BRA. Cartão 2608,0,3.9,
-1510,08/04/2023,RADIODOC IMAGEM,Configurações Templates OndemandDDental,R$ 150.00,,31/03/2023,DVL1D15-REGIS BITTENCOURT - REGIS BITTEN,0,3.9,
-1511,08/04/2023,S R S da Silva Martins de Souza Radiologia ME,/ Importar Pac Scanora / Conexão Digora Optime,R$ 140.00,,31/03/2023,010004196030002:POSTOS PELANDA COMBUS  CAMPINA GRAND BRA. Cartão 2608,0,100,
-1512,08/04/2023,Maxilare Radiologia Odontologica,Acesso Remoto OP lento Detecção Problema = Instalar Programas atualizados,R$ 70.00,,31/03/2023,DVL1D15-AUTOPISTA LITORAL SUL - BR376 - ,0,4.7,
-1513,12/04/2023,RADIOREDX,Instruções troca de cabo CAT,R$ 300.00,,31/03/2023,Pix recebido de RADIO DIAGNOSIS SC LTDA ME,150,0,
-1514,12/04/2023,IGRO,Imagem Travada Digora Optime,R$ 70.00,,31/03/2023,91543380       :POSTO BOGO LTDA        TIJUCAS DO SU BRA. Cartão 2608,0,63.9,
-1515,13/04/2023,IRO,Instalação BD OndemandDDental,R$ 150.00,,31/03/2023,DVL1D15-AUTOPISTA LITORAL SUL - BR101 - ,0,4.7,
-1516,14/04/2023,ROI,Calibração Cranex D,R$ 600.00,,31/03/2023,010004341579200:POSTO AMIZADE          JARAGUA DO SU BRA. Cartão 2608,0,150,
-1517,17/04/2023,Marcelo Kuerten Borges,Instalação OndemandDDental,R$ 300.00,,30/03/2023,TRANSF ENVIADA PIX,0,150,
-1518,17/04/2023,RADIOLOGIA ODONTOLÓGICA PERFIL,Reinstalação Drivers DICOM,R$ 100.00,,30/03/2023,PAGTO DESMONTAGEM E EMBALAGREM DO RAIO X,1750,0,
-1519,17/04/2023,RADIOLOGIA ODONTOLÓGICA LTDA,Instalação OndemanddDental,R$ 300.00,,30/03/2023,TRANSF ENVIADA PIX,0,150,
-,,,,,,30/03/2023,Pix recebido de JULIANA DA SILVA NOIA LTDA,150,0,
-,,,,,,30/03/2023,TRANSF ENVIADA PIX,0,150,
-,,,,,,30/03/2023,Pix recebido de MARCIO ROBERTO OLIVEIRA,70,0,
-,,,,,,29/03/2023,TRANSF ENVIADA PIX,0,400,
-,,,,,,28/03/2023,Pix recebido de RADIO ODONTO LAJEADO,70,0,
-,,,,,,27/03/2023,depósito via boleto,300,0,
-,,,,,,26/03/2023,Fatura de cartão,0,250,
-,,,,,,26/03/2023,TRANSF ENVIADA PIX,0,700,
-,,,,,,26/03/2023,TRANSF ENVIADA PIX,0,100,
-,,,,,,24/03/2023,Fatura de cartão,0,90,
-,,,,,,24/03/2023,00197140669    :PAG*Administradora     JARAGUA DO SU BRA. Cartão 2608,0,11,
-,,,,,,24/03/2023,Pix recebido de SORAYA TOMAZ CASTRO,300,0,
-,,,,,,24/03/2023,Pix recebido de BARBOSA FREIRE LTDA,150,0,
-,,,,,,24/03/2023,Fatura de cartão,0,50,
-,,,,,,24/03/2023,Fatura de cartão,0,70,
-,,,,,,24/03/2023,Pagto tecnico p desmontar e embalar o Raio X Panoramico,400,0,
-,,,,,,24/03/2023,TRANSF ENVIADA PIX,0,400,
-,,,,,,24/03/2023,TRANSF ENVIADA PIX,0,647.65,
-,,,,,,23/03/2023,Fatura de cartão,0,20,
-,,,,,,23/03/2023,Pix recebido de CINTIA REJANE DA SILVEIRA,100,0,
-,,,,,,22/03/2023,Fatura de cartão,0,150,
-,,,,,,22/03/2023,Pix recebido de Tiago da Silva Lemos,300,0,
-,,,,,,22/03/2023,TRANSF ENVIADA PIX,0,115,
-,,,,,,22/03/2023,Fatura de cartão,0,500,
-,,,,,,22/03/2023,Transferência (TED) para Jorge,0,300,
-,,,,,,21/03/2023,TRANSF ENVIADA PIX,0,300,
-,,,,,,21/03/2023,Pix recebido de CROM CENTRO ROETGN DE ODONTOLOGIA MOGIANO LTDA,350,0,
-,,,,,,21/03/2023,Boleto,0,1720.98,
-,,,,,,21/03/2023,Comissao venda cranex D,3000,0,
-,,,,,,21/03/2023,digora,300,0,
-,,,,,,20/03/2023,000000008133169:ADMINISTRADORA GERAL D JARAGUA DO SU BRA. Cartão 2608,0,15,
-,,,,,,20/03/2023,Fatura de cartão,0,40,
-,,,,,,20/03/2023,Fatura de cartão,0,60,
-,,,,,,20/03/2023,Fatura de cartão,0,90,
-,,,,,,18/03/2023,Fatura de cartão,0,30,
-,,,,,,17/03/2023,Fatura de cartão,0,100,
-,,,,,,17/03/2023,010004341579300:POSTO AMIZADE          JARAGUA DO SU BRA. Cartão 2608,0,50,
-,,,,,,17/03/2023,TRANSF ENVIADA PIX,0,500,
-,,,,,,16/03/2023,Pix recebido de H A C DA SILVA LTDA,440,0,
-,,,,,,16/03/2023,TRANSF ENVIADA PIX,0,750,
-,,,,,,16/03/2023,Pix recebido de Tiago da Silva Lemos,1150,0,
-,,,,,,16/03/2023,TRANSF ENVIADA PIX,0,132,
-,,,,,,16/03/2023,Configuracao DIGORA Ortodiagnosis,450,0,
-,,,,,,16/03/2023,TRANSF ENVIADA PIX,0,74.88,
-,,,,,,16/03/2023,Fatura de cartão,0,50,
-,,,,,,16/03/2023,Fatura de cartão,0,100,
-,,,,,,15/03/2023,Boleto,0,156.48,
-,,,,,,15/03/2023,Devol recebida pix de PIX Marketplace,59.16,0,
-,,,,,,15/03/2023,Pix recebido de THAIS SUMIE NOZU IMADA,70,0,
-,,,,,,15/03/2023,Pix recebido de Clinica Odontologica Digirad Ltda,450,0,
-,,,,,,15/03/2023,TIM CELULAR,0,51.99,
-,,,,,,14/03/2023,on demand ,150,0,
-,,,,,,14/03/2023,TRANSF ENVIADA PIX,0,1100,
-,,,,,,14/03/2023,Pix recebido de Tiago da Silva Lemos,1042.38,0,
-,,,,,,14/03/2023,TRANSF ENVIADA PIX,0,58.56,
-,,,,,,14/03/2023,TRANSF ENVIADA PIX,0,12,
-,,,,,,14/03/2023,Fatura de cartão,0,150,
-,,,,,,14/03/2023,Pix recebido de CLINICA RADIOLOGICA SAO GERALDO EIRELI,290,0,
-,,,,,,14/03/2023,TRANSF ENVIADA PIX,0,250,
-,,,,,,13/03/2023,Fatura de cartão,0,40,
-,,,,,,13/03/2023,Boleto,0,1751.46,
-,,,,,,13/03/2023,Pix recebido de Tiago da Silva Lemos,400,0,
-,,,,,,11/03/2023,TRANSF ENVIADA PIX,0,108.5,
-,,,,,,10/03/2023,Pix recebido de PRIMED CURSOS E TREINAMENTOS PARA A AREA DE SAUDE LTDA,300,0,
-,,,,,,10/03/2023,Fatura de cartão,0,100,
-,,,,,,10/03/2023,Fatura de cartão,0,50,
-,,,,,,09/03/2023,Fatura de cartão,0,60,
-,,,,,,09/03/2023,Fatura de cartão,0,30,
-,,,,,,08/03/2023,028003064610001:DIMED S/A - DISTRIBUI  JARAGUA DO SU BRA. Cartão 2608,0,101.96,
-,,,,,,08/03/2023,Fatura de cartão,0,50,
-,,,,,,08/03/2023,Thiago Soredex,300,0,
-,,,,,,08/03/2023,TRANSF ENVIADA PIX,0,13,
-,,,,,,07/03/2023,Fatura de cartão,0,50,
-,,,,,,06/03/2023,Pix recebido de ODONTO PRIME CUIABA LTDA,70,0,
-,,,,,,06/03/2023,Pix recebido de GIULIANNA BARROS BARBOSA,150,0,
-,,,,,,06/03/2023,Fatura de cartão,0,50,
-,,,,,,06/03/2023,Fatura de cartão,0,60,
-,,,,,,04/03/2023,TRANSF ENVIADA PIX,0,59.16,
-,,,,,,04/03/2023,Pix recebido de HUDSON PEREIRA DO VALE,300,0,
-,,,,,,03/03/2023,Boleto,0,181.07,
-,,,,,,02/03/2023,,0,0.01,
-,,,,,,02/03/2023,,0,68.96,
-,,,,,,02/03/2023,,0,17.58,
-,,,,,,01/03/2023,TRANSF ENVIADA PIX,0,100,
-,,,,,,28/02/2023,Thiago soledex,150,0,
-,,,,,,28/02/2023,000000091167755:CFC VILA NOVA          Jaragua do Su BRA. Cartão 2608,0,516.67,
-,,,,,,27/02/2023,Pix recebido de Orallis Radiologia Odontologica ltda,300,0,
-,,,,,,25/02/2023,Note Polyana,150,0,
-,,,,,,24/02/2023,Pix recebido de LEONARDO LUCAS PERON,300,0,
-,,,,,,24/02/2023,TRANSF ENVIADA PIX,0,15,
-,,,,,,23/02/2023,Pix recebido de CROM CENTRO ROETGN DE ODONTOLOGIA MOGIANO LTDA,450,0,
-,,,,,,23/02/2023,maquina plastico,273,0,
-,,,,,,22/02/2023,TRANSF ENVIADA PIX,0,110,
-,,,,,,22/02/2023,TRANSF ENVIADA PIX,0,4.9,
-,,,,,,22/02/2023,Fatura de cartão,0,40,
-,,,,,,22/02/2023,Pix recebido de SONIA NISHIYAMA HOSOMI,200,0,
-,,,,,,22/02/2023,Fatura de cartão,0,20,
-,,,,,,22/02/2023,Fatura de cartão,0,50,
-,,,,,,21/02/2023,Fatura de cartão,0,130,
-,,,,,,20/02/2023,Fatura de cartão,0,115,
-,,,,,,18/02/2023,Fatura de cartão,0,30,
-,,,,,,18/02/2023,Fatura de cartão,0,50,
-,,,,,,17/02/2023,Pix recebido de TALITA PIASSA MAFESSONI,150,0,
-,,,,,,17/02/2023,Boleto,0,157.48,
-,,,,,,17/02/2023,010605279680001:MOLINA RECUPERADORA D  JARAGUA DO SU BRA. Cartão 2608,0,3120,
-,,,,,,16/02/2023,Fatura de cartão,0,100,
-,,,,,,16/02/2023,Fatura de cartão,0,30,
-,,,,,,16/02/2023,Pix recebido de PHOTONGRAPH ODONTOLOGIA LTDA,670,0,
-,,,,,,16/02/2023,Pix recebido de ANDRE VILANOVA M PORTES,3000,0,
-,,,,,,15/02/2023,manutencao,150,0,
-,,,,,,15/02/2023,TRANSF ENVIADA PIX,0,274.79,
-,,,,,,15/02/2023,Pix recebido de INCO COPACABANA,150,0,
-,,,,,,15/02/2023,Pix recebido de BIAGIONI RAD DOCUM ODONT LTDA,450,0,
-,,,,,,15/02/2023,TRANSF ENVIADA PIX,0,1050,
-,,,,,,15/02/2023,Pix recebido de Aline Da Silva Lemos,1000,0,
-,,,,,,15/02/2023,TIM CELULAR,0,53.19,
-,,,,,,15/02/2023,Pix recebido de CENTRO ODONTOLOGICO AYRES DINIZ,150,0,
-,,,,,,14/02/2023,Fatura de cartão,0,215,
-,,,,,,14/02/2023,manutencao,70,0,
-,,,,,,14/02/2023,TRANSF ENVIADA PIX,0,99.44,
-,,,,,,14/02/2023,Pix recebido de FERNANDA BASSO BIASI,70,0,
-,,,,,,14/02/2023,Thiago programa,70,0,
-,,,,,,14/02/2023,250130020000000:CONTRASTE RADIOLOGIA O JARAGUA DO SU BRA. Cartão 2608,0,290,
-,,,,,,14/02/2023,TRANSF ENVIADA PIX,0,140,
-,,,,,,14/02/2023,TRANSF ENVIADA PIX,0,133,
-,,,,,,13/02/2023,Soredex,360,0,
-,,,,,,13/02/2023,172820299000000:BORRACHARIA SENEM      JARAGUA DO SU BRA. Cartão 2608,0,1600,
-,,,,,,13/02/2023,Fatura de cartão,0,1882.95,
-,,,,,,13/02/2023,Fatura de cartão,0,200,
-,,,,,,13/02/2023,Pix recebido de MARCIO ROBERTO OLIVEIRA,2000,0,
-,,,,,,12/02/2023,Fatura de cartão,0,100,
-,,,,,,12/02/2023,Fatura de cartão,0,150,
-,,,,,,11/02/2023,Fatura de cartão,0,200,
-,,,,,,11/02/2023,TRANSF ENVIADA PIX,0,400,
-,,,,,,10/02/2023,Pix recebido de M D MOREIRA MACHADO CLINICA MEDICA,300,0,
-,,,,,,10/02/2023,Pix recebido de RR IMAGEM,150,0,
-,,,,,,10/02/2023,Boleto,0,1563.5,
-,,,,,,10/02/2023,Pix recebido de ANTONIO OLIVEIRA DE CARVALHO JR,300,0,
-,,,,,,10/02/2023,TRANSF ENVIADA PIX,0,20,
-,,,,,,10/02/2023,Pix recebido de ODONTOX,300,0,
-,,,,,,09/02/2023,TRANSF ENVIADA PIX,0,162.32,
-,,,,,,09/02/2023,Pix recebido de ODONTO X LTDA ME,70,0,
-,,,,,,09/02/2023,Pix recebido de ROQUE ANTENOR PASSARO JR,150,0,
-,,,,,,08/02/2023,chamado scanora,150,0,
-,,,,,,08/02/2023,TRANSF ENVIADA PIX,0,107.29,
-,,,,,,08/02/2023,TRANSF ENVIADA PIX,0,8000,
-,,,,,,08/02/2023,Fatura de cartão,0,3086.34,
-,,,,,,08/02/2023,Fatura de cartão,0,1882.95,
-,,,,,,08/02/2023,TRANSF ENVIADA PIX,0,17,
-,,,,,,08/02/2023,TRANSF ENVIADA PIX,0,750,
-,,,,,,07/02/2023,Sensor Cury,12000,0,
-,,,,,,07/02/2023,Pix recebido de RADIO IMAGEM SETE LAGOAS LTDA,70,0,
-,,,,,,07/02/2023,Boleto,0,255.64,
-,,,,,,06/02/2023,Fatura de cartão,0,300,
-,,,,,,06/02/2023,104280150001   :DR  VINICIUS CONTE     JARAGUA DO SU BRA. Cartão 2608,0,200,
-,,,,,,06/02/2023,Devol recebida pix de PIX Marketplace,79.7,0,
-,,,,,,06/02/2023,Pix recebido de RADIO IMAGEM SETE LAGOAS LTDA,220,0,
-,,,,,,06/02/2023,TRANSF ENVIADA PIX,0,79.7,
-,,,,,,06/02/2023,TRANSF ENVIADA PIX,0,79.7,
-,,,,,,05/02/2023,TRANSF ENVIADA PIX,0,298.03,
-,,,,,,05/02/2023,TRANSF ENVIADA PIX,0,54.19,
-,,,,,,05/02/2023,Fatura de cartão,0,150,
-,,,,,,05/02/2023,Fatura de cartão,0,120,
-,,,,,,04/02/2023,Pix recebido de FERNANDO UMENO WATANABE,70,0,
-,,,,,,04/02/2023,TRANSF ENVIADA PIX,0,74.88,
-,,,,,,03/02/2023,Fatura de cartão,0,600,
-,,,,,,03/02/2023,Fatura de cartão,0,500,
-,,,,,,03/02/2023,TRANSF ENVIADA PIX,0,500,
-,,,,,,03/02/2023,TRANSF ENVIADA PIX,0,72.57,
-,,,,,,03/02/2023,TRANSF ENVIADA PIX,0,307.3,
-,,,,,,03/02/2023,Pix recebido de CLINICA DE RADIOLOGIA ODONTOLOGICA FENELON LTDA,7000,0,
-,,,,,,03/02/2023,TRANSF ENVIADA PIX,0,355.89,
-,,,,,,03/02/2023,TRANSF ENVIADA PIX,0,91.2,
-,,,,,,03/02/2023,TRANSF ENVIADA PIX,0,77.25,
-,,,,,,02/02/2023,odontonorte. Obrigado Tiago,150,0,
-,,,,,,02/02/2023,TRANSF ENVIADA PIX,0,61.99,
-,,,,,,02/02/2023,Fatura de cartão,0,50,
-,,,,,,02/02/2023,Fatura de cartão,0,600,
-,,,,,,02/02/2023,TRANSF ENVIADA PIX,0,77.54,
-,,,,,,02/02/2023,Fatura de cartão,0,200,
-,,,,,,02/02/2023,,0,0.63,
-,,,,,,02/02/2023,,0,130.31,
-,,,,,,02/02/2023,,0,13.75,
-,,,,,,01/02/2023,TRANSF ENVIADA PIX,0,950.4,
-,,,,,,01/02/2023,Devol recebida pix de PIX Marketplace,1182.09,0,
-,,,,,,01/02/2023,TRANSF ENVIADA PIX,0,1182.09,
-,,,,,,01/02/2023,TRANSF ENVIADA PIX,0,259.9,
-,,,,,,01/02/2023,Devol recebida pix de PIX Marketplace,1149,0,
-,,,,,,01/02/2023,Fatura de cartão,0,80,
-,,,,,,01/02/2023,028848784539400:CAVIQUIO ACADEMIA      JARAGUA DO SU BRA. Cartão 2608,0,115,
-,,,,,,31/01/2023,TRANSF ENVIADA PIX,0,1149,
-,,,,,,31/01/2023,TRANSF ENVIADA PIX,0,182,
-,,,,,,31/01/2023,TRANSF ENVIADA PIX,0,2000,
-,,,,,,31/01/2023,Pix recebido de CURY RADIOLOGIA E DOCUMENTACAO,150,0,
-,,,,,,31/01/2023,THIAGO,370,0,
-,,,,,,31/01/2023,Pix recebido de Orallis Radiologia Odontologica ltda,300,0,
-,,,,,,31/01/2023,TRANSF ENVIADA PIX,0,40.1,
-,,,,,,31/01/2023,TRANSF ENVIADA PIX,0,1200,
-,,,,,,31/01/2023,RECUPECAO BC DADOS,150,0,
-,,,,,,30/01/2023,TRANSF ENVIADA PIX,0,104.6,
-,,,,,,30/01/2023,TRANSF ENVIADA PIX,0,93.8,
-,,,,,,30/01/2023,TRANSF ENVIADA PIX,0,595.58,
-,,,,,,30/01/2023,Boleto,0,120.69,
-,,,,,,30/01/2023,Boleto,0,75.45,
-,,,,,,30/01/2023,TRANSF ENVIADA PIX,0,87.1,
-,,,,,,30/01/2023,TRANSF ENVIADA PIX,0,411.28,
-,,,,,,29/01/2023,TRANSF ENVIADA PIX,0,41.74,
-,,,,,,29/01/2023,TRANSF ENVIADA PIX,0,240.76,
-,,,,,,29/01/2023,TRANSF ENVIADA PIX,0,316.99,
-,,,,,,29/01/2023,TRANSF ENVIADA PIX,0,628.26,
-,,,,,,29/01/2023,TRANSF ENVIADA PIX,0,490,
-,,,,,,29/01/2023,TRANSF ENVIADA PIX,0,29.79,
-,,,,,,29/01/2023,TRANSF ENVIADA PIX,0,67.63,
-,,,,,,29/01/2023,TRANSF ENVIADA PIX,0,69.71,
-,,,,,,29/01/2023,TRANSF ENVIADA PIX,0,99.36,
-,,,,,,29/01/2023,TRANSF ENVIADA PIX,0,112.9,
-,,,,,,29/01/2023,Fatura de cartão,0,100,
-,,,,,,28/01/2023,000000004346727:FILIAL 47 MIME GUARAMI JARAGUA DO SU BRA. Cartão 2608,0,100,
-,,,,,,28/01/2023,DVL1D15-AUTOPISTA LITORAL SUL - BR101 - ,0,4.7,
-,,,,,,28/01/2023,DVL1D15-AUTOPISTA LITORAL SUL - BR376 - ,0,4.7,
-,,,,,,28/01/2023,DVL1D15-REGIS BITTENCOURT - REGIS BITTEN,0,3.7,
-,,,,,,28/01/2023,19929331       :AUTO POSTO ESTRELA     CURITIBA      BRA. Cartão 2608,0,100,
-,,,,,,28/01/2023,DVL1D15-REGIS BITTENCOURT - REGIS BITTEN,0,3.7,
-,,,,,,28/01/2023,DVL1D15-REGIS BITTENCOURT - REGIS BITTEN,0,3.7,
-,,,,,,28/01/2023,DVL1D15-REGIS BITTENCOURT - REGIS BITTEN,0,3.7,
-,,,,,,28/01/2023,011102013009200:MARGARETE BALPARDA     TAPIRAI       BRA. Cartão 2608,0,61.42,
-,,,,,,28/01/2023,003000000367468:POSTO DEZ              SOROCABA      BRA. Cartão 2608,0,150,
-,,,,,,28/01/2023,000000011455188:SUITEINN ADMINISTRACAO SOROCABA      BRA. Cartão 2608,0,36,
-,,,,,,27/01/2023,TRANSF ENVIADA PIX,0,200,
-,,,,,,27/01/2023,Pix recebido de BRUNO ALBERTO VIDOTTI,400,0,
-,,,,,,27/01/2023,Fatura de cartão,0,100,
-,,,,,,27/01/2023,TRANSF ENVIADA PIX,0,550,
-,,,,,,27/01/2023,Pix recebido de REDLAB LABORATORIO,10000,0,
-,,,,,,27/01/2023,028122579169400:SUITEINN ADMINISTRACA  SOROCABA      BRA. Cartão 2608,0,230,
-,,,,,,27/01/2023,TRANSF ENVIADA PIX,0,800,
-,,,,,,27/01/2023,Pix recebido de 3D IMAGE SERVICE DIGITAL RSM LTDA,1500,0,
-,,,,,,27/01/2023,000000011599290:MS PARK ADMINISTRACAO  SOROCABA      BRA. Cartão 2608,0,20,
-,,,,,,27/01/2023,TIAGO AMIGO,150,0,
-,,,,,,27/01/2023,Pix recebido de Aline Da Silva Lemos,500,0,
-,,,,,,27/01/2023,TRANSF ENVIADA PIX,0,200,
-,,,,,,27/01/2023,000000007996564:WTUR HOTEIS E SIMILARE SOROCABA      BRA. Cartão 2608,0,188,
-,,,,,,27/01/2023,010356439760001:AUTO POSTO HESS LTDA   PIEDADE       BRA. Cartão 2608,0,50,
-,,,,,,27/01/2023,DVL1D15-REGIS BITTENCOURT - REGIS BITTEN,0,3.7,
-,,,,,,27/01/2023,DVL1D15-REGIS BITTENCOURT - REGIS BITTEN,0,3.7,
-,,,,,,26/01/2023,DVL1D15-REGIS BITTENCOURT - REGIS BITTEN,0,3.7,
-,,,,,,26/01/2023,010004272400001:POSTO REPRESA          CAMPINA GRAND BRA. Cartão 2608,0,150,
-,,,,,,26/01/2023,DVL1D15-REGIS BITTENCOURT - REGIS BITTEN,0,3.7,
-,,,,,,26/01/2023,DVL1D15-AUTOPISTA LITORAL SUL - BR376 - ,0,4.7,
-,,,,,,26/01/2023,91543380       :POSTO BOGO LTDA        TIJUCAS DO SU BRA. Cartão 2608,0,52.9,
-,,,,,,26/01/2023,DVL1D15-AUTOPISTA LITORAL SUL - BR101 - ,0,4.7,
-,,,,,,26/01/2023,010004341579300:POSTO AMIZADE          JARAGUA DO SU BRA. Cartão 2608,0,113.5,
-,,,,,,26/01/2023,TRANSF ENVIADA PIX,0,3500,
-,,,,,,26/01/2023,Pix recebido de Tiago da Silva Lemos,2240,0,
-,,,,,,25/01/2023,Boleto,0,180.65,
-,,,,,,25/01/2023,TRANSF ENVIADA PIX,0,172.79,
-,,,,,,24/01/2023,Pix recebido de OBBELLAS-CLINICA ODONTO-RAD,210,0,
-,,,,,,24/01/2023,Pix recebido de DR ELIAS EID,70,0,
-,,,,,,24/01/2023,Thiago Digora,150,0,
-,,,,,,24/01/2023,Pix recebido de RALPH AZEVEDO,150,0,
-,,,,,,24/01/2023,011164764849300:CONDOR JARAGUA DO SUL  JARAGUA DO SU BRA. Cartão 2608,0,256.18,
-,,,,,,24/01/2023,Fatura de cartão,0,100,
-,,,,,,22/01/2023,Fatura de cartão,0,45,
-,,,,,,21/01/2023,Fatura de cartão,0,300,
-,,,,,,20/01/2023,Boleto,0,3403.76,
-,,,,,,20/01/2023,Boleto,0,279.1,
-,,,,,,20/01/2023,000000091167755:CFC VILA NOVA          Jaragua do Su BRA. Cartão 2608,0,516.65,
-,,,,,,18/01/2023,TRANSF ENVIADA PIX,0,589.5,
-,,,,,,18/01/2023,Tiago pc,150,0,
-,,,,,,18/01/2023,TRANSF ENVIADA PIX,0,1322.39,
-,,,,,,18/01/2023,Fatura de cartão,0,1600,
-,,,,,,18/01/2023,Pix recebido de INCO COPACABANA,150,0,
-,,,,,,17/01/2023,20842996       :LANCHES SEVILHA        SANTOS        BRA. Cartão 2608,0,20,
-,,,,,,17/01/2023,TRANSF ENVIADA PIX,0,119.9,
-,,,,,,17/01/2023,TRANSF ENVIADA PIX,0,187,
-,,,,,,17/01/2023,Boleto,3336.27,0,
-,,,,,,17/01/2023,Fatura de cartão,0,4000,
-,,,,,,17/01/2023,Boleto,0,868.58,
-,,,,,,17/01/2023,Boleto,0,3336.27,
-,,,,,,17/01/2023,TRANSF ENVIADA PIX,0,3500,
-,,,,,,17/01/2023,Pix recebido de LEONARDO PONTELO F PERAZOLLI,4000,0,
-,,,,,,17/01/2023,Soredex,12000,0,
-,,,,,,17/01/2023,TRANSF ENVIADA PIX,0,1000,
-,,,,,,16/01/2023,Fatura de cartão,0,4025.1,
-,,,,,,16/01/2023,Fatura de cartão,0,1175.78,
-,,,,,,16/01/2023,TRANSF ENVIADA PIX,0,850,
-,,,,,,16/01/2023,TRANSF ENVIADA PIX,0,50,
-,,,,,,16/01/2023,TRANSF ENVIADA PIX,0,3500,
-,,,,,,16/01/2023,000000008345056:COM - AG 26 - ROD JABA SAO PAULO     BRA. Cartão 2608,0,33.85,
-,,,,,,16/01/2023,TRANSF ENVIADA PIX,0,2856,
-,,,,,,16/01/2023,TRANSF ENVIADA PIX,0,2500,
-,,,,,,16/01/2023,TRANSF ENVIADA PIX,0,400,
-,,,,,,16/01/2023,Boleto,0,302.68,
-,,,,,,16/01/2023,Boleto,0,267.33,
-,,,,,,16/01/2023,Boleto,0,197.18,
-,,,,,,16/01/2023,Boleto,0,134.25,
-,,,,,,16/01/2023,TIM CELULAR,0,51.99,
-,,,,,,16/01/2023,Pix recebido de ANDRE VILANOVA M PORTES,20000,0,
-,,,,,,15/01/2023,TRANSF ENVIADA PIX,0,240,
-,,,,,,14/01/2023,TRANSF ENVIADA PIX,0,150,
-,,,,,,14/01/2023,Pix recebido de CLAUDER LIMA MARTINS,390,0,
-,,,,,,14/01/2023,TRANSF ENVIADA PIX,0,20,
-,,,,,,13/01/2023,TRANSF ENVIADA PIX,0,350,
-,,,,,,13/01/2023,Pix recebido de IDOC INST RAD DOC OD LTDA,300,0,
-,,,,,,13/01/2023,Boleto,0,802,
-,,,,,,13/01/2023,Pix recebido de Tiago da Silva Lemos,285,0,
-,,,,,,13/01/2023,Boleto,0,142.69,
-,,,,,,13/01/2023,TRANSF ENVIADA PIX,0,950,
-,,,,,,13/01/2023,TRANSF ENVIADA PIX,0,1500,
-,,,,,,13/01/2023,TRANSF ENVIADA PIX,0,2112.5,
-,,,,,,13/01/2023,Pix recebido de AURELINO MACHADO L GUEDES,5000,0,
-,,,,,,12/01/2023,Pix recebido de BIAGIONI RADIOLOGIA E DOCUMENT,150,0,
-,,,,,,12/01/2023,suporte,70,0,
-,,,,,,12/01/2023,TRANSF ENVIADA PIX,0,170.1,
-,,,,,,12/01/2023,TRANSF ENVIADA PIX,0,57.3,
-,,,,,,12/01/2023,TRANSF ENVIADA PIX,0,100,
-,,,,,,12/01/2023,Pix recebido de S. R. S. DA SILVA MARTINS DE SOUZA RADIO,370,0,
-,,,,,,12/01/2023,Boleto,0,1751.99,
-,,,,,,12/01/2023,Pix recebido de Aline Da Silva Lemos,900,0,
-,,,,,,11/01/2023,Pix recebido de CENTRO DE IMAGEM E RADIOLOGIA ODONTOLOGICA EIRELI,300,0,
-,,,,,,11/01/2023,Pix recebido de Centro Radiodiagnostico Odontologico Passaro,70,0,
-,,,,,,10/01/2023,Pix recebido de JESCA NEFTALI N SILVA,300,0,
-,,,,,,10/01/2023,TRANSF ENVIADA PIX,0,100,
-,,,,,,09/01/2023,TRANSF ENVIADA PIX,0,80.2,
-,,,,,,09/01/2023,Pix recebido de CAROLINA N FERREIRA,140,0,
-,,,,,,09/01/2023,MANUT 2251,150,0,
-,,,,,,08/01/2023,TRANSF ENVIADA PIX,0,100,
-,,,,,,07/01/2023,Pix recebido de Gescionita Maurício Glória,200,0,
-,,,,,,07/01/2023,TRANSF ENVIADA PIX,0,30,
-,,,,,,06/01/2023,TRANSF ENVIADA PIX,0,95.8,
-,,,,,,06/01/2023,TRANSF ENVIADA PIX,0,109.8,
-,,,,,,06/01/2023,TRANSF ENVIADA PIX,0,265.66,
-,,,,,,05/01/2023,1055957000106-R O D RADIOLOGIA ODONTOL,70,0,
-,,,,,,05/01/2023,TRANSF ENVIADA PIX,0,78.7,
-,,,,,,05/01/2023,Reinstalar Soft Digora,300,0,
-,,,,,,04/01/2023,TRANSF ENVIADA PIX,0,100,
-,,,,,,04/01/2023,TRANSF ENVIADA PIX,0,88.2,
-,,,,,,04/01/2023,TRANSF ENVIADA PIX,0,139,
-,,,,,,03/01/2023,TRANSF ENVIADA PIX,0,100,
-,,,,,,03/01/2023,Pix recebido de CLINICA DE RADIOLOGIA ODONTOLOGICA FENELON LTDA,300,0,
-,,,,,,03/01/2023,Boleto,0,257.72,
-,,,,,,03/01/2023,Boleto,0,255.32,
-,,,,,,03/01/2023,Pix recebido de SANTOS  SCHINESTSCK LTDA,600,0,
-,,,,,,03/01/2023,,0,206.07,
-,,,,,,03/01/2023,,0,2.08,
-,,,,,,03/01/2023,,0,26.43,
-,,,,,,02/01/2023,DIGORA C NOVA,300,0,
+
+HOW IT WORKS
+TEMPLATES
+PRICING
+ABOUT US
+BLOG
+
+LOGIN
+START RIGHT NOW
+Take the first step: Create a free webpage with BOWWECreate free website builder account
+All-In-One Guide For Midjourney: The Art Of Prompts
+
+Karol Andruszków
+Published: April 15, 2023
+A mad wizard throwing painting supplies into a cauldron
+Discover the secret to generating breathtaking images with Midjourney by crafting the perfect prompts. In this ultimate guide, I'll walk you through the process of creating effective prompts that will unleash the full potential of Midjourney's AI, resulting in stunning visuals that match your creative vision. Learn the ins and outs of description, style, and customization to turn your ideas into reality!
+
+Introduction to Midjourney
+What is Midjourney? 
+Screenshot from Midjourney
+Imagine having a personal artist at your fingertips, transforming your thoughts and ideas into stunning visuals within minutes. That's the magic of Midjourney, a cutting-edge AI program and service, brought to life by the creative minds at the San Francisco-based independent research lab, Midjourney, Inc. As a brilliant brainchild of artificial intelligence, Midjourney takes natural language descriptions called "prompts," and transforms them into captivating images, much like OpenAI's DALL-E and Stable Diffusion.
+
+ 
+
+Unlocking the power of Midjourney is as simple as joining their official Discord server, sending a direct message to the bot, or inviting the bot to a third-party server. By typing a prompt with the /imagine command, you'll unleash the AI's creative prowess, resulting in a mesmerizing set of four images. From here, you can choose your favorite masterpiece and watch it come to life in even greater detail through upscaling. With Midjourney, the artistic possibilities are virtually limitless!
+
+How to get into Midjourney? 
+Ready to embark on a creative journey with Midjourney? First, hop on board the official Midjourney Discord server or invite the bot to a third-party server. With a verified Discord account, you can sail smoothly through the onboarding process on Midjourney.com or their Discord server. Congratulations, you've unlocked the gateway to endless creativity 🔓
+
+How to start generating images with Midjourney? 
+Screenshot of Midjourney command /imagine
+To conjure up mesmerizing images, simply type the /imagine command in a designated channel or direct message. Describe the visual masterpiece you wish to create in the prompt field and hit return. Watch in awe as Midjourney weaves its magic and generates a set of four images inspired by your vision.
+
+How to start to refine created image? 
+Once you have your initial set of images, it's time to polish your artwork. Choose to upscale your image, adding more details; create variations, exploring different takes on your theme; or rerun the job with the same prompt to discover new possibilities. Use the U and V buttons to upscale and create variations, respectively, and the 🔄 button to rerun the job. Let your creativity soar as you refine your AI-generated art to perfection!
+
+The ultimate guide for pro prompts building for Midjourney
+1. Begin with a basic outline
+Imagine yourself as an artist, preparing to draw a picture. Start by making a simple, clear description of the image you want to create. Describe the main subject, the scene, or the small details you want to include. This basic outline will help your AI assistant understand the main idea of your vision.
+
+ 
+
+Example:
+
+ 
+
+A tranquil forest with a winding river and a small wooden bridge
+A child flying a colorful kite on a sunny beach
+A busy city street at night with bright neon signs and people walking by
+ 
+
+As you refine your prompt, remember that a picture is worth a thousand words. The more detailed and vivid your description, the more remarkable the results will be. Now unleash your inner artist and let Midjourney bring your masterpiece to life 🖼️✨
+
+2. Enhance with style and keywords
+With the basic outline ready, it's time to add some style and keywords to make your image more interesting. Midjourney's AI is like a talented artist, able to create images in different styles like abstract, dream-like, or true-to-life. By choosing a style or adding relevant keywords, you can guide the AI to make an image that matches your vision. Play around with different styles and keywords, like mixing colors, to find the perfect combination for your desired result.
+
+ 
+
+Examples: 
+
+ 
+
+A city skyline at dusk in the style of Van Gogh's Starry Night::3, with vibrant colors::2 and swirling clouds::1.
+A dreamy underwater scene::2 featuring a mermaid::1 playing a harp::1, surrounded by glowing jellyfish::2, in a surrealist style reminiscent of Salvador Dali.
+A detailed medieval battle scene::3, with knights clad in shining armor::2 and dragons soaring overhead::1, inspired by the epic style of J.R.R. Tolkien's Middle-earth.
+An abstract representation of a tranquil forest::3, with geometric shapes::2 forming trees and foliage, and a color palette inspired by Wassily Kandinsky's paintings::1.
+ 
+
+Experiment with various styles and keywords to uncover the ideal combination that brings your artistic vision to life with Midjourney.
+
+3. Master the art of aspect ratios
+Imagine Midjourney as a skilled painter, ready to create images in a variety of shapes and sizes to fit your vision. Just as an artist stretches canvas over a frame, you can customize the aspect ratio of your generated image. Simply add a double dash followed by the perfect ratio code (e.g., –ar 16:9 for a scenic landscape) to the end of your prompt. It's like tailoring a suit; you'll ensure your masterpiece fits the dimensions you have in mind flawlessly.
+
+ 
+
+Examples: 
+
+ 
+
+A serene and peaceful scene of a girl reading a book under a blossoming cherry tree during springtime –ar 2:3
+A breathtaking, Van Gogh-inspired starry night sky over a quaint, sleepy village nestled among rolling hills –ar 16:9
+A vibrant, cubist-style portrait of a jazz musician playing a saxophone in the midst of an energetic performance –ar 1:1
+A towering cyberpunk cityscape filled with neon lights, bustling streets, and futuristic skyscrapers, reminiscent of Blade Runner –ar 9:16
+ 
+
+By simply adding a double dash followed by the perfect ratio code (e.g., –ar 16:9 for a scenic landscape) to the end of your prompt, you'll tailor your AI-generated artwork to the dimensions you desire.
+
+4. Unleash your creativity with advanced settings
+Screenshot of command list in Midjourney
+Picture Midjourney is a versatile tool kit, filled with advanced settings like seed, stylization, and chaos parameters that empower you to fine-tune your generated images. It's like having a magic wand that can conjure up the perfect blend of randomness, artistic flair, and image variation. Don't be afraid to mix and match these settings, experimenting with different values like a mad scientist, until you strike the perfect balance for your creative vision. Embrace the power and let your imagination run wild!
+
+⚡ BOWWE Growth Hack: 
+
+Unleash the power of Midjourney's customization by tweaking these captivating parameters to refine your image-generation process:
+
+ 
+
+Seed: Take the reins of serendipity with the "–seed [NUMBER]" parameter, orchestrating the perfect harmony of your generated images for consistent masterpieces.
+
+ 
+
+Stylization: Dial up or down the "–s" parameter to effortlessly glide between artistic styles, with a spectrum of values from 0 (subtle) to 1000 (dramatic).
+
+ 
+
+Chaos: Embrace the element of surprise with the chaos parameter, crafting a mesmerizing mosaic of initial image grids using values between 0 (tame) and 100 (wild).
+
+Dive into the world of Midjourney and orchestrate a symphony of stunning visuals by fine-tuning these parameters to your heart's content!
+
+ 
+
+Examples: 
+
+ 
+
+A tranquil Zen garden with a cherry blossom tree –seed 42 –s 200 –c 50
+Vincent Van Gogh painting a futuristic cityscape –seed 24 –s 800 –c 10
+Salvador Dali's take on a neon-lit cyberpunk alley –seed 99 –s 500 –c 70
+A steampunk dragon soaring above a Victorian city –seed 7 –s 300 –c 30
+ 
+
+Remember, these settings are merely guidelines. Feel free to tweak them to your liking and explore the limitless potential of Midjourney's advanced settings!
+
+5. Spotlight your masterpiece with weights
+Picture your image as a symphony, with every element playing its part to create a visual harmony. Sometimes, you'll want the soloist to take center stage. Enter the "::" notation - your conductor's baton - to assign weight ratios to different parts of your prompt, orchestrating the AI to magnify or dim specific elements, ensuring your visual magnum opus shines brilliantly.
+
+ 
+
+Examples: 
+
+ 
+
+[Eiffel Tower]::3 illuminated at night with [fireworks]::1
+[A roaring lion]::2 in front of a [sunset]::1 on the African savannah
+[Starry Night]::4 sky by Vincent Van Gogh combined with [The Persistence of Memory]::1 by Salvador Dalí
+ 
+
+By using the "::" notation to adjust the weight of various elements in your prompt, you can turn the spotlight on the star of your visual symphony and create a breathtaking masterpiece.
+
+6. Unleash your inner Picasso with Remix mode
+Craving a little creative twist to your generated images? Remix mode is like having a magic paintbrush at your fingertips. It lets you dance between variations, blending and bending your prompt, all while using the composition of your starting image as a muse. With Remix mode, the only limit is your imagination!
+
+ 
+
+Examples: 
+
+ 
+
+A cityscape at night in the style of Van Gogh's Starry Night, with swirling skies and glowing streetlights –seed 12345
+A steampunk submarine exploring a coral reef filled with mechanical sea creatures and sunken treasures –seed 67890
+A futuristic city skyline with towering skyscrapers, neon lights, and flying cars in a cyberpunk aesthetic –seed 13579
+A colorful tea party scene in a magical forest, inspired by Alice in Wonderland, with talking animals and oversized teacups –seed 24680
+ 
+
+To activate Remix mode, type "/settings" into the chat and select the 'Remix mode' button. Let your creative juices flow and watch your artwork transform into mesmerizing new versions!
+
+7. Paint your prompts with a splash of color
+Looking to infuse your generated images with a kaleidoscope of hues? Adding colours to your prompts in Midjourney is like dipping your brush into a boundless palette of possibilities. Enliven your pictures by specifying the colours you want to see, harmonizing tones, and evoking the mood of your masterpiece. Let your artistic vision take flight as you explore the vibrant world of colour in your AI-generated art!
+
+ 
+
+Examples:
+
+ 
+
+A lush enchanted forest with emerald-green foliage, magical creatures, and shimmering fairy lights –seed 12345
+A mesmerizing desert landscape with a blazing red-orange sunset, casting long shadows on the sand dunes –seed 67890
+A soft, pastel-coloured dreamscape with floating islands, calming waterfalls, and gentle clouds –seed 13579
+A dynamic, black-and-white graphic novel scene with intense action, dramatic shadows, and captivating characters –seed 24680
+ 
+
+Unleash the full spectrum of your creativity as you blend and balance colors in your Midjourney prompts, bringing your vivid imaginings to life!
+
+8. The art of discovery: Iterate and experiment
+Unleashing the full potential of Midjourney is like uncovering a hidden treasure chest of dazzling images. Be bold! Embrace your inner explorer and venture into the unknown, trying out different concoctions of descriptions, styles, keywords, and settings. As you dive deeper into the realm of Midjourney's AI capabilities, you'll unearth the secrets to crafting powerful prompts and awe-inspiring results. So, grab your creative compass and embark on an artistic journey like no other!
+Ready to create your dream Website?
+Say goodbye to the hassles of coding and hello to a stunning, professional Website with top-notch SEO today!
+
+
+Get inspired with a library of over 30 Midjourney prompts!
+Explore a wide range of detailed prompt examples to help you generate stunning images using Midjourney. These prompts are divided into various categories to inspire creativity and suit a diverse array of artistic styles and subjects. Get ready to spark your imagination and create captivating visuals with Midjourney's AI.
+
+Nature and Landscapes
+A serene waterfall in a lush tropical forest, with sunlight filtering through the canopy
+A serene waterfall in a lush tropical forest, with sunlight filtering through the canopy, painted in the style of Claude Monet. ::2 [Waterfall]::1 [Sunlight]::1 –ar 16:9
+ 
+
+A panoramic view of a snowy mountain range at sunrise, casting an orange glow on the peaks, reminiscent of Ansel Adams' black and white photography. ::3 [Mountains]::1 [Sunrise]::1 –ar 3:2
+ 
+
+A tranquil beach scene with a hammock tied between two palm trees, overlooking a crystal-clear ocean, in a vibrant watercolor style. ::2 [Beach]::1 [Hammock]::1 [Ocean] –ar 2:3
+Animals and Wildlife
+A close-up portrait of a curious fox, with snowflakes resting on its fur
+A majestic tiger walking through a field of tall grass, with piercing blue eyes, in a hyper-realistic digital painting style. ::2 [Tiger]::1 [Grass]::1 [Blue Eyes] –ar 16:9
+ 
+
+A flock of colourful parrots takes flight in a dense jungle, creating a burst of vibrant hues, inspired by Henri Rousseau's jungle scenes. ::3 [Parrots]::2 [Jungle] –ar 3:2
+ 
+
+A close-up portrait of a curious fox, with snowflakes resting on its fur, in a detailed charcoal drawing style. ::1 [Fox]::1 [Snowflakes] –ar 2:3
+Fantasy and Mythology
+A magical landscape with islands, connected by glowing bridges, and a sky filled with stars
+A fierce battle between a knight in shining armor and a fire-breathing dragon atop a castle tower, in the style of Frank Frazetta. ::2 [Knight]::3 [Dragon]::1 [Castle] –ar 16:9
+ 
+
+A whimsical scene of a mermaid lounging on a rock, combing her hair with a seashell, illustrated in a Disney-inspired art style. ::2 [Mermaid]::1 [Rock]::1 [Seashell] –ar 3:2
+ 
+
+A magical landscape with floating islands, connected by glowing bridges, and a sky filled with stars, in a Studio Ghibli-inspired animation style. ::3 [Floating Islands]::1 [Bridges]::2 [Stars] –ar 16:9
+Science Fiction and Futuristic
+A group of astronauts exploring an alien planet, with strange plants
+A bustling cyberpunk cityscape with neon-lit skyscrapers and flying cars zipping through the air, in the style of Syd Mead. ::2 [Cityscape]::1 [Flying Cars] –ar 3:2
+ 
+
+A group of astronauts exploring an alien planet, with strange plants and creatures in the background, reminiscent of H.R. Giger's artwork. ::1 [Astronauts]::2 [Alien Planet]::3 [Creatures] –ar 16:9
+ 
+
+A high-tech robot warrior standing in a post-apocalyptic wasteland, holding a glowing energy weapon, in a detailed concept art style similar to ArtStation. ::2 [Robot]::1 [Wasteland]::1 [Weapon] –ar 3:2
+Portraits and People
+An elegant ballerina poised in a graceful dance pose
+A striking portrait of a tribal warrior with intricate face paint and feathered headdress,in the style of Steve McCurry's photography. ::2 [Warrior]::1 [Face Paint]::1 [Headdress] –ar 2:3
+ 
+
+An elegant ballerina poised in a graceful dance pose, surrounded by a swirl of pastel colors, inspired by Edgar Degas' paintings. ::1 [Ballerina]::3 [Dance Pose]::2 [Pastel Colors] –ar 3:2
+ 
+
+A street musician playing a saxophone under a streetlight, with a city skyline in the background, in a moody film noir style. ::1 [Musician]::1 [Saxophone]::1 [City Skyline] –ar 16:9
+Abstract and Surreal Art
+A geometric, minimalist composition with intersecting lines and simple shapes, in a bold, high-contrast color palette
+A vivid and chaotic abstract composition, with swirling shapes and bold colors, influenced by Jackson Pollock's drip painting technique. ::3 [Swirling Shapes]::2 [Bold Colors] –ar 3:2
+ 
+
+A surreal dreamscape featuring melting clocks draped over a barren landscape, reminiscent of Salvador Dali's famous painting "The Persistence of Memory." ::1 [Melting Clocks]::2 [Landscape] –ar 16:9
+ 
+
+A geometric, minimalist composition with intersecting lines and simple shapes, in a bold, high-contrast color palette, inspired by Piet Mondrian's work. ::1 [Geometric]::1 [Minimalist]::1 [High-Contrast] –ar 2:3
+Pop Culture and Fan Art
+A dynamic comic book-style illustration of a superhero leaping into action, with a cityscape in the background
+A dynamic comic book-style illustration of a superhero leaping into action, with a cityscape in the background and dramatic action lines. ::3 [Superhero]::1 [Cityscape]::2 [Action Lines] –ar 3:2
+ 
+
+A highly detailed digital painting of a popular video game character, equipped with their signature weapon and armor, in a dramatic battle pose. ::2 [Character]::1 [Weapon]::1 [Armor] –ar 16:9
+ 
+
+A playful, cartoonish representation of a famous movie scene, with exaggerated facial expressions and bright, bold colors, reminiscent of a Looney Tunes animation. ::1 [Movie Scene]::1 [Exaggerated Expressions]::1 [Bright Colors] –ar 3:2
+Website design
+An educational website on monitor, incorporating playful illustrations
+A modern and responsive e-commerce website design with minimalistic aesthetics, showcasing products in a clean and organized grid layout –ar 16:9 –s 300
+ 
+
+A sleek, dark-themed portfolio website for a professional photographers, displaying their work in a stunning full-screen gallery –ar 16:9
+ 
+
+An interactive and user-friendly educational website, incorporating playful illustrations and intuitive navigation for a delightful learning experience –ar 16:9
+Tech
+A futuristic concept design of a smartwatch with holographic display, blending elegance with cutting-edge technology
+A futuristic concept design of a smartwatch with holographic display, blending elegance with cutting-edge technology –ar 3:2
+ 
+
+A sleek and ergonomic gaming controller with customizable LED lights and a seamless blend of form and function, reminiscent of Razer's gaming peripherals –ar 3:2 –s 500
+ 
+
+A high-tech robotic assistant with expressive features, designed to help with everyday tasks around the home, inspired by Boston Dynamics' robots –ar 3:2 –s 700
+Music
+A vintage-inspired album cover with jazz musician
+A vintage-inspired album cover for a jazz musician, incorporating moody lighting and classic design elements, influenced by the works of Reid Miles –ar 2:3 –s 400
+ 
+
+An imaginative illustration of a music festival scene, with a lively crowd, mesmerizing stage lighting, and iconic landmarks in the background, inspired by the vibrant art of James R. Eads –ar 2:3 –s 600
+ 
+
+A stylized portrait of a famous pop singer, captured in the midst of a powerful performance, surrounded by adoring fans, drawn in the iconic style of Andy Warhol –ar 2:3 –s 800
+
+Ultimate Guide
+To Mindblowing Midjourney Prompts
+
+
+Unleash the full potential of art creation with Midjourney! 
+In conclusion, the world of AI-powered art has opened up a universe of possibilities, and Midjourney is your vessel for navigating this uncharted territory. As you embark on this creative odyssey, let the Midjourney bot be your artistic companion, guiding you through new realms of self-expression and imagination. By mastering the tips and techniques shared in this Ultimate Guide, you'll soon be weaving visual tapestries that capture the essence of your ideas and take your creative endeavors to new heights.
+
+ 
+
+So go ahead, buckle up, and dive into the kaleidoscopic world of Midjourney. With every pixel, every color, and every stroke, you're not just creating art—you're forging new realities, one masterpiece at a time. Let your artistic spirit soar and explore the endless possibilities that await in the realm of AI-generated art. 
+
+Midjourney - FAQ
+What is Midjourney?
+How to get Midjourney?
+How much does Midjourney cost?
+How to subscribe to a plan in Midjourney?
+How to cancel a Midjourney subscription?
+Can you use Midjourney for free?
+Read also:
+
+Killer ChatGPT SEO Prompts For Maximum Impact
+
+10 Revolutionary AI Stats You Can't Afford to Miss in 2023
+
+23+ Life-Changing AI-Powered Marketing Tools For 2023
+
+Karol Andruszków
+CEO BOWWE
+
+Karol is a serial entrepreneur, e-commerce speaker m.in for the World Bank, and founder of 3 startups, as part of which he has advised several hundred companies. He was also responsible for projects of the largest financial institutions in Europe, with the smallest project being worth over €50 million.
+
+
+
+He has two master's degrees, one in Computer Science and the other in Marketing Management, obtained during his studies in Poland and Portugal. He gained experience in Silicon Valley and while running companies in many countries, including Poland, Portugal, the United States, and Great Britain. For over ten years, he has been helping startups, financial institutions, small and medium-sized enterprises to improve their functioning through digitization. 
+
+What do you need?
+Categories:
+AllSEOSocial MediaOnline MarketingBOWWE How To'sBusiness AppsAgenciesFreelancersBloggingBrilliant Portfolio&ResumeWeb DesignBuild Your WebsiteBusiness Hacks
+LAST POSTS:
+8 Tips For Graphic Design Portfolio [ + Stunning Examples]
+8 Tips For Graphic Design Portfolio [ + Stunning Examples]
+2023 May 05
+Navigate GA4 with Confidence: In-depth Beginner Guide
+Navigate GA4 with Confidence: In-depth Beginner Guide
+2023 April 26
+All-In-One Guide For Midjourney: The Art Of Prompts
+All-In-One Guide For Midjourney: The Art Of Prompts
+2023 April 15
+Dining on Sales: Create a Winning Landing Page for Restaurant
+Dining on Sales: Create a Winning Landing Page for Restaurant
+2023 April 04
+Top 21 Tips For a Successful Blogging Journey
+Top 21 Tips For a Successful Blogging Journey
+2023 March 24
+Check our latest videos
+BOWWE TV
+Ready to build your own website?
+Don't worry, we'll help you! We can also do it for you!
+
+START RIGHT NOW
+banner image1
+BOWWE website builder
+BOWWE doesn't stop at web page creation. Creating a web page is only the first step in earning more money for your business!
+MAP OF THE PAGE
+How it works
+Templates
+Pricing
+About us
+Blog
+Partners Blog
+Tutorial
+Contact
+Terms of service
+Privacy policy
+
+Call +48 5 3007 3007
+keep in touch by email here
+Facebook BOWWE account BOWWE LinkedIn account BOWWE twitter account HONARO - business directory for business owners from around the world
+Banner of the European Union donation
+The support of small and medium enterprises in the promotion of product brands - Go to Brand from the Intelligent Development Operational Program 2014-2020,
+
+co-financed by the European Regional Development Fund.
+
+Exclusive Deal For New Accounts On The Most Trusted Builder
+ONLY NOW FOR 48H: 3 years plan for less than a 1 year’s price!
+price background
+save up to
+$723
+CHECK THE DEAL
+bowwe robot
+
+Feedback
