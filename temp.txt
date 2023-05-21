@@ -1,274 +1,170 @@
+const Koa = require("koa");
+const Router = require("koa-router");
+const mongoose = require("mongoose");
+const multer = require("@koa/multer");
+const path = require("path");
+const cors = require("@koa/cors");
+const serve = require("koa-static");
+const koaBody = require("koa-body");
+const fs = require("fs"); // Add this line
 
-// multer diskStorage for product images
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    const tmpDir = `C:/ecommerce2/server/Images/Products/tmp`;
-    cb(null, tmpDir);
-  },
-  filename: function (req, file, cb) {
-    const { model, location, year, exposureCounter } = req.body;
-    const currentDate = new Date();
-    const hours = String(currentDate.getHours()).padStart(2, '0');
-    const minutes = String(currentDate.getMinutes()).padStart(2, '0');
-    const seconds = String(currentDate.getSeconds()).padStart(2, '0');
-    const timestamp = `${hours}-${minutes}-${seconds}`;
-
-    // Create the new filename
-    const newFileName = `${model}-${year}-${location}-${exposureCounter}-${timestamp}.${file.originalname.split('.').pop()}`;
-
-    cb(null, newFileName);
-  },
-});
-
-const upload = multer({ storage: storage }).single('file');
-
-
-router.post("/api/products", upload, async (ctx) => {
-
-  const { model, location, year, price, name } = req.body;
-  const currentDate = new Date();
-  const day = String(currentDate.getDate()).padStart(2, '0');
-  const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Months are zero-based
-  const year2 = currentDate.getFullYear();
-  const hours = String(currentDate.getHours()).padStart(2, '0');
-  const minutes = String(currentDate.getMinutes()).padStart(2, '0');
-  const seconds = String(currentDate.getSeconds()).padStart(2, '0');
-  const timestamp = `${day}-${month}-${year2}-${hours}-${minutes}-${seconds}`;
-  const newFolderName = `C:/ecommerce2/server/Images/Products/${name}-${model}-${location}-${year}-${price}-${timestamp}`;
-
-  if (!fs.existsSync(newFolderName)) {
-    fs.mkdirSync(newFolderName, { recursive: true });
-  }
-
-  req.files.forEach(file => {
-    const tempPath = file.path;
-    const targetPath = path.join(newFolderName, file.filename);
-    
-    fs.rename(tempPath, targetPath, err => {
-      if (err) return res.status(500).send(err);
-    });
-  });
-
-  res.send('Files moved successfully');
-});
-
-app.use(serve("C:/ecommerce2/server/Images/Blogs"));
+const app = new Koa();
+const router = new Router();
 
 app.use(cors());
+app.use(serve("C:/ecommerce2/server/Images/Products"));
+app.use(serve("C:/ecommerce2/server/Images/Blogs")); // Add this line
+app.use(koaBody());
 
 mongoose.connect("mongodb://127.0.0.1:27017/ecommerce2", {});
 
-module.exports.createProduct = async (product, image) => {
+const customerSchema = new mongoose.Schema({
+  name: String,
+  email: String,
+  phoneNumber: String,
+  address: String,
+  // Add any other fields you need for a customer
+});
+
+const Customer = mongoose.model("Customer", customerSchema);
+// Get all customers
+router.get("/api/customers", async (ctx) => {
+  const customers = await Customer.find();
+  ctx.body = customers;
+});
+
+router.post("/api/customers", async (ctx) => {
   try {
-    const date = new Date();
-    const year = date.getFullYear();
-    const { model, location, price } = product;
-    const folderName = `${model}-${location}-${year}-${price}-${timestamp}`;
-
-    console.log("Creating product...");
-    console.log("Folder Name:", folderName);
-
-    // Create folder if it doesn't exist
-    const response = await fetch(`${baseURL}/create-folder/${folderName}`, {
-      method: "POST",
-    });
-
-    if (!response.ok) {
-      throw new Error("Error creating folder");
-    }
-
-    console.log("Folder created:", folderName);
-
-    // Prepare the form data
-    const formData = new FormData();
-    formData.append("data", JSON.stringify(product));
-    
-    if (image) {
-      // Append image to form data with filename :image.jpg
-      formData.append("image", image, `image.jpg`);
-
-      // Upload image to server
-      const uploadResponse = await fetch(
-        `${baseURL}/upload-image/${folderName}`,
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
-
-      if (!uploadResponse.ok) {
-        throw new Error("Error uploading image");
-      }
-
-      console.log("Image uploaded successfully");
-    }
-
-    const createProductResponse = await fetch(`${baseURL}/add-product`, {
-      method: "POST",
-      body: formData,
-    });
-
-    if (!createProductResponse.ok) {
-      throw new Error("Network response was not ok");
-    }
-
-    const createdProduct = await createProductResponse.json();
-    console.log("Product created:", createdProduct);
-    return createdProduct;
+    const customerData = ctx.request.body;
+    const newCustomer = new Customer(customerData);
+    const savedCustomer = await newCustomer.save();
+    ctx.status = 200;
+    ctx.body = savedCustomer;
   } catch (error) {
-    console.error("Error creating product:", error);
-    throw error;
+    console.error("Error creating customer:", error);
+    ctx.status = 500;
+    ctx.body = { error: "An error occurred while creating the customer" };
   }
-};
+});
 
-// Product related routes
+
+// Update a customer
+router.put("/api/customers/:id", async (ctx) => {
+  // Your logic for updating a customer and syncing with Google Contacts
+});
+
+// Delete a customer
+router.delete("/api/customers/:id", async (ctx) => {
+  // Your logic for deleting a customer and syncing with Google Contacts
+});
 
 const productSchema = new mongoose.Schema({
   name: String,
   model: String,
   brand: String,
-  description: String,
   location: String,
   year: Number,
   exposureCounter: Number,
   price: Number,
+  description: String,
   imageUrl: String,
-  imagePath: String,
 });
-
 
 const Product = mongoose.model("Product", productSchema);
 
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "C:/ecommerce2/server/Images/Products");
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  },
+});
+
+const upload = multer({
+  storage: storage,
+  limits: {
+    fileSize: 10 * 1024 * 1024, // 10 MB
+    fieldSize: 10 * 1024 * 1024 // 2MB for fields
+  },
+});
+
+
 router.get("/api/products", async (ctx) => {
-  try {
-    console.log("Received request for /api/products");
-    const products = await Product.find();
-    console.log("Fetched products:", products);
-    ctx.body = products;
-  } catch (err) {
-    console.error('Error fetching products:', err);
-    ctx.status = 500;
-    ctx.body = { error: "An error occurred while fetching the products" };
-  }
+  console.log("Received request for /api/products");
+  const products = await Product.find();
+  ctx.body = products;
 });
 
-router.post("/api/products", upload, async (ctx) => {
+router.post("/api/products", upload.single("image"), async (ctx) => {
   try {
-    const file = ctx.request.file; // Access the uploaded file
-    const { model, location, year, price, name, brand, description, exposureCounter } = ctx.request.body; // Access the form data
+    console.log("Received request to create a product");
 
-    // Create timestamp
-    const currentDate = new Date();
-    const day = String(currentDate.getDate()).padStart(2, '0');
-    const month = String(currentDate.getMonth() + 1).padStart(2, '0');
-    const year2 = currentDate.getFullYear();
-    const hours = String(currentDate.getHours()).padStart(2, '0');
-    const minutes = String(currentDate.getMinutes()).padStart(2, '0');
-    const seconds = String(currentDate.getSeconds()).padStart(2, '0');
-    const timestamp = `${day}-${month}-${year2}-${hours}-${minutes}-${seconds}`;
+    // log the request body
+    console.log(ctx.request.body);
 
-    // Create the product
-    const product = await Product.create({
-      name,
-      model,
-      brand,
-      location,
-      year: parseInt(year),
-      exposureCounter: parseInt(exposureCounter),
-      price: parseFloat(price),
-      description,
-      // The imageUrl and imagePath will be set later
-    });
+    // get the product data and parse it as JSON
+    const productData = JSON.parse(ctx.request.body.data);
 
-    const newFolderPath = `C:/ecommerce2/server/Images/Products/${product.name}-${product.model}-${product.location}-${product.year}-${product.price}-${timestamp}`;
-
-    if (!fs.existsSync(newFolderPath)) {
-      fs.mkdirSync(newFolderPath, { recursive: true });
-    }
-
-    // Move the files to the new directory and create image URLs
-    const imagePaths = [];
-    const imageURLs = [];
-    ctx.request.files.forEach((file, index) => {
-      const tempPath = file.path;
-      const targetPath = path.join(newFolderPath, file.filename);
-      fs.renameSync(tempPath, targetPath);
-      
-      imagePaths.push(targetPath);
-      // Replace with the URL of your server
-      imageURLs.push(`http://localhost:3000/Images/Products/${product.name}-${product.model}-${product.location}-${product.year}-${product.price}-${timestamp}/${file.filename}`);
-    });
-
-    // Update the product with the imageURLs and imagePaths
-    product.imageUrl = imageURLs;
-    product.imagePath = imagePaths;
-    await product.save();
-
-    // Return successful response
-    ctx.status = 200;
-    ctx.body = { message: "Product created and files uploaded successfully.", product };
-  } catch (err) {
-    console.error('General error:', err);
-    ctx.status = 500;
-    ctx.body = { error: "An error occurred while uploading the files or creating the product." };
-  }
-});
-
-module.exports = router;
-
-
-const uploadForUpdate = multer({ storage: storage });
-
-
-// Use the refactored function inside the route
-router.put("/api/products/:id", uploadForUpdate.single("image"), async (ctx) => {
-  try {
-    const id = ctx.params.id;
-    const productData = ctx.request.body.data ? JSON.parse(ctx.request.body.data) : ctx.request.body;
     const image = ctx.request.file;
 
-    const oldProduct = await Product.findById(id);
-    if (!oldProduct) {
-      ctx.status = 404;
-      ctx.body = { error: "Product not found" };
+    if (!image) {
+      console.log("No image file found in request");
+      ctx.status = 400;
+      ctx.body = { error: "Image file is required" };
       return;
     }
 
-    const fieldsChanged = productData.name !== oldProduct.name || 
-                      productData.model !== oldProduct.model ||
-                      productData.location !== oldProduct.location ||
-                      productData.year !== oldProduct.year ||
-                      productData.price !== oldProduct.price ||
-                      productData.exposureCounter !== oldProduct.exposureCounter;
+    const imageUrl = `${image.filename}`;
 
-    const timestamp = new Date().toISOString().replace(/:/g, "-").split('.')[0]; // remove milliseconds
-    const newFolderPath = `C:/ecommerce2/server/Images/Products/${productData.name}-${productData.model}-${productData.location}-${productData.year}-${productData.price}-${timestamp}`;
+    const product = await Product.create({
+      name: productData.name,
+      model: productData.model,
+      brand: productData.brand, 
+      location: productData.location,   
+      year: productData.year,
+      exposureCounter: productData.exposureCounter,
+      price: productData.price,
+      description: productData.description,
+      imageUrl: imageUrl,
+     
+    });
 
-    if (fieldsChanged) {
-      const oldFolderPath = path.join(__dirname, "Images", "Products", oldProduct.imagePath);
-      if (fs.existsSync(oldFolderPath)) {
-        fs.renameSync(oldFolderPath, `${oldFolderPath}_old`);
-      }
-      if (!fs.existsSync(newFolderPath)) {
-        fs.mkdirSync(newFolderPath, { recursive: true });
-      }
-
-      const newImagePath = path.join(__dirname, "Images", "Products", newFolderPath);
-      if (image) {
-        fs.copyFileSync(image.path, path.join(newImagePath, image.filename));
-      } else if (fs.existsSync(path.join(`${oldFolderPath}_old`, oldProduct.imageUrl))) {
-        fs.copyFileSync(path.join(`${oldFolderPath}_old`, oldProduct.imageUrl), path.join(newFolderPath, oldProduct.imageUrl));
-      }
+    ctx.body = product;
+  } catch (err) {
+    if (err instanceof multer.MulterError) {
+      console.error('Multer error:', err);
+      ctx.status = 400;
+      ctx.body = { error: "File size too large. Maximum allowed is 2 MB" };
+    } else {
+      console.error('General error:', err);
+      ctx.status = 500;
+      ctx.body = { error: "An error occurred while uploading the file" };
     }
+  }
+});
 
-    const imagePath = fieldsChanged ? `${productData.name}-${productData.model}-${productData.location}-${productData.year}-${productData.price}-${timestamp}` : oldProduct.imagePath;
-    const imageUrl = image ? `${imagePath}/${image.filename}` : oldProduct.imageUrl;
+router.put("/api/products/:id", upload.single("image"), async (ctx) => {
+  try {
+    const id = ctx.params.id;
+    const productData = JSON.parse(ctx.request.body.data);
+    const image = ctx.request.file;
 
     const updateObj = {
-      ...productData,
-      imagePath: imagePath,
-      imageUrl: imageUrl,
+      name: productData.name,
+      model: productData.model,
+      brand: productData.brand, 
+      location: productData.location,   
+      year: productData.year,
+      exposureCounter: productData.exposureCounter,
+      price: productData.price,
+      description: productData.description,
     };
+
+    if (image) {
+      const imageUrl = `${image.filename}`;
+      updateObj["imageUrl"] = imageUrl;
+    }
 
     const updatedProduct = await Product.findByIdAndUpdate(id, updateObj, {
       new: true,
@@ -281,3 +177,359 @@ router.put("/api/products/:id", uploadForUpdate.single("image"), async (ctx) => 
     ctx.body = { error: "An error occurred while updating the product" };
   }
 });
+
+router.delete("/api/products/:id", async (ctx) => {
+  try {
+    const id = ctx.params.id;
+
+    // Find the product by id
+    const product = await Product.findById(id);
+
+    if (!product) {
+      ctx.status = 404;
+      ctx.body = { error: "Product not found" };
+      return;
+    }
+
+    // Delete the associated image file
+    const imagePath = path.join(__dirname, "Images", "Products", product.imageUrl);
+    fs.unlink(imagePath, (err) => {
+      if (err) {
+        console.error("Error deleting image file:", err);
+        ctx.status = 500;
+        ctx.body = { error: "An error occurred while deleting the image file" };
+        return;
+      }
+
+      // Delete the product from the database
+      Product.findByIdAndDelete(id)
+        .then(() => {
+          ctx.body = { message: "Product deleted successfully", deletedProduct: product };
+        })
+        .catch((error) => {
+          console.error("Error deleting product:", error);
+          ctx.status = 500;
+          ctx.body = { error: "An error occurred while deleting the product" };
+        });
+    });
+  } catch (error) {
+    console.error("Error deleting product:", error);
+    ctx.status = 500;
+    ctx.body = { error: "An error occurred while deleting the product" };
+  }
+});
+
+// Blog related routes
+
+const blogSchema = new mongoose.Schema({
+  title: String,
+  content: String,
+  imageUrl: String,
+  tags: [String],
+});
+
+
+const Blog = mongoose.model("Blog", blogSchema);
+
+const blogStorage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    const dir = "C:/ecommerce2/server/Images/Blogs";
+    cb(null, dir);
+  },
+  filename: function (req, file, cb) {
+    cb(null, file.originalname);
+  },
+});
+
+const blogUpload = multer({
+  storage: blogStorage,
+  limits: {
+    fileSize: 10 * 1024 * 1024, // 10 MB
+    fieldSize: 2 * 1024 * 1024 // 2MB for fields
+  },
+});
+
+router.get("/api/blogs", async (ctx) => {
+console.log("Received request for /api/blogs");
+const blogs = await Blog.find();
+ctx.body = blogs;
+});
+
+
+router.post("/api/blogs", blogUpload.single("image"), async (ctx) => {
+  try {
+    console.log("Received request to create a blog");
+
+    // log the request body
+    console.log(ctx.request.body);
+
+    let blogData;
+
+    // Check if ctx.request.body.data is defined
+    if (ctx.request.body.data) {
+      // get the blog data and parse it as JSON
+      blogData = JSON.parse(ctx.request.body.data);
+    } else {
+      blogData = ctx.request.body;
+    }
+
+    const image = ctx.request.file;
+
+    if (!image) {
+      try {
+        console.log("No image file found in request");
+        ctx.status = 400;
+        ctx.body = { error: "Image file is required" };
+      } catch (err) {
+        console.error('Error handling missing image:', err);
+        ctx.status = 500;
+        ctx.body = { error: "An error occurred while processing the request" };
+      }
+      return;
+    }
+
+    const imageUrl = `${image.filename}`;
+
+    const blog = await Blog.create({
+      title: blogData.title,
+      content: blogData.content,
+      imageUrl: imageUrl,
+      tags: blogData.tags,
+    });
+
+    ctx.status = 200;
+    ctx.body = blog;
+    console.log("Response:", ctx.status, ctx.body);
+
+  } catch (err) {
+    console.error('General error:', err);
+    ctx.status = 500;
+    ctx.body = { error: "An error occurred while uploading the file" };
+  }
+});
+
+
+router.put("/api/blogs/:id", blogUpload.single("image"), async (ctx) => {
+
+
+  try {
+    const id = ctx.params.id;
+
+    let blogData;
+
+    // Check if ctx.request.body.data is defined
+    if (ctx.request.body.data) {
+      // get the blog data and parse it as JSON
+      blogData = JSON.parse(ctx.request.body.data);
+    } else {
+      blogData = ctx.request.body;
+    }
+
+    const image = ctx.request.file;
+   const updateObj = {
+  title: blogData.title,
+  content: blogData.content,
+  tags: blogData.tags,
+};
+
+
+    if (image) {
+     const imageUrl = `${image.filename}`;
+
+      updateObj["imageUrl"] = imageUrl;
+    }
+
+    const updatedBlog = await Blog.findByIdAndUpdate(id, updateObj, {
+      new: true,
+    });
+
+    ctx.body = updatedBlog;
+  } catch (err) {
+    console.error("Error updating blog:", err);
+    ctx.status = 500;
+    ctx.body = { error: "An error occurred while updating the blog" };
+  }
+});
+
+
+router.delete("/api/blogs/:id", async (ctx) => {
+  try {
+    const id = ctx.params.id;
+
+    // Find the blog by id
+    const blog = await Blog.findById(id);
+
+    if (!blog) {
+      ctx.status = 404;
+      ctx.body = { error: "Blog not found" };
+      return;
+    }
+
+    // Delete the associated image file
+    const imagePath = path.join(__dirname, "Images", "Blogs", blog.imageUrl);
+    fs.unlink(imagePath, async (err) => {
+      if (err) {
+        console.error("Error deleting image file:", err);
+        ctx.status = 500;
+        ctx.body = { error: "An error occurred while deleting the image file" };
+        return;
+      }
+
+      try {
+        // Delete the blog from the database
+        const deletedBlog = await Blog.findByIdAndDelete(id);
+        ctx.body = { message: "Blog deleted successfully", deletedBlog };
+      } catch (error) {
+        console.error("Error deleting blog:", error);
+        ctx.status = 500;
+        ctx.body = { error: "An error occurred while deleting the blog" };
+      }
+    });
+  } catch (error) {
+    console.error("Error deleting blog:", error);
+    ctx.status = 500;
+    ctx.body = { error: "An error occurred while deleting the blog" };
+  }
+});
+
+app.use(router.routes()).use(router.allowedMethods());
+
+app.listen(4000, function () {
+  console.log("Koa server is listening on port 4000");
+});
+
+= 
+export const baseURL = 'http://127.0.0.1:4000/api/products';
+
+export const fetchProducts = async () => {
+  try {
+    console.log('Fetching products...');
+    const response = await fetch(baseURL, { method: 'GET' });
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const products = await response.json();
+    console.log('Fetched products:', products);
+    return products;
+  } catch (error) {
+    console.error('Error fetching products:', error);
+    throw error;
+  }
+};
+
+export const createProduct = async (productFormData: FormData) => {
+  try {
+    console.log('Creating product...');
+
+    console.log('FormData:', [...productFormData.entries()]); // Log form data
+
+    const response = await fetch(baseURL, {
+      method: 'POST',
+      body: productFormData,
+    });
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    const createdProduct = await response.json();
+    console.log('Created product:', createdProduct);
+    return createdProduct;
+  } catch (error) {
+    console.error('Error creating product:', error);
+    throw error;
+  }
+};
+
+
+
+export const updateProduct = async (id, product, image) => {
+  try {
+    console.log('Updating product...');
+    const formData = new FormData();
+    formData.append('name', product.name);
+    formData.append('model', product.model);
+    formData.append('brand', product.brand);
+    formData.append('location', product.location);
+    formData.append('year', product.year.toString());
+    formData.append('exposureCounter', product.exposureCounter.toString());
+    formData.append('price', product.price.toString());
+    formData.append('description', product.description);
+
+    console.log('Image file:', image);
+if (image) {
+    formData.append('file', image, image.name);
+  }
+
+  // If no new image is provided, still pass the old image url and path
+  else {
+    formData.append('imageUrl', product.imageUrl);
+    formData.append('imagePath', product.imagePath);
+  }
+
+  const response = await fetch(`${baseURL}/${id}`, {
+    method: 'PUT',
+    body: formData,
+  });
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    const updatedProduct = await response.json();
+    console.log('Updated product:', updatedProduct);
+    return updatedProduct;
+  } catch (error) {
+    console.error('Error updating product:', error);
+    throw error;
+  }
+};
+
+export const deleteProduct = async (productId) => {
+  try {
+    console.log('Deleting product...');
+    const response = await fetch(`http://127.0.0.1:4000/api/products/${productId}`, {
+      method: 'DELETE',
+    });
+
+    if (response.status === 404) {
+      throw new Error(`Product with ID ${productId} not found`);
+    }
+
+    if (!response.ok) {
+      const errorMessage = await response.text();
+      throw new Error(`Delete request failed with status ${response.status}: ${errorMessage}`);
+    }
+
+    console.log('Product deleted:', productId);
+    // Add image deletion after the product deletion is successful
+    deleteImage(productId);
+    return response;
+  } catch (error) {
+    console.error('Error deleting product:', error);
+    throw error;
+  }
+};
+
+export const deleteImage = async (folderPath) => {
+  try {
+    console.log('Deleting image...');
+    const response = await fetch(`http://127.0.0.1:4000/api/images/${folderPath}`, {
+      method: 'DELETE',
+    });
+ 
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const deletedImage = await response.json();
+    console.log('Deleted image:', deletedImage);
+    return deletedImage;
+  } catch (error) {
+    console.error('Error deleting image:', error);
+    // No need to throw the error here
+  }
+};
+
+console.log('All functions imported successfully.');
+
+
