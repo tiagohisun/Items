@@ -1,120 +1,15 @@
-There are four files that are related to product creation:
-server.cjs, producform, productapi, products = 
-When i press submit button in the form this error shows:
-
-5 
-        
-        
-        POST http://127.0.0.1:4000/api/products 500 (Internal Server Error)
-createProduct @ productsAPI.ts:25
-createNewProduct @ productform.tsx:95
-handleSubmit @ productform.tsx:147
-callCallback @ react-dom.development.js:4164
-invokeGuardedCallbackDev @ react-dom.development.js:4213
-invokeGuardedCallback @ react-dom.development.js:4277
-invokeGuardedCallbackAndCatchFirstError @ react-dom.development.js:4291
-executeDispatch @ react-dom.development.js:9041
-processDispatchQueueItemsInOrder @ react-dom.development.js:9073
-processDispatchQueue @ react-dom.development.js:9086
-dispatchEventsForPlugins @ react-dom.development.js:9097
-eval @ react-dom.development.js:9288
-batchedUpdates$1 @ react-dom.development.js:26140
-batchedUpdates @ react-dom.development.js:3991
-dispatchEventForPluginEventSystem @ react-dom.development.js:9287
-dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ react-dom.development.js:6465
-dispatchEvent @ react-dom.development.js:6457
-dispatchDiscreteEvent @ react-dom.development.js:6430
-client.js:1  Error creating product: Error: Network response was not ok
-    at createProduct (productsAPI.ts:31:13)
-console.error @ client.js:1
-window.console.error @ next-dev.js:20
-createProduct @ productsAPI.ts:38
-await in createProduct (async)
-createNewProduct @ productform.tsx:95
-handleSubmit @ productform.tsx:147
-callCallback @ react-dom.development.js:4164
-invokeGuardedCallbackDev @ react-dom.development.js:4213
-invokeGuardedCallback @ react-dom.development.js:4277
-invokeGuardedCallbackAndCatchFirstError @ react-dom.development.js:4291
-executeDispatch @ react-dom.development.js:9041
-processDispatchQueueItemsInOrder @ react-dom.development.js:9073
-processDispatchQueue @ react-dom.development.js:9086
-dispatchEventsForPlugins @ react-dom.development.js:9097
-eval @ react-dom.development.js:9288
-batchedUpdates$1 @ react-dom.development.js:26140
-batchedUpdates @ react-dom.development.js:3991
-dispatchEventForPluginEventSystem @ react-dom.development.js:9287
-dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ react-dom.development.js:6465
-dispatchEvent @ react-dom.development.js:6457
-dispatchDiscreteEvent @ react-dom.development.js:6430
-client.js:1  An error occurred while creating product: Error: Network response was not ok
-    at createProduct (productsAPI.ts:31:13)
-console.error @ client.js:1
-window.console.error @ next-dev.js:20
-eval @ productform.tsx:107
-Promise.catch (async)
-createNewProduct @ productform.tsx:106
-handleSubmit @ productform.tsx:147
-callCallback @ react-dom.development.js:4164
-invokeGuardedCallbackDev @ react-dom.development.js:4213
-invokeGuardedCallback @ react-dom.development.js:4277
-invokeGuardedCallbackAndCatchFirstError @ react-dom.development.js:4291
-executeDispatch @ react-dom.development.js:9041
-processDispatchQueueItemsInOrder @ react-dom.development.js:9073
-processDispatchQueue @ react-dom.development.js:9086
-dispatchEventsForPlugins @ react-dom.development.js:9097
-eval @ react-dom.development.js:9288
-batchedUpdates$1 @ react-dom.development.js:26140
-batchedUpdates @ react-dom.development.js:3991
-dispatchEventForPluginEventSystem @ react-dom.development.js:9287
-dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ react-dom.development.js:6465
-dispatchEvent @ react-dom.development.js:6457
-dispatchDiscreteEvent @ react-dom.development.js:6430
-agfa.jpeg:1 
-        
-        
-        GET http://localhost:4000/agfa.jpeg 404 (Not Found)
-Image (async)
-commitMount @ react-dom.development.js:11038
-commitLayoutEffectOnFiber @ react-dom.development.js:23407
-commitLayoutMountEffects_complete @ react-dom.development.js:24688
-commitLayoutEffects_begin @ react-dom.development.js:24674
-commitLayoutEffects @ react-dom.development.js:24612
-commitRootImpl @ react-dom.development.js:26823
-commitRoot @ react-dom.development.js:26682
-finishConcurrentRender @ react-dom.development.js:25981
-performConcurrentWorkOnRoot @ react-dom.development.js:25809
-workLoop @ scheduler.development.js:266
-flushWork @ scheduler.development.js:239
-performWorkUntilDeadline @ scheduler.development.js:533
-blogimage1.jpeg:1 
-        
-        
-        GET http://localhost:4000/blogimage1.jpeg 404 (Not Found)
-Image (async)
-commitMount @ react-dom.development.js:11038
-commitLayoutEffectOnFiber @ react-dom.development.js:23407
-commitLayoutMountEffects_complete @ react-dom.development.js:24688
-commitLayoutEffects_begin @ react-dom.development.js:24674
-commitLayoutEffects @ react-dom.development.js:24612
-commitRootImpl @ react-dom.development.js:26823
-commitRoot @ react-dom.development.js:26682
-finishConcurrentRender @ react-dom.development.js:25981
-performConcurrentWorkOnRoot @ react-dom.development.js:25809
-workLoop @ scheduler.development.js:266
-flushWork @ scheduler.development.js:239
-performWorkUntilDeadline @ scheduler.development.js:533
-products.tsx:131 Current products: []
-products.tsx:132 Selected product: null
-productform.tsx:37 {_id: '', name: 'sfsdf', model: 'sdfsdf', brand: 'sdf', location: 'sdf', …}
-productsAPI.ts:5 Fetching products...
-productsAPI.ts:11 Fetched products: []
-products.tsx:46 Fetched products: []
-products.tsx:131 Current products: []
-products.tsx:132 Selected product: null
-
----------------------------------------------------------------
-Here are the files:
+const Koa = require("koa");
+const Router = require("koa-router");
+const mongoose = require("mongoose");
+const multer = require("@koa/multer");
+const path = require("path");
+const cors = require("@koa/cors");
+const serve = require("koa-static");
+const koaBody = require("koa-body");
+const fs = require("fs");
+const app = new Koa();
+const router = new Router();
+const bodyParser = require('koa-bodyparser');
 
 // multer diskStorage for product images
 const storage = multer.diskStorage({
@@ -137,9 +32,11 @@ const storage = multer.diskStorage({
   },
 });
 
-const upload = multer({ storage: storage });
+const upload = multer({ storage: storage }).single('file');
 
-router.post('/upload', upload.array('file'), (req, res) => {
+
+router.post("/api/products", upload, async (ctx) => {
+
   const { model, location, year, price, name } = req.body;
   const currentDate = new Date();
   const day = String(currentDate.getDate()).padStart(2, '0');
@@ -251,180 +148,85 @@ const productSchema = new mongoose.Schema({
   imagePath: String,
 });
 
-= server.cjs,
-const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
 
-  const productFormData = new FormData();
-  Object.entries(formData).forEach(([key, value]) => {
-    if (key === 'image' && value) {  
-      let fileValue = value as File; // Type assertion here
-      productFormData.append(key, fileValue, fileValue.name);
-    } else {
-      productFormData.append(key, value.toString());
-    }
-  });
+const Product = mongoose.model("Product", productSchema);
 
+router.get("/api/products", async (ctx) => {
   try {
-    if (formData._id && formData._id !== "") { // check if _id is not empty string
-      let imageFile = formData.image ? formData.image : new File([], "");  // Fallback
-      await updateExistingProduct(formData._id, productFormData, imageFile);  
-    } else {
-      await createNewProduct(productFormData);
-    }
-    setSelectedProduct(null);
-  } catch (error) {
-    console.error('Error in form submission:', error);
+    console.log("Received request for /api/products");
+    const products = await Product.find();
+    console.log("Fetched products:", products);
+    ctx.body = products;
+  } catch (err) {
+    console.error('Error fetching products:', err);
+    ctx.status = 500;
+    ctx.body = { error: "An error occurred while fetching the products" };
   }
-  return undefined; 
-};
- = productform.tsx
-type Product = {
-  _id: string;
-  name: string;
-  model: string;
-  brand: string;
-  location: string;
-  year: number;
-  exposureCounter: number;
-  price: number;
-  description: string;
-  imageUrl: string;
-  imagePath: string;
-  image?: File;
-};
+});
 
-const Products: React.FC = () => {
-  const [products, setProducts] = useState<Product[]>([]);
-  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [formData, setFormData] = useState<Product>({
-    _id: "",
-    name: "sfsdf",
-    model: "sdfsdf",
-    brand: "sdf",
-    location: "sdf",
-    year: new Date().getFullYear(),
-    exposureCounter: 230,
-    price: 230,
-    description: "sdf",
-    imageUrl: "",
-    imagePath: "",
-  });
-
-  useEffect(() => {
-    fetchProducts();
-  }, []);
-
-  const fetchProducts = async () => {
-    try {
-      const products = await fetchProductsAPI();
-      setProducts(products);
-      console.log("Fetched products:", products);
-    } catch (error) {
-      console.error("Error fetching products:", error);
-    }
-  };
-
-  const handleProductEdit = (product: Product) => {
-  setFormData(product);
-  setSelectedProduct(product);
-  console.log("Selected product for editing:", product);
-};
-
-
-  const handleProductUpdate = async (updatedProduct: Product) => {
-    try {
-      console.log("Updating product:", updatedProduct);
-
-      const savedProduct = await updateProduct(
-        updatedProduct._id,
-        updatedProduct,
-        updatedProduct.image
-      );
-
-      console.log("Product updated:", savedProduct);
-
-      // Update the products state with the updated product
-      setProducts(products.map((product) =>
-        product._id === savedProduct._id ? savedProduct : product
-      ));
-
-      // Update form data
-      setFormData(savedProduct);
-    } catch (error) {
-      console.error("Error updating product:", error);
-    }
-};
-
-  const handleProductDelete = async (productId: string) => {
-    try {
-      const productToDelete = products.find((product) => product._id === productId);
-      if (!productToDelete) throw new Error("Product not found");
-
-      await deleteImage(productToDelete.imagePath);
-      await deleteProduct(productId);
-
-      setProducts(products.filter((product) => product._id !== productId));
-      console.log("Product deleted:", productId);
-    } catch (error) {
-      console.error("Error deleting product:", error.message);
-    }
-  };
-
-  const handleProductSubmit = async (product: Product) => {
+router.post("/api/products", upload, async (ctx) => {
   try {
-    const productFormData = new FormData();
-    Object.entries(product).forEach(([key, value]) => {
-      if (key === 'image' && value instanceof File) {
-        productFormData.append(key, value, value.name);
-      } else {
-        productFormData.append(key, value.toString());
-      }
+    const file = ctx.request.file; // Access the uploaded file
+    const { model, location, year, price, name, brand, description, exposureCounter } = ctx.request.body; // Access the form data
+
+    // Create timestamp
+    const currentDate = new Date();
+    const day = String(currentDate.getDate()).padStart(2, '0');
+    const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+    const year2 = currentDate.getFullYear();
+    const hours = String(currentDate.getHours()).padStart(2, '0');
+    const minutes = String(currentDate.getMinutes()).padStart(2, '0');
+    const seconds = String(currentDate.getSeconds()).padStart(2, '0');
+    const timestamp = `${day}-${month}-${year2}-${hours}-${minutes}-${seconds}`;
+
+    // Create the product
+    const product = await Product.create({
+      name,
+      model,
+      brand,
+      location,
+      year: parseInt(year),
+      exposureCounter: parseInt(exposureCounter),
+      price: parseFloat(price),
+      description,
+      // The imageUrl and imagePath will be set later
     });
 
-    const createdProduct = await createProduct(productFormData); // Adjusted to include a single FormData argument
-    setProducts([...products, createdProduct]);
-    setSelectedProduct(null);
-    setFormData({
-      _id: "",
-      name: "",
-      model: "",
-      brand: "",
-      location: "",
-      year: new Date().getFullYear(),
-      exposureCounter: 0,
-      price: 0,
-      description: "",
-      imageUrl: "",
-      imagePath: "",
-    });
-    console.log("Product created:", createdProduct);
-  } catch (error) {
-    console.error("Error creating product:", error);
-  }
-};
-= product.tsx
-export const createProduct = async (productFormData: FormData) => {
-  try {
-    console.log('Creating product...');
+    const newFolderPath = `C:/ecommerce2/server/Images/Products/${product.name}-${product.model}-${product.location}-${product.year}-${product.price}-${timestamp}`;
 
-    console.log('FormData:', [...productFormData.entries()]); // Log form data
-
-    const response = await fetch(baseURL, {
-      method: 'POST',
-      body: productFormData,
-    });
-
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
+    if (!fs.existsSync(newFolderPath)) {
+      fs.mkdirSync(newFolderPath, { recursive: true });
     }
 
-    const createdProduct = await response.json();
-    console.log('Created product:', createdProduct);
-    return createdProduct;
-  } catch (error) {
-    console.error('Error creating product:', error);
-    throw error;
+    // Move the files to the new directory and create image URLs
+    const imagePaths = [];
+    const imageURLs = [];
+    ctx.request.files.forEach((file, index) => {
+      const tempPath = file.path;
+      const targetPath = path.join(newFolderPath, file.filename);
+      fs.renameSync(tempPath, targetPath);
+      
+      imagePaths.push(targetPath);
+      // Replace with the URL of your server
+      imageURLs.push(`http://localhost:3000/Images/Products/${product.name}-${product.model}-${product.location}-${product.year}-${product.price}-${timestamp}/${file.filename}`);
+    });
+
+    // Update the product with the imageURLs and imagePaths
+    product.imageUrl = imageURLs;
+    product.imagePath = imagePaths;
+    await product.save();
+
+    // Return successful response
+    ctx.status = 200;
+    ctx.body = { message: "Product created and files uploaded successfully.", product };
+  } catch (err) {
+    console.error('General error:', err);
+    ctx.status = 500;
+    ctx.body = { error: "An error occurred while uploading the files or creating the product." };
   }
-};
-= productsapi.ts
+});
+
+module.exports = router;
+
+
+const uploadForUpdate = multer({ storage: storage });
