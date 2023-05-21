@@ -1,4 +1,284 @@
-const Koa = require("koa");
+import React, { useState, useRef, useEffect } from "react";
+import { createProduct, updateProduct } from "../../api/productsAPI";
+import { v4 as uuidv4 } from 'uuid';
+
+type Product = {
+  _id: string;
+  name: string;
+  model: string;
+  brand: string;
+  location: string;
+  year: number;
+  exposureCounter: number;
+  price: number;
+  description: string;
+  imageUrl: string;
+  imagePath: string;
+  image?: File;
+};
+
+interface ProductFormProps {
+  product: Product;
+  setFormData: (product: Product) => void;
+  onSubmit: (product: Product) => void;
+  setSelectedProduct: (product: Product | null) => void; // Allow null here
+  selectedProduct: Product | null; // And here
+}
+
+const ProductForm: React.FC<ProductFormProps> = ({ 
+  product, 
+  setFormData, 
+  onSubmit, 
+  setSelectedProduct, 
+  selectedProduct 
+}) => {
+
+  useEffect(() => {
+  console.log(formData); // Add this line
+  setLocalFormData(product);
+}, [product]);
+
+
+
+  const [formData, setLocalFormData] = useState<Product>(product);
+  const imageRef = useRef<HTMLInputElement>(null);
+
+const [isFileSelected, setIsFileSelected] = useState(false);
+
+const handleFile = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const files = event.target.files;
+  if (files && files.length > 0) {
+    const file = files[0];
+    console.log(file); // Keep this line if you want to keep logging the file
+    console.log('Selected file name:', file.name); // New line
+    console.log('Selected file type:', file.type); // New line
+    const imageUrl = URL.createObjectURL(file);
+    setLocalFormData((prevFormData) => ({
+      ...prevFormData,
+      image: file,
+      imageUrl: imageUrl,
+    }));
+    setIsFileSelected(true); // Update the isFileSelected state
+  } else {
+    setIsFileSelected(false); // If no file is selected, update the state to false
+  }
+};
+
+  const handleInputChange = (
+  event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+) => {
+  const { name, value } = event.target;
+  setLocalFormData((prevFormData) => ({
+    ...prevFormData,
+    [name]: value,
+  }));
+};
+
+
+const resetFormData = () => {
+  setFormData({
+    _id: "",
+    name: "",
+    model: "",
+    brand: "",
+    location: "",
+    year: new Date().getFullYear(),
+    exposureCounter: 0,
+    price: 0,
+    description: "",
+    imageUrl: "",
+    imagePath: "",
+  });
+};
+
+const createNewProduct = (productFormData: FormData) => {
+    createProduct(productFormData)
+    .then((response) => {
+      if (response.error) {
+        console.error("Error creating product:", response.error);
+        return;
+      }
+
+      const createdProduct = response; // Assuming the response is the created product object
+      resetFormData();
+      onSubmit(createdProduct);
+    })
+    .catch((err) => {
+      console.error("An error occurred while creating product:", err);
+    });
+};
+
+
+
+const updateExistingProduct = async (productId: string, productFormData: FormData, image: File) => {
+  try {
+    const response = await updateProduct(productId, productFormData, image);
+
+    if (!response.ok) {
+      console.error("Error updating product:", response.statusText);
+      return;
+    }
+
+    const updatedProduct = await response.json();
+    setFormData(updatedProduct);
+  } catch (err) {
+    console.error("An error occurred while updating product:", err);
+  }
+};
+
+const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+
+  const productFormData = new FormData();
+  Object.entries(formData).forEach(([key, value]) => {
+    if (key === 'image' && value) {  
+      let fileValue = value as File; // Type assertion here
+      productFormData.append(key, fileValue, fileValue.name);
+    } else {
+      productFormData.append(key, value.toString());
+    }
+  });
+
+  try {
+    if (formData._id && formData._id !== "") { // check if _id is not empty string
+      let imageFile = formData.image ? formData.image : new File([], "");  // Fallback
+      await updateExistingProduct(formData._id, productFormData, imageFile);  
+    } else {
+      await createNewProduct(productFormData);
+    }
+    setSelectedProduct(null);
+  } catch (error) {
+    console.error('Error in form submission:', error);
+  }
+  return undefined; 
+};
+
+
+  return (
+    <form onSubmit={handleSubmit} encType="multipart/form-data" className="flex flex-row flex-wrap items-start justify-start w-full">
+      <div className="flex flex-col w-1/10 m-1">
+  <label htmlFor="image" className="text-sm">Image</label>
+  <input
+  type="file"
+  id="image"
+  name="image" // Add this line
+  accept="image/*"
+  ref={imageRef}
+  onChange={handleFile}
+  className="w-full border rounded-md py-1 px-2 sm:text-sm"
+/>
+</div>   
+      <div className="flex flex-col w-1/10 m-1">
+        <label htmlFor="name" className="text-sm">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value={formData.name}
+          onChange={handleInputChange}
+          className="w-full border rounded-md py-1 px-2 sm:text-sm"
+        />
+      </div>
+
+      <div className="flex flex-col w-1/10 m-1">
+        <label htmlFor="model" className="text-sm">Model</label>
+        <input
+          type="text"
+          id="model"
+          name="model"
+          value={formData.model}
+          onChange={handleInputChange}
+          className="w-full border rounded-md py-1 px-2 sm:text-sm"
+        />
+      </div>
+
+           <div className="flex flex-col w-1/10 m-1">
+        <label htmlFor="brand" className="text-sm">Brand</label>
+        <input
+          type="text"
+          id="brand"
+          name="brand"
+          value={formData.brand}
+          onChange={handleInputChange}
+          className="w-full border rounded-md py-1 px-2 sm:text-sm"
+        />
+      </div>
+
+      <div className="flex flex-col w-1/10 m-1">
+        <label htmlFor="location" className="text-sm">Location</label>
+        <input
+          type="text"
+          id="location"
+          name="location"
+          value={formData.location}
+          onChange={handleInputChange}
+          className="w-full border rounded-md py-1 px-2 sm:text-sm"
+        />
+      </div>
+
+      <div className="flex flex-col w-1/10 m-1">
+        <label htmlFor="year" className="text-sm">Year</label>
+        <input
+          type="number"
+          id="year"
+          name="year"
+          value={formData.year}
+          onChange={handleInputChange}
+          className="w-full border rounded-md py-1 px-2 sm:text-sm"
+        />
+      </div>
+
+      <div className="flex flex-col w-1/10 m-1">
+        <label htmlFor="exposureCounter" className="text-sm">Exposure</label>
+        <input
+          type="number"
+          id="exposureCounter"
+          name="exposureCounter"
+          value={formData.exposureCounter}
+          onChange={handleInputChange}
+          className="w-full border rounded-md py-1 px-2 sm:text-sm"
+        />
+      </div>
+
+      <div className="flex flex-col w-1/10 m-1">
+        <label htmlFor="price" className="text-sm">Price</label>
+        <input
+          type="number"
+          id="price"
+          name="price"
+          value={formData.price}
+          onChange={handleInputChange}
+          className="w-full border rounded-md py-1 px-2 sm:text-sm"
+        />
+      </div>
+
+      <div className="flex flex-col w-1/10 m-1">
+        <label htmlFor="description" className="text-sm">Description</label>
+        <textarea
+          id="description"
+          name="description"
+          value={formData.description}
+          onChange={handleInputChange}
+          className="w-full h-10 border rounded-md py-1 px-2 sm:text-sm"
+        ></textarea>
+      </div>
+
+     {formData.imageUrl && (
+  <div className="w-full my-2">
+    <img src={formData.imageUrl} alt="Product" className="mx-auto" width={100} />
+  </div>
+)}
+
+      <div className="w-full mt-4">
+        <button type="submit" disabled={!isFileSelected}>Submit</button>
+      </div>
+    </form>
+  );
+};
+
+export default ProductForm;
+----------------
+const Koa = require("koa")
 const Router = require("koa-router");
 const mongoose = require("mongoose");
 const multer = require("@koa/multer");
@@ -6,165 +286,281 @@ const path = require("path");
 const cors = require("@koa/cors");
 const serve = require("koa-static");
 const koaBody = require("koa-body");
-const fs = require("fs"); // Add this line
-
+const fs = require("fs");
 const app = new Koa();
 const router = new Router();
+const bodyParser = require('koa-bodyparser');
+
+// multer diskStorage for product images
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    const tmpDir = `C:/ecommerce2/server/Images/Products/tmp`;
+    cb(null, tmpDir);
+  },
+  filename: function (req, file, cb) {
+    const { model, location, year, exposureCounter } = req.body;
+    const currentDate = new Date();
+    const hours = String(currentDate.getHours()).padStart(2, '0');
+    const minutes = String(currentDate.getMinutes()).padStart(2, '0');
+    const seconds = String(currentDate.getSeconds()).padStart(2, '0');
+    const timestamp = `${hours}-${minutes}-${seconds}`;
+
+    // Create the new filename
+    const newFileName = `${model}-${year}-${location}-${exposureCounter}-${timestamp}.${file.originalname.split('.').pop()}`;
+
+    cb(null, newFileName);
+  },
+});
+
+const upload = multer({ storage: storage }).single('image');
+const multerMiddleware = multer({ storage: storage }).single('image');
+
+router.post("/api/products", multerMiddleware, async (ctx) => {
+  console.log("Received fields:", ctx.req.body);
+  console.log("Received files:", ctx.req.files);
+
+ const { model, location, year, price, name } = ctx.request.body;
+  const currentDate = new Date();
+  const day = String(currentDate.getDate()).padStart(2, '0');
+  const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+  const year2 = currentDate.getFullYear();
+  const hours = String(currentDate.getHours()).padStart(2, '0');
+  const minutes = String(currentDate.getMinutes()).padStart(2, '0');
+  const seconds = String(currentDate.getSeconds()).padStart(2, '0');
+  const timestamp = `${day}-${month}-${year2}-${hours}-${minutes}-${seconds}`;
+  const newFolderName = `C:/ecommerce2/server/Images/Products/${name}-${model}-${location}-${year}-${price}-${timestamp}`;
+
+  if (!fs.existsSync(newFolderName)) {
+    fs.mkdirSync(newFolderName, { recursive: true });
+  }
+
+  req.files.forEach(file => {
+    const tempPath = file.path;
+    const targetPath = path.join(newFolderName, file.filename);
+    
+    fs.rename(tempPath, targetPath, err => {
+      if (err) return res.status(500).send(err);
+    });
+  });
+
+  res.send('Files moved successfully');
+});
+
+app.use(serve("C:/ecommerce2/server/Images/Blogs"));
 
 app.use(cors());
-app.use(serve("C:/ecommerce2/server/Images/Products"));
-app.use(serve("C:/ecommerce2/server/Images/Blogs")); // Add this line
-app.use(koaBody());
 
 mongoose.connect("mongodb://127.0.0.1:27017/ecommerce2", {});
 
-const customerSchema = new mongoose.Schema({
-  name: String,
-  email: String,
-  phoneNumber: String,
-  address: String,
-  // Add any other fields you need for a customer
-});
-
-const Customer = mongoose.model("Customer", customerSchema);
-// Get all customers
-router.get("/api/customers", async (ctx) => {
-  const customers = await Customer.find();
-  ctx.body = customers;
-});
-
-router.post("/api/customers", async (ctx) => {
+module.exports.createProduct = async (product, image) => {
   try {
-    const customerData = ctx.request.body;
-    const newCustomer = new Customer(customerData);
-    const savedCustomer = await newCustomer.save();
-    ctx.status = 200;
-    ctx.body = savedCustomer;
+    const date = new Date();
+    const year = date.getFullYear();
+    const { model, location, price } = product;
+    const folderName = `${model}-${location}-${year}-${price}-${timestamp}`;
+
+    console.log("Creating product...");
+    console.log("Folder Name:", folderName);
+
+    // Create folder if it doesn't exist
+    const response = await fetch(`${baseURL}/create-folder/${folderName}`, {
+      method: "POST",
+    });
+
+    if (!response.ok) {
+      throw new Error("Error creating folder");
+    }
+
+    console.log("Folder created:", folderName);
+
+    // Prepare the form data
+    const formData = new FormData();
+    formData.append("data", JSON.stringify(product));
+    
+    if (image) {
+      // Append image to form data with filename :image.jpg
+      formData.append("image", image, `image.jpg`);
+
+      // Upload image to server
+      const uploadResponse = await fetch(
+        `${baseURL}/upload-image/${folderName}`,
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      if (!uploadResponse.ok) {
+        throw new Error("Error uploading image");
+      }
+
+      console.log("Image uploaded successfully");
+    }
+
+    const createProductResponse = await fetch(`${baseURL}/add-product`, {
+      method: "POST",
+      body: formData,
+    });
+
+    if (!createProductResponse.ok) {
+      throw new Error("Network response was not ok");
+    }
+
+    const createdProduct = await createProductResponse.json();
+    console.log("Product created:", createdProduct);
+    return createdProduct;
   } catch (error) {
-    console.error("Error creating customer:", error);
-    ctx.status = 500;
-    ctx.body = { error: "An error occurred while creating the customer" };
+    console.error("Error creating product:", error);
+    throw error;
   }
-});
+};
 
-
-// Update a customer
-router.put("/api/customers/:id", async (ctx) => {
-  // Your logic for updating a customer and syncing with Google Contacts
-});
-
-// Delete a customer
-router.delete("/api/customers/:id", async (ctx) => {
-  // Your logic for deleting a customer and syncing with Google Contacts
-});
+// Product related routes
 
 const productSchema = new mongoose.Schema({
   name: String,
   model: String,
   brand: String,
+  description: String,
   location: String,
   year: Number,
   exposureCounter: Number,
   price: Number,
-  description: String,
   imageUrl: String,
+  imagePath: String,
 });
+
 
 const Product = mongoose.model("Product", productSchema);
 
-const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "C:/ecommerce2/server/Images/Products");
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.originalname);
-  },
-});
-
-const upload = multer({
-  storage: storage,
-  limits: {
-    fileSize: 10 * 1024 * 1024, // 10 MB
-    fieldSize: 10 * 1024 * 1024 // 2MB for fields
-  },
-});
-
-
 router.get("/api/products", async (ctx) => {
-  console.log("Received request for /api/products");
-  const products = await Product.find();
-  ctx.body = products;
+  try {
+    console.log("Received request for /api/products");
+    const products = await Product.find();
+    console.log("Fetched products:", products);
+    ctx.body = products;
+  } catch (err) {
+    console.error('Error fetching products:', err);
+    ctx.status = 500;
+    ctx.body = { error: "An error occurred while fetching the products" };
+  }
 });
 
-router.post("/api/products", upload.single("image"), async (ctx) => {
+router.post("/api/products", upload, async (ctx) => {
+  console.log("Received fields:", ctx.req.body);
+console.log("Received files:", ctx.req.files);
+
   try {
     console.log("Received request to create a product");
 
-    // log the request body
-    console.log(ctx.request.body);
-
-    // get the product data and parse it as JSON
-    const productData = JSON.parse(ctx.request.body.data);
+    let productData;
+    if (ctx.request.body.data) {
+      productData = JSON.parse(ctx.request.body.data);
+    } else {
+      productData = ctx.request.body;
+    }
 
     const image = ctx.request.file;
+    console.log('ctx.request.file:', ctx.request.file);
 
     if (!image) {
-      console.log("No image file found in request");
+      console.log("Image file is required");
       ctx.status = 400;
       ctx.body = { error: "Image file is required" };
       return;
     }
 
-    const imageUrl = `${image.filename}`;
+    const imageUrl = image ? `${newFolderPath}/${image.filename}` : '';
 
-    const product = await Product.create({
-      name: productData.name,
-      model: productData.model,
-      brand: productData.brand, 
-      location: productData.location,   
-      year: productData.year,
-      exposureCounter: productData.exposureCounter,
-      price: productData.price,
-      description: productData.description,
-      imageUrl: imageUrl,
-     
-    });
+    // Define an asynchronous function to handle product creation
+    const createProduct = async () => {
+      const product = await Product.create({
+        name: productData.name,
+        model: productData.model,
+        brand: productData.brand,
+        location: productData.location,
+        year: productData.year,
+        exposureCounter: productData.exposureCounter,
+        price: productData.price,
+        description: productData.description,
+        imageUrl: imageUrl,
+        imagePath: productData.imagePath,
+      });
 
-    ctx.body = product;
+      console.log("Product created:", product);
+
+      ctx.status = 200;
+      ctx.body = {
+        product: product,
+        imagePath: product.imagePath,
+        imageUrl: product.imageUrl,
+      };
+    };
+
+    // Call the asynchronous function
+    await createProduct();
   } catch (err) {
-    if (err instanceof multer.MulterError) {
-      console.error('Multer error:', err);
-      ctx.status = 400;
-      ctx.body = { error: "File size too large. Maximum allowed is 2 MB" };
-    } else {
-      console.error('General error:', err);
-      ctx.status = 500;
-      ctx.body = { error: "An error occurred while uploading the file" };
-    }
+    console.error('General error:', err);
+    ctx.status = 500;
+    ctx.body = { error: "An error occurred while uploading the file" };
   }
 });
 
-router.put("/api/products/:id", upload.single("image"), async (ctx) => {
+module.exports = router;
+
+
+const uploadForUpdate = multer({ storage: storage });
+
+
+// Use the refactored function inside the route
+router.put("/api/products/:id", uploadForUpdate.single("image"), async (ctx) => {
   try {
     const id = ctx.params.id;
-    const productData = JSON.parse(ctx.request.body.data);
+    const productData = ctx.request.body.data ? JSON.parse(ctx.request.body.data) : ctx.request.body;
     const image = ctx.request.file;
 
-    const updateObj = {
-      name: productData.name,
-      model: productData.model,
-      brand: productData.brand, 
-      location: productData.location,   
-      year: productData.year,
-      exposureCounter: productData.exposureCounter,
-      price: productData.price,
-      description: productData.description,
-    };
-
-    if (image) {
-      const imageUrl = `${image.filename}`;
-      updateObj["imageUrl"] = imageUrl;
+    const oldProduct = await Product.findById(id);
+    if (!oldProduct) {
+      ctx.status = 404;
+      ctx.body = { error: "Product not found" };
+      return;
     }
+
+    const fieldsChanged = productData.name !== oldProduct.name || 
+                      productData.model !== oldProduct.model ||
+                      productData.location !== oldProduct.location ||
+                      productData.year !== oldProduct.year ||
+                      productData.price !== oldProduct.price ||
+                      productData.exposureCounter !== oldProduct.exposureCounter;
+
+    const timestamp = new Date().toISOString().replace(/:/g, "-").split('.')[0]; // remove milliseconds
+    const newFolderPath = `C:/ecommerce2/server/Images/Products/${productData.name}-${productData.model}-${productData.location}-${productData.year}-${productData.price}-${timestamp}`;
+
+    if (fieldsChanged) {
+      const oldFolderPath = path.join(__dirname, "Images", "Products", oldProduct.imagePath);
+      if (fs.existsSync(oldFolderPath)) {
+        fs.renameSync(oldFolderPath, `${oldFolderPath}_old`);
+      }
+      if (!fs.existsSync(newFolderPath)) {
+        fs.mkdirSync(newFolderPath, { recursive: true });
+      }
+
+      const newImagePath = path.join(__dirname, "Images", "Products", newFolderPath);
+      if (image) {
+        fs.copyFileSync(image.path, path.join(newImagePath, image.filename));
+      } else if (fs.existsSync(path.join(`${oldFolderPath}_old`, oldProduct.imageUrl))) {
+        fs.copyFileSync(path.join(`${oldFolderPath}_old`, oldProduct.imageUrl), path.join(newFolderPath, oldProduct.imageUrl));
+      }
+    }
+
+    const imagePath = fieldsChanged ? `${productData.name}-${productData.model}-${productData.location}-${productData.year}-${productData.price}-${timestamp}` : oldProduct.imagePath;
+    const imageUrl = image ? `${imagePath}/${image.filename}` : oldProduct.imageUrl;
+
+    const updateObj = {
+      ...productData,
+      imagePath: imagePath,
+      imageUrl: imageUrl,
+    };
 
     const updatedProduct = await Product.findByIdAndUpdate(id, updateObj, {
       new: true,
@@ -178,14 +574,18 @@ router.put("/api/products/:id", upload.single("image"), async (ctx) => {
   }
 });
 
+
 router.delete("/api/products/:id", async (ctx) => {
   try {
     const id = ctx.params.id;
+
+    console.log("Received request to delete product:", id);
 
     // Find the product by id
     const product = await Product.findById(id);
 
     if (!product) {
+      console.log("Product not found");
       ctx.status = 404;
       ctx.body = { error: "Product not found" };
       return;
@@ -193,7 +593,7 @@ router.delete("/api/products/:id", async (ctx) => {
 
     // Delete the associated image file
     const imagePath = path.join(__dirname, "Images", "Products", product.imageUrl);
-    fs.unlink(imagePath, (err) => {
+    fs.unlink(imagePath, async (err) => {
       if (err) {
         console.error("Error deleting image file:", err);
         ctx.status = 500;
@@ -201,16 +601,27 @@ router.delete("/api/products/:id", async (ctx) => {
         return;
       }
 
-      // Delete the product from the database
-      Product.findByIdAndDelete(id)
-        .then(() => {
-          ctx.body = { message: "Product deleted successfully", deletedProduct: product };
-        })
-        .catch((error) => {
+      // Delete the folder
+      const folderPath = path.dirname(imagePath);
+      fs.rmdir(folderPath, { recursive: true }, async (err) => {
+        if (err) {
+          console.error("Error deleting folder:", err);
+          ctx.status = 500;
+          ctx.body = { error: "An error occurred while deleting the folder" };
+          return;
+        }
+
+        try {
+          // Delete the product from the database
+          const deletedProduct = await Product.findByIdAndDelete(id);
+          console.log("Product deleted:", deletedProduct);
+          ctx.body = { message: "Product deleted successfully", deletedProduct };
+        } catch (error) {
           console.error("Error deleting product:", error);
           ctx.status = 500;
           ctx.body = { error: "An error occurred while deleting the product" };
-        });
+        }
+      });
     });
   } catch (error) {
     console.error("Error deleting product:", error);
@@ -218,6 +629,12 @@ router.delete("/api/products/:id", async (ctx) => {
     ctx.body = { error: "An error occurred while deleting the product" };
   }
 });
+
+
+// Serve static files from the Products directory
+app.use(serve("C:/ecommerce2/server/Images/Products"));
+
+//----------------------------------------------------------------------------
 
 // Blog related routes
 
@@ -249,156 +666,220 @@ const blogUpload = multer({
   },
 });
 
-router.get("/api/blogs", async (ctx) => {
-console.log("Received request for /api/blogs");
-const blogs = await Blog.find();
-ctx.body = blogs;
-});
-
-
-router.post("/api/blogs", blogUpload.single("image"), async (ctx) => {
-  try {
-    console.log("Received request to create a blog");
-
-    // log the request body
-    console.log(ctx.request.body);
-
-    let blogData;
-
-    // Check if ctx.request.body.data is defined
-    if (ctx.request.body.data) {
-      // get the blog data and parse it as JSON
-      blogData = JSON.parse(ctx.request.body.data);
-    } else {
-      blogData = ctx.request.body;
-    }
-
-    const image = ctx.request.file;
-
-    if (!image) {
-      try {
-        console.log("No image file found in request");
-        ctx.status = 400;
-        ctx.body = { error: "Image file is required" };
-      } catch (err) {
-        console.error('Error handling missing image:', err);
-        ctx.status = 500;
-        ctx.body = { error: "An error occurred while processing the request" };
-      }
-      return;
-    }
-
-    const imageUrl = `${image.filename}`;
-
-    const blog = await Blog.create({
-      title: blogData.title,
-      content: blogData.content,
-      imageUrl: imageUrl,
-      tags: blogData.tags,
-    });
-
-    ctx.status = 200;
-    ctx.body = blog;
-    console.log("Response:", ctx.status, ctx.body);
-
-  } catch (err) {
-    console.error('General error:', err);
-    ctx.status = 500;
-    ctx.body = { error: "An error occurred while uploading the file" };
-  }
-});
-
-
-router.put("/api/blogs/:id", blogUpload.single("image"), async (ctx) => {
-
-
-  try {
-    const id = ctx.params.id;
-
-    let blogData;
-
-    // Check if ctx.request.body.data is defined
-    if (ctx.request.body.data) {
-      // get the blog data and parse it as JSON
-      blogData = JSON.parse(ctx.request.body.data);
-    } else {
-      blogData = ctx.request.body;
-    }
-
-    const image = ctx.request.file;
-   const updateObj = {
-  title: blogData.title,
-  content: blogData.content,
-  tags: blogData.tags,
-};
-
-
-    if (image) {
-     const imageUrl = `${image.filename}`;
-
-      updateObj["imageUrl"] = imageUrl;
-    }
-
-    const updatedBlog = await Blog.findByIdAndUpdate(id, updateObj, {
-      new: true,
-    });
-
-    ctx.body = updatedBlog;
-  } catch (err) {
-    console.error("Error updating blog:", err);
-    ctx.status = 500;
-    ctx.body = { error: "An error occurred while updating the blog" };
-  }
-});
-
-
-router.delete("/api/blogs/:id", async (ctx) => {
-  try {
-    const id = ctx.params.id;
-
-    // Find the blog by id
-    const blog = await Blog.findById(id);
-
-    if (!blog) {
-      ctx.status = 404;
-      ctx.body = { error: "Blog not found" };
-      return;
-    }
-
-    // Delete the associated image file
-    const imagePath = path.join(__dirname, "Images", "Blogs", blog.imageUrl);
-    fs.unlink(imagePath, async (err) => {
-      if (err) {
-        console.error("Error deleting image file:", err);
-        ctx.status = 500;
-        ctx.body = { error: "An error occurred while deleting the image file" };
-        return;
-      }
-
-      try {
-        // Delete the blog from the database
-        const deletedBlog = await Blog.findByIdAndDelete(id);
-        ctx.body = { message: "Blog deleted successfully", deletedBlog };
-      } catch (error) {
-        console.error("Error deleting blog:", error);
-        ctx.status = 500;
-        ctx.body = { error: "An error occurred while deleting the blog" };
-      }
-    });
-  } catch (error) {
-    console.error("Error deleting blog:", error);
-    ctx.status = 500;
-    ctx.body = { error: "An error occurred while deleting the blog" };
-  }
-});
 
 app.use(router.routes()).use(router.allowedMethods());
 
-app.listen(4000, function () {
-  console.log("Koa server is listening on port 4000");
+app.listen(4000, () => {
+  console.log("Server is running on port 4000");
 });
 
-= 
+
+-----------------
+import React, { useState, useEffect } from "react";
+import ProductForm from "./productform";
+import { createProduct, updateProduct, deleteProduct, deleteImage } from "../../api/productsAPI";
+import { fetchProducts as fetchProductsAPI } from "../../api/productsAPI";
+
+type Product = {
+  _id: string;
+  name: string;
+  model: string;
+  brand: string;
+  location: string;
+  year: number;
+  exposureCounter: number;
+  price: number;
+  description: string;
+  imageUrl: string;
+  imagePath: string;
+  image?: File;
+};
+
+const Products: React.FC = () => {
+  const [products, setProducts] = useState<Product[]>([]);
+  const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
+  const [formData, setFormData] = useState<Product>({
+    _id: "",
+    name: "sfsdf",
+    model: "sdfsdf",
+    brand: "sdf",
+    location: "sdf",
+    year: new Date().getFullYear(),
+    exposureCounter: 230,
+    price: 230,
+    description: "sdf",
+    imageUrl: "",
+    imagePath: "",
+  });
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
+  const fetchProducts = async () => {
+    try {
+      const products = await fetchProductsAPI();
+      setProducts(products);
+      console.log("Fetched products:", products);
+    } catch (error) {
+      console.error("Error fetching products:", error);
+    }
+  };
+
+  const handleProductEdit = (product: Product) => {
+  setFormData(product);
+  setSelectedProduct(product);
+  console.log("Selected product for editing:", product);
+};
+
+
+  const handleProductUpdate = async (updatedProduct: Product) => {
+    try {
+      console.log("Updating product:", updatedProduct);
+
+      const savedProduct = await updateProduct(
+        updatedProduct._id,
+        updatedProduct,
+        updatedProduct.image
+      );
+
+      console.log("Product updated:", savedProduct);
+
+      // Update the products state with the updated product
+      setProducts(products.map((product) =>
+        product._id === savedProduct._id ? savedProduct : product
+      ));
+
+      // Update form data
+      setFormData(savedProduct);
+    } catch (error) {
+      console.error("Error updating product:", error);
+    }
+};
+
+  const handleProductDelete = async (productId: string) => {
+    try {
+      const productToDelete = products.find((product) => product._id === productId);
+      if (!productToDelete) throw new Error("Product not found");
+
+      await deleteImage(productToDelete.imagePath);
+      await deleteProduct(productId);
+
+      setProducts(products.filter((product) => product._id !== productId));
+      console.log("Product deleted:", productId);
+    } catch (error) {
+      console.error("Error deleting product:", error.message);
+    }
+  };
+
+  const handleProductSubmit = async (product: Product) => {
+  try {
+    const productFormData = new FormData();
+    Object.entries(product).forEach(([key, value]) => {
+      if (key === 'image' && value instanceof File) {
+        productFormData.append(key, value, value.name);
+      } else {
+        productFormData.append(key, value.toString());
+      }
+    });
+
+    const createdProduct = await createProduct(productFormData); // Adjusted to include a single FormData argument
+    setProducts([...products, createdProduct]);
+    setSelectedProduct(null);
+    setFormData({
+      _id: "",
+      name: "",
+      model: "",
+      brand: "",
+      location: "",
+      year: new Date().getFullYear(),
+      exposureCounter: 0,
+      price: 0,
+      description: "",
+      imageUrl: "",
+      imagePath: "",
+    });
+    console.log("Product created:", createdProduct);
+  } catch (error) {
+    console.error("Error creating product:", error);
+  }
+};
+
+  console.log("Current products:", products);
+  console.log("Selected product:", selectedProduct);
+
+  return (
+    <div>
+      <h2 className="text-lg font-medium text-gray-700 mb-2">Products</h2>
+      <div>
+         <ProductForm
+  key={selectedProduct?._id || "newProduct"}
+  product={formData}
+  setFormData={setFormData}
+  onSubmit={selectedProduct ? handleProductUpdate : handleProductSubmit}
+  setSelectedProduct={setSelectedProduct}
+  selectedProduct={selectedProduct} // Add the selectedProduct prop here
+/>
+
+      </div>
+      <table className="w-full border-collapse">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Model</th>
+            <th>Brand</th>
+            <th>Location</th>
+            <th>Year</th>
+            <th>Exposure Counter</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {products.map((product) => (
+            <tr key={product._id}>
+              <td>
+                <img className="card-img-top" 
+                src={`http://127.0.0.1:4000/${product.imageUrl}`} 
+                alt="Product image"
+                width={20}
+                height={20} />
+              {" "}
+              </td>
+              <td>{product.name}</td>
+              <td>{product.model}</td>
+              <td>{product.brand}</td>
+              <td>{product.location}</td>
+              <td>{product.year}</td>
+              <td>{product.exposureCounter}</td>
+              <td>{product.price}</td>
+              <td>{product.description}</td>
+              <td>
+                <button
+                  className="py-2 px-4 bg-indigo-500 text-white rounded-md hover:bg-indigo-600"
+                  onClick={() => handleProductEdit(product)}
+                >
+                  Update
+                </button>
+                <button
+                  className="py-2 px-4 bg-red-500 text-white rounded-md hover:bg-red-600"
+                  onClick={() => handleProductDelete(product._id)}
+                >
+                  Delete
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default Products;
+---------------------
 export const baseURL = 'http://127.0.0.1:4000/api/products';
 
 export const fetchProducts = async () => {
