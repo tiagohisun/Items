@@ -1,15 +1,3 @@
-const Koa = require("koa");
-const Router = require("koa-router");
-const mongoose = require("mongoose");
-const multer = require("@koa/multer");
-const path = require("path");
-const cors = require("@koa/cors");
-const serve = require("koa-static");
-const koaBody = require("koa-body");
-const fs = require("fs");
-const app = new Koa();
-const router = new Router();
-const bodyParser = require('koa-bodyparser');
 
 // multer diskStorage for product images
 const storage = multer.diskStorage({
@@ -230,3 +218,66 @@ module.exports = router;
 
 
 const uploadForUpdate = multer({ storage: storage });
+
+
+// Use the refactored function inside the route
+router.put("/api/products/:id", uploadForUpdate.single("image"), async (ctx) => {
+  try {
+    const id = ctx.params.id;
+    const productData = ctx.request.body.data ? JSON.parse(ctx.request.body.data) : ctx.request.body;
+    const image = ctx.request.file;
+
+    const oldProduct = await Product.findById(id);
+    if (!oldProduct) {
+      ctx.status = 404;
+      ctx.body = { error: "Product not found" };
+      return;
+    }
+
+    const fieldsChanged = productData.name !== oldProduct.name || 
+                      productData.model !== oldProduct.model ||
+                      productData.location !== oldProduct.location ||
+                      productData.year !== oldProduct.year ||
+                      productData.price !== oldProduct.price ||
+                      productData.exposureCounter !== oldProduct.exposureCounter;
+
+    const timestamp = new Date().toISOString().replace(/:/g, "-").split('.')[0]; // remove milliseconds
+    const newFolderPath = `C:/ecommerce2/server/Images/Products/${productData.name}-${productData.model}-${productData.location}-${productData.year}-${productData.price}-${timestamp}`;
+
+    if (fieldsChanged) {
+      const oldFolderPath = path.join(__dirname, "Images", "Products", oldProduct.imagePath);
+      if (fs.existsSync(oldFolderPath)) {
+        fs.renameSync(oldFolderPath, `${oldFolderPath}_old`);
+      }
+      if (!fs.existsSync(newFolderPath)) {
+        fs.mkdirSync(newFolderPath, { recursive: true });
+      }
+
+      const newImagePath = path.join(__dirname, "Images", "Products", newFolderPath);
+      if (image) {
+        fs.copyFileSync(image.path, path.join(newImagePath, image.filename));
+      } else if (fs.existsSync(path.join(`${oldFolderPath}_old`, oldProduct.imageUrl))) {
+        fs.copyFileSync(path.join(`${oldFolderPath}_old`, oldProduct.imageUrl), path.join(newFolderPath, oldProduct.imageUrl));
+      }
+    }
+
+    const imagePath = fieldsChanged ? `${productData.name}-${productData.model}-${productData.location}-${productData.year}-${productData.price}-${timestamp}` : oldProduct.imagePath;
+    const imageUrl = image ? `${imagePath}/${image.filename}` : oldProduct.imageUrl;
+
+    const updateObj = {
+      ...productData,
+      imagePath: imagePath,
+      imageUrl: imageUrl,
+    };
+
+    const updatedProduct = await Product.findByIdAndUpdate(id, updateObj, {
+      new: true,
+    });
+
+    ctx.body = updatedProduct;
+  } catch (err) {
+    console.error("Error updating product:", err);
+    ctx.status = 500;
+    ctx.body = { error: "An error occurred while updating the product" };
+  }
+});
